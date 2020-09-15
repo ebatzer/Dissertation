@@ -34,7 +34,8 @@ apptab3_3 <- read_csv("data/App3_3.csv", col_names = FALSE)
 apptab3_4 <- read_csv("data/App3_4.csv",  col_types = "ccccc")
 apptab3_5 <- read_csv("data/App3_5.csv", col_types = "ccccccnn")
 ```
-# Appendix 1
+
+# Chapter 1 Supporting Information
 
 ```{r, results = "hide"}
 table_nums_appendix(name = "tableA1_1")
@@ -56,8 +57,9 @@ colnames(apptab1_2) <- c("Site Name",
                          "$\\Delta$K",
                          "D")
 print(xtable(apptab1_2,
-             caption = "Table of sites, pairwise correlations between community responses to different treatments ($\\rho$), rate of community change in response to treatment ($\\Delta$), and estimated response dimensionality (D). Significant (P < 0.05) magnitudes of community response are labelled with $\\*$"),
-      scalebox = 0.6, sanitize.text.function=function(x){x})
+             caption = "Table of sites, pairwise correlations between community responses to different treatments ($\\rho$), rate of community change in response to treatment ($\\Delta$), and estimated response dimensionality (D). Significant (P < 0.05) magnitudes of community response are labelled with *."),
+      scalebox = 0.6, 
+      sanitize.text.function=function(x){x})
 ```
 
 
@@ -82,9 +84,9 @@ fig_nums_appendix(name = "app-3-1")
 table_nums_appendix(name = "tableA1_2")
 ```
 
-# Appendix 2
+# Chapter 2 Supporting Information
 
-# Appendix 3
+# Chapter 3 Supporting Information
 
 ```{r, results = "hide"}
 table_nums_appendix(name = "tableA3_1")
@@ -111,7 +113,8 @@ print(xtable(apptab3_3[-1,],
 
 \pagebreak
 
-Clustering Index Ranking Method:  
+Clustering Index Ranking Method:
+
 1. Hartigan: Choose value K with maximum index difference between K and K-1.
 2. CH: Choose maximum value among orders of K considered.
 3. Beale: Choose minimum value of K such that the critical value of the index is less than alpha = 0.05. Other values whose critical value is less than alpha are ranked in order of significance.
@@ -130,13 +133,10 @@ table_nums_appendix(name = "table3_4")
 ```{r table3_4, echo = FALSE, include = TRUE, results = 'asis'}
 colnames(apptab3_4)[1] = " "
 print(xtable(apptab3_4, 
-             caption = "Contingency table of observed transitions between state assignments between 2008-2018. For each plot observation of a state assignment in year t (rows), data shows the frequency of state assignments (columns) of the same plot in a subsequent year (t + 1). Diagonal values represent the frequency of a given state retaining its assignment (persistence), while off-diagonal values represent transitions in state assignment. Changes in assignment frequency were highly non-random (χ2 = 392.017, df = 9, P < 0.001)."),
-      scalebox = .7)
+             caption = "Contingency table of observed transitions between state assignments between 2008-2018. For each plot observation of a state assignment in year t (rows), data shows the frequency of state assignments (columns) of the same plot in a subsequent year (t + 1). Diagonal values represent the frequency of a given state retaining its assignment (persistence), while off-diagonal values represent transitions in state assignment. Changes in assignment frequency were highly non-random ($\\chi^2$ = 392.017, df = 9, P < 0.001)."),
+      scalebox = .7,
+      sanitize.text.function=function(x){x})
 ```
-
-  
-  
-  
   
 
 ```{r, results = "hide"}
@@ -146,7 +146,8 @@ table_nums_appendix(name = "table3_5")
 ```{r table3_5, echo = FALSE, include = TRUE, results = 'asis'}
 colnames(apptab3_5) = c("Model", "DF", "Priority", "1 Year SPEI", "2 Year SPEI", "3 Year SPEI", "deltaAIC", "AIC")
 xtable(apptab3_5[-1,],
-             caption = "AIC model comparison used to select the best fit multi-state model from a series of candidates. Covariates include “Priority Effects” – the effect of initial seeding mixture representation of indicator species correlated with cluster assignments – and “1-“, “2-“, and “3-year SPEI” – a standardized measure of drought stress computed over 1, 2, and 3 cumulative water year intervals, respectively. DF corresponds to the number of parameters estimated within the transition matrix, including baseline transition probabilities and effects of covariates.")
+             caption = "AIC model comparison used to select the best fit multi-state model from a series of candidates. Covariates include “Priority Effects” – the effect of initial seeding mixture representation of indicator species correlated with cluster assignments – and “1-“, “2-“, and “3-year SPEI” – a standardized measure of drought stress computed over 1, 2, and 3 cumulative water year intervals, respectively. DF corresponds to the number of parameters estimated within the transition matrix, including baseline transition probabilities and effects of covariates.",
+       scalebox = .9)
 ```
 
 
@@ -168,4 +169,4 @@ fig_nums_appendix(name = "app-3-2")
 fig_nums_appendix(name = "app-3-3")
 ```
 
-![Visualization of clustering assignments following K-medoids clustering. Non-metric multidimensional scaling (NMDS) ordination was conducted on all community observations from 2008 – 2018 (n=560). Pairwise community distance was calculated using Bray-Curtis dissimilarity index. Species vectors correspond to taxa that were found to be significantly associated (p < 0.05) with state assignments using indicator species analysis. \label{app-3-3}](figure/Fig3_2.png){height=80%}
+![Plot-level shifts in state assignment over time. For each observed community (grid cell), the state assignment of a community is presented as a function of initial seeding treatment (row) and time (column). \label{app-3-3}](figure/AppFig3_3.png){height=80% width=65%}

@@ -11,7 +11,7 @@
 \contentsline {section}{Results}{5}{section*.7}%
 \contentsline {section}{Discussion}{5}{section*.8}%
 \contentsline {chapter}{Conclusion}{6}{chapter*.9}%
-\contentsline {chapter}{\numberline {A}Appendix 1}{7}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Appendix 2}{11}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Appendix 3}{12}{appendix.C}%
+\contentsline {chapter}{\numberline {A}Supporting information for Chapter 1}{7}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Supporting information for Chapter 2}{11}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Supporting information for Chapter 3}{12}{appendix.C}%
 \contentsline {chapter}{References}{18}{appendix*.21}%

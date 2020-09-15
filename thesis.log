@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.9)  14 SEP 2020 21:56
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.9)  15 SEP 2020 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,16 +850,13 @@ Appendix B.
 
 ]
 Appendix C.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [12
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [13]
-Overfull \hbox (10.31267pt too wide) in paragraph at lines 457--471
+Overfull \hbox (10.31267pt too wide) in paragraph at lines 468--482
  [][] 
  []
 
@@ -867,27 +864,27 @@ File: figure/AppFig3_1.png Graphic file (type bmp)
 <figure/AppFig3_1.png>
 File: figure/AppFig3_2.png Graphic file (type bmp)
 <figure/AppFig3_2.png>
-File: figure/Fig3_2.png Graphic file (type bmp)
-<figure/Fig3_2.png>
+File: figure/AppFig3_3.png Graphic file (type bmp)
+<figure/AppFig3_3.png>
 [14] [15] [16] [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 495.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
 [18
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 495.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 495.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 495.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 506.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 66CBFFFB51952AFCF3FB4711041B2FE9;1122.
+(rerunfilecheck)             Checksum: AD1124FBE08F5B58F2FD7DAD42B9D9C3;1227.
  ) 
 Here is how much of TeX's memory you used:
  19475 strings out of 481649
- 344276 string characters out of 5930265
- 697045 words of memory out of 5000000
+ 344372 string characters out of 5930265
+ 696899 words of memory out of 5000000
  36328 multiletter control sequences out of 15000+600000
  542637 words of font info for 73 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 44i,10n,50p,812b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,50p,812b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on thesis.pdf (26 pages).
