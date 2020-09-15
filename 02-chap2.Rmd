@@ -1,0 +1,8 @@
+# Nitrogen enrichment has scale-dependent effects on plant diversity in California grasslands.
+<!-- This adds a different "short title" -->
+\chaptermark{Scale dependence}
+
+Evan E. Batzer^1\*^ and Valerie T. Eviner^1^
+
+1. Department of Plant Sciences, University of California, Davis
+

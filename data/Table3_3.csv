@@ -1,0 +1,14 @@
+﻿State,Species,Statistic,P-value
+1,E. glaucus,0.801,0.001
+1,S. pulchra,0.574,0.001
+1,B. carinatus,0.548,0.001
+1,F. microstachys,0.284,0.001
+2,F. perennis ,0.825,0.001
+2,B. hordeaceus,0.723,0.001
+2,T. subterraneum,0.607,0.001
+3,E. caput-medusae,0.871,0.001
+3,A. triuncialis,0.741,0.001
+4,A. fatua,0.819,0.001
+4,B. diandrus,0.553,0.001
+4,E. triticoides,0.303,0.036
+4,A. americanus,0.274,0.011

@@ -1,0 +1,13 @@
+﻿Functional Group,Pair,n,Slope,Intercept,R2
+Forb,N-P,307,0.99,0.02,0.20
+Graminoid,N-P,241,1.04,0.04,0.11
+Legume,N-P,46,1.13,0.34,0.032ns
+Woody,N-P,18,0.81,0.04,0.76
+Forb,N-K,307,0.97,0.00,0.21
+Graminoid,N-K,241,1.03,0.01,0.11
+Legume,N-K,46,1.33,0.25,0.10
+Woody,N-K,18,0.78,-0.01,0.63
+Forb,P-K,307,0.99,-0.03,0.21
+Graminoid,P-K,241,0.99,-0.03,0.27
+Legume,P-K,46,1.18,-0.15,0.09
+Woody,P-K,18,0.96,-0.05,0.67

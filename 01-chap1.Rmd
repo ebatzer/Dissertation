@@ -1,0 +1,137 @@
+# The “Neutral Theory” of Niche Dimensionality
+<!-- This adds a different "short title" -->
+\chaptermark{Response dimensionality}
+
+Evan E. Batzer^1\*^, 
+Siddharth Bharath^2^, 
+Elizabeth Borer^2^, 
+Stan Harpole^3^, 
+Carlos Alberto Arnillas^4^, 
+Miguel Bugalho^5^, 
+Maria Caldeira^6^, 
+Oliver Carroll^7^, 
+Mick Crawley^8^, 
+Kendi Davies^9^, 
+Pedro Daleo^10^, 
+Johannes Knops^11^,
+Kimberly Komatsu^12^,
+Andrew MacDougall^7^,
+Rebecca L. McCulley^13^,
+Brett Melbourne^9^,
+Timothy Ohlert^14^,
+Sally A. Power^15^, 
+Suzanne Prober^16^,
+Christiane Roscher^3,17^,
+Mahesh Sankaran^18,19^,
+Glenda Wardle^20^,
+George Wheeler^21^,
+Peter Wilfhart^2^,
+and Eric Seabloom^2^.
+
+1. Department of Plant Sciences, University of California, Davis, USA
+2. Department of Ecology, Evolution, and Behavior, University of Minnesota, USA
+3. Department for Physiological Diversity, German Centre for Integrative Biodiversity Research (iDiv), Germany
+4. University of Toronto at Scarborough, Canada
+5. Centre for Applied Ecology (CEABN-InBIO), University of Lisbon, Portugal
+6. Forest Research Centre, School of Agriculture, University of Lisbon, Portugal
+7. Imperial College London, Silwood Park, UK
+8. University of Guelph, Canada
+9. Department of Ecology and Evolutionary Biology, University of Colorado, Boulder, USA
+10. Instituto de Investigaciones Marinas y Costeras (IIMyC), CONICET – UNMDP, Argentina
+11. Department of Health & Environmental Sciences, Xi'an Jiaotong Liverpool University, Suzhou, China
+12. Smithsonian Environmental Research Center, Edgewater, USA
+13. Department of Plant and Soil Sciences, University of Kentucky, Lexington, USA
+14. Department of Biology, University of New Mexico
+15. Hawkesbury Institute for the Environment, Western Sydney University, Australia
+16. CSIRO Land and Water, Australia
+17. UFZ, Helmholtz Centre for Environmental Research, Physiological Diversity, Germany
+18. National Centre for Biological Sciences, TIFR, India 
+19. School of Biology, University of Leeds, UK
+20. School of Life and Environmental Sciences, University of Sydney, Australia
+21. School of Biological Sciences, University of Nebraska, Lincoln, USA
+
+```{r setup_chap01, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r dependencies_chap01, echo = FALSE, output = FALSE}
+library(here)
+library(knitr)
+library(kableExtra)
+library(captioner)
+library(tidyverse)
+library(xtable)
+
+options(xtable.comment = FALSE, xtable.include.rownames=FALSE)
+
+fig_nums_chap01 <- captioner(prefix = "Figure 1.", auto_space = FALSE)
+table_nums_chap01 <- captioner(prefix = "Table 1.", auto_space = FALSE)
+```
+
+
+```{r data_chap1}
+tab1_1 <- read_csv("data/Table1_1.csv", col_types = "cccccc")
+tab1_2 <- read_csv("data/Table1_2.csv")
+```
+
+```{r, results = "hide"}
+fig_nums_chap01(name = "fig-1-1")
+```
+
+![Conceptual diagram illustrating the method used to assess dimensionality of community enrichment response. \newline (a) Bivariate relationships between responses: In this hypothetical example, a community of 3 species is subject to enrichment by three different resources. Estimated responses to these nutrients are standardized such that the total magnitude of community response to each nutrient is of unit length. The line illustrates the null hypothesis of proportionally identical responses; Species 1 (Sp1) exhibits comparatively stronger responses to N treatment than either P or K. \newline (b) Three-dimensional representation of responses: The responses above are presented as a three-dimensional plot, with the vector y representing the null hypothesis. The vector of responses estimated for Sp1, x1, is projected onto y, producing the projection, $a_1$, and rejection, $b_1$. The coordinates of this projection vector, $a_1$, correspond to the average response of Sp1 recorded across all three nutrients. Projection and rejection vectors for Sp2 and Sp3 may be calculated in a similar fashion and used to evaluate response dimensionality at the community scale. In this community, strong positive correlation across all three treatment dimensions yielded low overall response dimensionality, D = 0.04. \newline (c) Two-dimensional plot of rejection vectors: Residual elements of the response vector not captured by projection onto y may be visualized in two dimensions, b1 and b2. Corresponding to relationships shown in bivariate plots, rejection elements of Sp1 have large values in the second rejection dimension, b2, reflecting proportionally stronger responses to N enrichment than other treatments.  \label{fig-1-1}](figure/Fig1_1.png){height=60%}
+
+```{r, results = "hide"}
+fig_nums_chap01(name = "fig-1-2")
+```
+
+![\newline (a) Frequency of sites exhibiting significant (P < 0.05) effects of nutrient (N, P, or Kµ) fertilization on plant community composition. Of 49 total sites, 37 showed significant compositional changes to at least one of three fertilization treatments, while 12 sites showed non-significant compositional responses to all nutrient manipulations. \newline (b) Rate of estimated fertilization-driven change in species composition, prior to standardization of response coefficients. The rate of total compositional change was calculated as the magnitude of the vector of estimated species response coefficients, as net Euclidean change in log2-transformed community cover per year of treatment. Higher values indicate greater overall rate of compositional change. \label{fig-1-2}](figure/Fig1_2.png){height=60%}
+
+
+```{r, results = "hide"}
+fig_nums_chap01(name = "fig-1-3")
+```
+
+![Visualization of pairwise relationships between plant responses to nutrient addition treatments. Each point refers to a unique site x species combination, colored by functional group. Lines correspond to results of semi major axis (SMA) regression applied to each functional group. \label{fig-1-3}](figure/Fig1_3.png){height=35%}
+
+
+```{r, results = "hide"}
+fig_nums_chap01(name = "fig-1-4")
+```
+
+![\newline (a) Three-dimensional visualization of species responses to nutrient enrichment across all sites, with line corresponding to 1:1:1 vector (y) assuming proportionally equal responses. \newline (b) Residual deviation from 1:1:1 vector displayed in two dimensions (b¬1, b2) orthogonal to y. Points are colored by functional group with 95% confidence ellipses centered on group means.  \label{fig-1-4}](figure/Fig1_4.png){height=45%}
+
+```{r, results = "hide"}
+fig_nums_chap01(name = "fig-1-5")
+```
+
+![Visual representation of structural equation model (SEM) used to evaluate pre-treatment site factors that explain variation in community response dimensionality (D) following multiple nutrient enrichment. All statistically significant (P < 0.05) pathways are presented. Solid lines correspond to positive effects, while dashed lines correspond to negative effects. Chi-square test statistic = 23.408 on 20 degrees of freedom indicates close model-data fit (P = 0.269; Comparative Fit Index = 0.943). \label{fig-1-5}](figure/Fig1_5.png){height=50%}
+
+
+```{r, results = "hide"}
+table_nums_chap01(name = "table1_1")
+```
+
+```{r table1_1, echo = FALSE, include = TRUE, results='asis'}
+colnames(tab1_1)[6] = "$R^2$"
+tab1_1[3,6] = "$0.032^{ns}$"
+print(xtable(tab1_1,
+             caption = "Summary of semi major axis (SMA) regression model fits to each of 3 pairwise comparisons of response to fertilization treatment. A majority of models captured significantly more variation (P < 0.05) in response than models assuming no correlation between treatment responses; models with non-significant fits are denoted by superscript “ns”."), hline.after = c(0,4,8),
+      sanitize.text.function=function(x){x})
+```
+
+```{r, results = "hide"}
+table_nums_chap01(name = "table1_2")
+```
+
+```{r table1_2, echo = FALSE, include = TRUE, results='asis'}
+tab1_2$X2 <- sapply(tab1_2$X2,FUN = function(x){paste("$", x, "^1$", sep = "")})
+tab1_2$X3 <- sapply(tab1_2$X3,FUN = function(x){paste("$", x, "^1$", sep = "")})
+tab1_2$X4 <- c("$0.0081^1$",
+               "$0.0021^1$",
+               "$0.2062^2$",
+               "$0.0221^1$")
+colnames(tab1_2) <- c("","$\\bar{y}$", "$\\bar{b_1}$", "$\\bar{b_2}$")
+print(xtable(tab1_2,
+             caption = "Mean coordinate position of functional groups along 1:1:1 vector ($\\bar{y}$) and residual components ($\\bar{b_1}$,$\\bar{b_2}$). Superscripts correspond to significant (P < 0.05) contrasts between functional group means in each dimension."),
+      sanitize.text.function=function(x){x})
+```

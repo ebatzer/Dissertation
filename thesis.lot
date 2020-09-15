@@ -1,0 +1,13 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Table of sites included in analysis.\relax }}{9}{table.caption.10}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Table of sites, pairwise correlations between community responses to different treatments ($\rho $), rate of community change in response to treatment ($\Delta $), and estimated response dimensionality (D). Significant (P < 0.05) magnitudes of community response are labelled with $\*$\relax }}{10}{table.caption.11}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces Heuristics used to determine best number of clusters to use in partitioning, K. Summary of the best performing K for 8 different clustering indices.\relax }}{12}{table.caption.14}%
+\contentsline {table}{\numberline {C.2}{\ignorespaces Rank summary table of performance across different clustering indices.\relax }}{12}{table.caption.15}%
+\contentsline {table}{\numberline {C.3}{\ignorespaces Contingency table of observed transitions between state assignments between 2008-2018. For each plot observation of a state assignment in year t (rows), data shows the frequency of state assignments (columns) of the same plot in a subsequent year (t + 1). Diagonal values represent the frequency of a given state retaining its assignment (persistence), while off-diagonal values represent transitions in state assignment. Changes in assignment frequency were highly non-random (<U+03C7>2 = 392.017, df = 9, P < 0.001).\relax }}{14}{table.caption.16}%
+\contentsline {table}{\numberline {C.4}{\ignorespaces AIC model comparison used to select the best fit multi-state model from a series of candidates. Covariates include “Priority Effects” – the effect of initial seeding mixture representation of indicator species correlated with cluster assignments – and “1-“, “2-“, and “3-year SPEI” – a standardized measure of drought stress computed over 1, 2, and 3 cumulative water year intervals, respectively. DF corresponds to the number of parameters estimated within the transition matrix, including baseline transition probabilities and effects of covariates.\relax }}{14}{table.caption.17}%
