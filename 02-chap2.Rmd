@@ -6,3 +6,56 @@ Evan E. Batzer^1\*^ and Valerie T. Eviner^1^
 
 1. Department of Plant Sciences, University of California, Davis
 
+```{r setup_chap02, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r dependencies_chap02}
+library(here)
+library(knitr)
+library(kableExtra)
+library(captioner)
+library(tidyverse)
+library(xtable)
+
+options(xtable.comment = FALSE, xtable.include.rownames=FALSE)
+
+fig_nums_chap02 <- captioner(prefix = "Figure 2.", auto_space = FALSE)
+table_nums_chap02 <- captioner(prefix = "Table 2.", auto_space = FALSE)
+```
+
+```{r data_chap2}
+tab2_1 <- read_csv("data/Table2_1.csv")
+tab2_2 <- read_csv("data/Table2_2.csv")
+```
+
+
+```{r, results = "hide"}
+fig_nums_chap02(name = "fig-2-1")
+```
+![\label{fig-2-1}](figure/Fig2_1.png){width=30%}
+
+```{r, results = "hide"}
+fig_nums_chap02(name = "fig-2-2")
+```
+![\label{fig-2-2}](figure/Fig2_2.png){height=40%}
+
+```{r, results = "hide"}
+fig_nums_chap02(name = "fig-2-3")
+```
+![\label{fig-2-3}](figure/Fig2_3.png){height=40%}
+
+```{r, results = "hide"}
+fig_nums_chap02(name = "fig-2-4")
+```
+![\label{fig-2-4}](figure/Fig2_4.png){height=40%}
+
+```{r, results = "hide"}
+fig_nums_chap02(name = "fig-2-5")
+```
+![\label{fig-2-5}](figure/Fig2_5.png){height=40%}
+
+```{r, results = "hide"}
+fig_nums_chap02(name = "fig-2-6")
+```
+![\label{fig-2-6}](figure/Fig2_6.png){height=40%}

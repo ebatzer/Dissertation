@@ -115,7 +115,7 @@
   % TITLE PAGE INFORMATION %  modified to meet UCDavis, R. Peek, 2018
   %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \title{Population genetics of a frog you've never heard of}
+  \title{The Diversity and Composition of Grassland Ecosystems Under Global Change}
   \author{Evan E. Batzer}
 
 \report{DISSERTATION} 
@@ -134,24 +134,10 @@
 	% APPROVAL AND COPYRIGHT
 	% \approvalpage % AS OF 2018 Fall, don't need this additional page if use cover page for signatures
 	% \copyrightpage
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % DEDICATION PAGE INFORMATION %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{dedication}
-
-      \vspace*{20ex}
-      \begin{center}
-      \begin{large}
-
-        ``My dedication''
-
-      \end{large}
-      \end{center}
-  \end{dedication}
+  
   % ACKNOWLEDGEMENTS
 \begin{acknowledgements}
-    ``My acknowledgments''
+    ``Thank you to everyone''
   \end{acknowledgements}
   %%%%%%
   % CV % Not required, add if you need
@@ -182,7 +168,7 @@
   \begin{abstract}
     \addcontentsline{toc}{chapter}{Abstract}
 
-    ``Frogs are great. Ribbit Ribbit.''
+    ""
 
     %\abstractsignature
   \end{abstract}
@@ -196,15 +182,338 @@
 \end{ucfrontmatter}
 \begin{ucmainmatter}
 
-\hypertarget{ucd-thesis-fields}{%
-\chapter{UCD thesis fields}\label{ucd-thesis-fields}}
-
-Placeholder
-
 \hypertarget{the-neutral-theory-of-niche-dimensionality}{%
 \chapter{The ``Neutral Theory'' of Niche Dimensionality}\label{the-neutral-theory-of-niche-dimensionality}}
 
-Placeholder
+\chaptermark{Response dimensionality}
+
+Evan E. Batzer\textsuperscript{1*},
+Siddharth Bharath\textsuperscript{2},
+Elizabeth Borer\textsuperscript{2},
+Stan Harpole\textsuperscript{3},
+Carlos Alberto Arnillas\textsuperscript{4},
+Miguel Bugalho\textsuperscript{5},
+Maria Caldeira\textsuperscript{6},
+Oliver Carroll\textsuperscript{7},
+Mick Crawley\textsuperscript{8},
+Kendi Davies\textsuperscript{9},
+Pedro Daleo\textsuperscript{10},
+Johannes Knops\textsuperscript{11},
+Kimberly Komatsu\textsuperscript{12},
+Andrew MacDougall\textsuperscript{7},
+Rebecca L. McCulley\textsuperscript{13},
+Brett Melbourne\textsuperscript{9},
+Timothy Ohlert\textsuperscript{14},
+Sally A. Power\textsuperscript{15},
+Suzanne Prober\textsuperscript{16},
+Christiane Roscher\textsuperscript{3,17},
+Mahesh Sankaran\textsuperscript{18,19},
+Glenda Wardle\textsuperscript{20},
+George Wheeler\textsuperscript{21},
+Peter Wilfhart\textsuperscript{2},
+and Eric Seabloom\textsuperscript{2}.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Department of Plant Sciences, University of California, Davis, USA
+\item
+  Department of Ecology, Evolution, and Behavior, University of Minnesota, USA
+\item
+  Department for Physiological Diversity, German Centre for Integrative Biodiversity Research (iDiv), Germany
+\item
+  University of Toronto at Scarborough, Canada
+\item
+  Centre for Applied Ecology (CEABN-InBIO), University of Lisbon, Portugal
+\item
+  Forest Research Centre, School of Agriculture, University of Lisbon, Portugal
+\item
+  Imperial College London, Silwood Park, UK
+\item
+  University of Guelph, Canada
+\item
+  Department of Ecology and Evolutionary Biology, University of Colorado, Boulder, USA
+\item
+  Instituto de Investigaciones Marinas y Costeras (IIMyC), CONICET -- UNMDP, Argentina
+\item
+  Department of Health \& Environmental Sciences, Xi'an Jiaotong Liverpool University, Suzhou, China
+\item
+  Smithsonian Environmental Research Center, Edgewater, USA
+\item
+  Department of Plant and Soil Sciences, University of Kentucky, Lexington, USA
+\item
+  Department of Biology, University of New Mexico
+\item
+  Hawkesbury Institute for the Environment, Western Sydney University, Australia
+\item
+  CSIRO Land and Water, Australia
+\item
+  UFZ, Helmholtz Centre for Environmental Research, Physiological Diversity, Germany
+\item
+  National Centre for Biological Sciences, TIFR, India
+\item
+  School of Biology, University of Leeds, UK
+\item
+  School of Life and Environmental Sciences, University of Sydney, Australia
+\item
+  School of Biological Sciences, University of Nebraska, Lincoln, USA
+\end{enumerate}
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Increases in the availability of limiting soil nutrients are known to produce changes in plant community diversity and composition. Among locally interacting species, this change is tied to competitive trade-offs across gradients of resource availability. Plant responses to fertilization are often thought to be mediated through aboveground competition, where effective competitors are better able to intercept available light.
+However, plant communities are often subject to simultaneous limitation by multiple nutrients, which may lead to multidimensional trade-offs in the use of individual belowground resources. Depending on the contributions of these two mechanisms to species interactions, treatment effects may vary in their dimensionality -- the degree to which community responses to fertilization can be captured across a single axis of change.
+Using data from a globally replicated nutrient addition experiment, we assessed the dimensionality of community response to fertilization across three different resource addition treatments. Across all studies, species responses to nutrient enrichment were broadly consistent across multiple enrichment treatments, suggesting that fertilization often acts on a one-dimensional trade-off governed by light limitation.
+However, we also found significant deviations from this general relationship across plant functional groups and local contexts; sites characterized by high pre-treatment productivity and legume abundance exhibited more variation in the direction of community change across treatments. Our findings suggest that while broad functional trade-offs may predominate at a global scale, community responses to fertilization are likely to depend on site-specific variation in coexistence mechanisms.
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Human alterations of the earth's biogeochemical cycles have produced widespread changes in the availability of key nutrients known to control plant productivity (Vitousek et al. \protect\hyperlink{ref-Vitousek1997b}{1997}, Elser et al. \protect\hyperlink{ref-Elser2007}{2007}).
+Increased concentrations of soil nutrients are recognized as important drivers of compositional change in plant communities, resulting in altered patterns of abundance and diversity (Tilman \protect\hyperlink{ref-Tilman1984}{1984}, Tilman and Lehman \protect\hyperlink{ref-Tilman2001}{2001}).
+In turn, these effects on community structure are implicated in changes to key ecosystem properties, including reductions in resilience, resistance, and loss of multifunctionality (Chapin et al. \protect\hyperlink{ref-Chapin2000}{2000}, Hector and Bagchi \protect\hyperlink{ref-Hector2007}{2007}, Isbell et al. \protect\hyperlink{ref-Isbell2015}{2015}).
+Nutrient enrichment is thought to control plant community composition through environmental shifts that operate on niche differences among interacting species. Given that photosynthetic organisms compete for a similar set of limiting resources (Hutchinson 1961), plant coexistence is likely mediated by trade-offs in resource use that produce variable fitness across environments. It is through these trade-offs that nutrient enrichment drives changes in plant abundance, favoring species that are better able to exclude their competitors under elevated nutrient conditions (Tilman \protect\hyperlink{ref-Tilman1984}{1984}).
+To effectively predict compositional shifts following nutrient enrichment, it is thus essential to identify the specific mechanisms that govern plant responses. In many cases, fertilization is linked to a shift between soil nutrients and light as the primary limiting factor for plant growth ({\textbf{???}}, Tilman \protect\hyperlink{ref-Tilman1984}{1984}, Dybzinski and Tilman \protect\hyperlink{ref-Dybzinski2007a}{2007}, Hautier et al. \protect\hyperlink{ref-Hautier2009}{2009}, Clark et al. \protect\hyperlink{ref-Clark2018}{2018}).
+The increased abundance of taller species under elevated nutrient inputs suggests a one-dimensional trade-off where plants are differentiated by their ability to acquire belowground resources or intercept available light (Hautier et al. \protect\hyperlink{ref-Hautier2009}{2009}, DeMalach et al. \protect\hyperlink{ref-DeMalach2017a}{2017}).
+However, fertilization effects may not be limited to a single driver. Plants are also known to be limited by (and compete for) multiple belowground resources, even in high productivity contexts (Wilson and Tilman \protect\hyperlink{ref-Wilson1991}{1991}, Fay et al. \protect\hyperlink{ref-Fay2015}{2015}, Harpole et al. \protect\hyperlink{ref-Harpole2016}{2016}).
+As a result, biodiversity loss may also stem from multi-dimensional trade-offs in the use and acquisition of individual soil nutrients. In this perspective, plant responses to fertilization are governed by variation in species' ability to utilize specific soil resources, such nitrogen, phosphorous, potassium, or other micronutrients (Harpole and Tilman \protect\hyperlink{ref-Harpole2007}{2007}, Harpole et al. \protect\hyperlink{ref-Harpole2016}{2016}).
+While trade-offs mediated by light competition or the use of individual soil resources explain declines in species richness following fertilization, there exist few tests of their relative contribution to observed effects (but see DeMalach and Kadmon (\protect\hyperlink{ref-DeMalach2017b}{2017}) and Harpole et al. (\protect\hyperlink{ref-Harpole2017}{2017})).
+However, these mechanisms present distinct predictions related to the dimensionality of community change across different nutrient enrichment treatments. Under a one-dimensional trade-off mediated by light competition, the addition of any limiting belowground resource will shift species abundances across a single axis.
+As a result, treatment effects will be directionally equivalent in response to the enrichment of different soil resources. Nutrient-specific trade-offs, however, predict that fertilization effects depend on resource identity, leading to high-dimensional (dissimilar) shifts in composition that vary as a function of the specific soil nutrient added.
+
+Observed patterns of plant niche differentiation offer lines of evidence supporting predictions of both one-dimensional and multi-dimensional patterns of change. At a global scale, conserved patterns of tissue stoichiometry (Ågren \protect\hyperlink{ref-Agren2008}{2008}) and dominant axes of plant functional variation (Díaz et al. \protect\hyperlink{ref-Diaz2016}{2016}) suggest that one-dimensional trade-offs are likely to predominate -- plant growth strategies may be expected to confer increased fitness under elevated nutrient concentrations generally, rather than varying in response to specific fertilization treatments ({\textbf{???}}).
+However, outcomes of plant competition are the result of relative differences in resource use among interacting species (Tilman \protect\hyperlink{ref-tilman1982resource}{1982}).
+Depending on community context, variation in plant nutrient demands and functional strategies may drive resource-specific trade-offs.
+Critically, performance under variable nutrient concentrations only forms a subset of the possible forms of niche differentiation in plant communities. Correlated patterns of variation in plant functional characteristics and abundance suggest several key ways in which niche differentiation commonly occurs ({\textbf{???}}).
+Plants are theorized to exhibit trade-offs between competition and colonization (Tilman \protect\hyperlink{ref-Tilman1994}{1994}, Pacala and Rees \protect\hyperlink{ref-Pacala1998}{1998}), herbivore defense and growth (Mattson and Herms \protect\hyperlink{ref-Mattson1992}{1992}), and between leaf longevity and photosynthetic rate (Wright et al. \protect\hyperlink{ref-Wright2004}{2004}, Reich \protect\hyperlink{ref-Reich2014}{2014}).
+Depending on the strength of these other mechanisms, constraints on plant function and physiology may limit the development of nutrient-specific trade-offs; varied responses to different nutrient enrichment treatments may be more common in systems where belowground resource competition acts as an important coexistence mechanism ({\textbf{???}}, Brauer et al. \protect\hyperlink{ref-Brauer2012}{2012}, Hautier et al. \protect\hyperlink{ref-Hautier2018}{2018}).
+For example, multi-dimensional trade-offs may be limited in systems characterized by stressful environmental conditions or reduced functional diversity that limit specialization on specific soil resources (Suding et al. \protect\hyperlink{ref-Suding2005}{2005}, Dwyer and Laughlin \protect\hyperlink{ref-Dwyer2017}{2017}).
+Evaluation of the direction of compositional response to nutrient enrichment, broadly and in site-specific contexts, may identify mechanisms responsible fertilization-driven biodiversity change.
+Here, we use a globally distributed experiment manipulating the availability of belowground resources to determine if there are tradeoffs in species responses to multiple nutrients.
+In a geometric approach, we compare observed community response dimensionality to a neutral expectation in which species exhibit proportionally identical responses to the enrichment of multiple soil nutrients.
+Deviations from this neutral model provide a metric to quantify the importance of tradeoffs that may drive diversity changes in response to increased nutrient supply rates.
+
+We hypothesize that community responses to fertilization will be less varied (more one-dimensional) in spatially or temporally heterogeneous systems and those of lower productivity, where specialization on individual soil nutrients is unlikely to form an important axis of niche differentiation. In contrast, we expect multi-dimensional tradeoffs in belowground resource use to be more important in in taxonomically diverse, productive, spatially homogenous environments. Quantification of these patterns forms a critical tool to infer how local coexistence mechanisms control community responses to global change and improve predictions of their effects.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\emph{Study Sites}
+
+We examined 49 study sites that are part of the Nutrient Network, a cooperative, globally distributed experiment (Borer et al.~2014a). Nutrient Network study sites are constructed in a randomized block design, typically composed of 3 blocks divided into 5m x 5m plots. In each block, we selected four plots to be used in experimental analysis: control plots with no supplemental nutrient enrichment and plots subject to fertilization of either nitrogen (N), phosphorous (P), or potassium with other micronutrients (Kµ), yielding 12 -- 20 plots per site.
+
+All nutrient enrichment treatments were applied at a rate of 10 g N, P, or K m-2 year-1 as time-release urea, triple-super-phosphate, and potassium sulfate, respectively. A micronutrient mix (17\% Fe, 12\% S , 6\% Ca, 3\% Mg, 2.5\% Mn, 1\% Zn, 1\% Cu, 0.1\% B, and 0.05\% Mo) supplied as part of the Kµ treatment occurred only during the first treatment year at a rate of 100g m-2 to avoid accumulation toxicity.
+Because sites were initialized at different years and observed for different durations, we filtered our dataset to focus on sites with at least 5 years of treatment, a sufficient number of treatment years to have confidence in observed community responses. All sites used in this analysis also included a pre-treatment year (Median = 9.36, Min = 5, Max = 13), which was used to establish baseline community composition metrics used in structural equation modeling. A full list of sites and their characteristics is presented in Appendix 1.
+
+\emph{Response Measurements}
+
+In each 5m x 5m plot, a 1m x 1m subplot was designated for community observation. Observers evaluated community composition annually, visually estimating areal cover of all species to the nearest 1 percent. Cover for each species was estimated independently, yielding total cover values that often exceeded 100\% in vertically stratified communities. We focused our analysis on species with well-characterized responses to nutrient enrichment by including taxa that were observed in all treatments and present in at least 33\% of all community observations within a site. Our filtering criteria included species across a range of mean abundance, and in most sites, captured a large proportion of the total observed community cover in control plots (Median = 0.88, Min = 0.36, Max = 0.99).
+To evaluate relationships between plant life history strategy and fertilization response, species were divided into four functional groups: graminoids (order Poales), legumes (family Fabaceae), woody species, and forbs. At each site, plants were also characterized by local longevity (annual / biennial / perennial) and provenance (native / introduced).
+
+In most sites, photosynthetically active radiation (PAR) was measured using a ceptometer placed above the grassland canopy and at the soil surface. Light interception was estimated as the fraction of available PAR above the canopy relative to available PAR on the soil surface.
+
+In a separate subplot, aboveground biomass was collected yearly in two 1m x 10cm strips of vegetation, air dried to a constant mass at 60º C, and weighed to the nearest 0.01 g. Biomass harvest locations were moved each year, to avoid effects of the destructive sampling. In the first year of study, 250g of soil was collected to estimate pre-treatment soil nutrient availability. Soil was analyzed for total \%C and \%N using dry combustion gas chromatography (COSTECH ESC 4010 Element Analyzer) at the University of Nebraska. Assessment of elemental soil phosphorous, potassium, soil pH, and soil texture were performed at A\&L Analytical Laboratory in Memphis, TN. For more detail, please visit \url{http://www.nutnet.org/exp_protocol}.
+
+\emph{Estimation of Treatment Response}
+
+Given that species abundances often form lognormal distributions in natural communities, raw species abundances were log¬2-transformed prior to model fitting ({\textbf{???}}). Transformation yielded stronger adherence to model assumptions while providing a natural scale for model responses, where a coefficient value of 1 corresponds to a doubling in abundance per unit change of a given covariate.
+To estimate species responses to fertilization treatment, we fit multiple linear regression models to community composition data from each site:
+
+\[\mathbf{Y} = \mathbf{XB} + \mathbf{E}\]
+
+Where \(\mathbf{Y}\) is an \([n x s]\) matrix of abundances of all \(s\) species present within a site, \(\mathbf{X}\) is an \([n x p]\) matrix of covariates, \(\mathbf{B}\) is a \([p x s]\) matrix of coefficients, and \(\mathbf{E}\) is an \([n x s]\) matrix of residuals. For sites containing three nutrient treatments, \(i\) plots, and \(j\) years, the coefficient matrix consists of the following terms:
+
+\[\mathbf{B} = \begin{matrix}
+    [{\beta}_N, {\beta}_P , {\beta}_K, {\beta}_{Plot_1}, ... {\beta}_{Plot_i},
+    {\beta}_{Year_1}, ... {\beta}_{Year_j}]
+\end{matrix} \]
+where community abundance is estimated as a function of the quantity of fertilizer added in observation (expressed as the number of years of treatment), interannual variation in site-level species abundance (encoded as a factor variable), and plot-level variation in species abundance (encoded as a factor variable). Plot and year terms in this model formula act to de-trend species abundances, providing estimates of responses to nutrient enrichment while accounting for other sources of spatial and temporal variation in community composition.
+
+Significance of model terms was evaluated using permutation-based ANOVA. We ordered model terms in an ANOVA with type ``I'' sums of squares to account for the spatial and temporal variation in community composition before testing for effects of fertilization treatment.
+
+\emph{Response Dimensionality}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight]{figure/Fig1_1.png}
+\caption{Conceptual diagram illustrating the method used to assess dimensionality of community enrichment response. \newline (a) Bivariate relationships between responses: In this hypothetical example, a community of 3 species is subject to enrichment by three different resources. Estimated responses to these nutrients are standardized such that the total magnitude of community response to each nutrient is of unit length. The line illustrates the null hypothesis of proportionally identical responses; Species 1 (Sp1) exhibits comparatively stronger responses to N treatment than either P or K. \newline (b) Three-dimensional representation of responses: The responses above are presented as a three-dimensional plot, with the vector y representing the null hypothesis. The vector of responses estimated for Sp1, x1, is projected onto y, producing the projection, \(a_1\), and rejection, \(b_1\). The coordinates of this projection vector, \(a_1\), correspond to the average response of Sp1 recorded across all three nutrients. Projection and rejection vectors for Sp2 and Sp3 may be calculated in a similar fashion and used to evaluate response dimensionality at the community scale. In this community, strong positive correlation across all three treatment dimensions yielded low overall response dimensionality, D = 0.04. \newline (c) Two-dimensional plot of rejection vectors: Residual elements of the response vector not captured by projection onto y may be visualized in two dimensions, b1 and b2. Corresponding to relationships shown in bivariate plots, rejection elements of Sp1 have large values in the second rejection dimension, b2, reflecting proportionally stronger responses to N enrichment than other treatments. \label{fig-1-1}}
+\end{figure}
+While multivariate linear modelling approaches may be used to estimate the rate of community change in response to treatment, their output does not provide a quantification of similarity among directions of change. To evaluate correlations among different trajectories of community response -- proportional consistency across the responses of individual species that contribute to overall community response -- we derive a geometric approach based on work of ({\textbf{???}}).
+
+In the context of this study, we evaluate trajectories of community change based on experimental manipulations of three limiting nutrients -- N, P, and Kµ. While the following description presents details for this three-dimensional case, our approach may extend to any n-dimensional set of treatments. First, we define \(\mathbf{X}\) as a matrix describing the treatment responses (columns) of all \(S\) species observed in a community (rows). For simplicity in notation, we define each row vector consisting of the \(i\)th species responses to different treatments as \(x_i\); column vectors describing the response of all species within the \(j\)th community to a given treatment as \(x_{:,j}\).
+
+\[
+\mathbf{X} = 
+\begin{matrix}
+Sp & Trt_1 & Trt_2 & Trt_3\\
+\hline
+\mathbf{1}& x_{1,1} & x_{1,2} & x_{1,3} \\
+\mathbf{2} & x_{2,1} & x_{2,2} & x_{2,3} \\
+\vdots & \vdots & \vdots & \vdots \\
+\mathbf{S} & x_{S,1} & x_{S,2} & x_{S,3} \\
+\end{matrix} =
+\begin{matrix}
+\\
+\mathbf{x}_1 \\
+\mathbf{x}_2 \\
+\vdots \\
+\mathbf{x}_S \\
+\end{matrix} \\
+= \\
+\begin{matrix}
+\mathbf{x}_{:,1} & \mathbf{x}_{:,2} & \mathbf{x}_{:,3}\\
+\end{matrix}
+\]
+
+In this study, \(\mathbf{X}\) was composed of the three vectors of estimated nutrient response coefficients computed in multiple regression model, B.We captured to total magnitude of compositional change in response to treatments using the Euclidean (\(L_2\)) norm of column (treatment response) vectors, defined as:
+
+\[\|\mathbf{x}_{:,j}\| = \sqrt{\sum_{i = 1}^{S} x_{i,j}^2}\]
+
+Where \(i\) iterates over the \(S\) species present within each community.
+
+To control for differences in magnitudes of change across treatments, column vectors were standardized through dividing by \(L_2\) norm, such that \(\|x_{:,j}\| = 1\). After standardization, community responses to treatment are equal in length, allowing for comparison between directions of change.
+
+To compare potential trade-offs among different axes of environmental change, bivariate relationships may be used to illustrate correlated patterns of change between pairs of treatments (Figure 1a). To evaluate these bivariate relationships, we fit Semi Major Axis (SMA) regressions to each pairwise combination of treatments, which account for uncertainty in both \(X\) and \(Y\) variables not captured in Ordinary Least Squares (OLS) regression.
+
+However, bivariate relationships do not provide an aggregate measure of similarity among variables in 3 or more dimensions. Instead, correlation among responses can be evaluated through projection onto a new coordinate basis. Conceptually, our approach is similar to dimensionality reduction through Principal Component Analysis (PCA). Rather than defining the first Principle Component through eigenvalue decomposition, axes are pre-specified under a null hypothesis. We define this null model as a ``neutral'' expectation where the effects of nutrient enrichment are one-dimensional, resulting in trajectories of community change that are directionally equivalent. While the total magnitude of effect may vary, our null model assumes that species exhibit proportionally equal responses to multiple nutrient enrichment treatments.
+
+First, we define a vector of 1's, \(\mathbf{y}\), to form an estimate of species responses under our ``neutral'' null hypothesis. Under this neutral expectation, proportionally equal responses to treatment will be perfectly captured by variation along this 1:1:1 vector (Figure 1b).
+
+To evaluate the degree to which this null hypothesis captures the responses of species i, we define a vector, a, as the projection of observed responses onto the 1:1:1 vector, \(\mathbf{y}\):
+
+\[\mathbf{a}_i = \frac{\mathbf{y} \cdot \mathbf{x}_i}{\|\mathbf{y}\|}\]
+
+The orthogonal compliment of the projection, \(\mathbf{b}\), defines the elements of \(\mathbf{x}\) not captured by projection onto \(\mathbf{y}\):
+
+\[\mathbf{b}_i = \mathbf{x}_i - \mathbf{a}_i\]
+
+The fraction of variance in species response that is captured by this projection is thus defined as the ratio of squared norms (sums of squares) of \(\mathbf{a}\) and \(\mathbf{x}\):
+
+\[D = 1 - \frac{\|\mathbf{a}_i\|^2}{\|\mathbf{x}_i\|^2}\]
+
+Under our null hypothesis, the set of responses observed for species \(i\), \(\mathbf{x}_i\), will be of equal magnitude to the projection, \(\mathbf{a}_i\),. The proportional magnitude of these vectors thus serves as a measure of response dimensionality for a given species, \(i\).
+
+Extending this method to all \(S\) observed species gives an aggregate measure of community dimensionality, bounded between 0 and 1:
+
+\[D = 1 - \frac{\sum_{i = 1}^{S}\|\mathbf{a}_i\|^2}{\sum_{i = 1}^{S}\|\mathbf{x}_i\|^2}\]
+
+Where dimensionality (\(D\)) is equal to one minus the ratio of summed magnitudes of change when projected on y over their observed magnitudes. When trajectories of community change are directionally identical (low dimensional), response vectors will be perfectly captured by this projection (\(D = 0\)). Orthogonal responses (high dimensional), where community responses to treatment are uncorrelated, will be poorly captured by this projection (\(D = 1\)).
+When possible, elements of the rejection, \(\mathbf{b}\), may be used to visualize deviations from this 1:1:1 line (Figure 1c). In this study, we project this rejection component to two other dimensions orthogonal to \(\mathbf{y}\), constituting a change of basis. Thus, the overall projection onto y and residual coordinates may be expressed as \(XP^\top\), with projection matrix:
+
+\[
+\mathbf{P} = 
+\begin{matrix}
+y & b_1 & b_2 \\
+\hline
+0.577 & 0 & -0.816 \\
+0.577 & -0.707 & 0.4082 \\
+0.577 & 0.707 & 0.4082 
+\end{matrix}
+\]
+
+Where column vectors above are standardized to unit length.
+
+\emph{Structural Equation Modeling}
+
+To capture variation in site-level community properties and abiotic characteristics, we generated a series of derived variables to supplement observations made during sampling. Climate characteristics were obtained from each site using BioClim, a publicly available dataset of global climate layers. Following prior analyses of the Nutrient Network dataset (Grace et al. \protect\hyperlink{ref-Grace2016a}{2016}), we chose to represent climatic effects on plant growth through site mean temperature at the wettest quarter of year (BIO8) and site mean precipitation during the warmest quarter of the year (BIO18).
+Community properties were generated from compositional data collected during pre-treatment sampling. To estimate community spatial heterogeneity (``Species Turnover''), we calculated beta diversity using the ratio of site-level species richness to mean plot-level species richness (\(\beta=\frac{\gamma}{\alpha}\)). Pre-treatment community composition was also used to calculate the relative abundance of plant functional groups present within each site (e.g.~``Legume Abundance''), defined as the mean proportion of total cover across all plots. Estimates of the total site species pool (``Species Pool') were calculated by the total number of unique species observed in the first 5 years of sampling, to account for varying durations of observation across sites.
+From sites with complete data (n = 35), we used structural equation modeling (SEM) to evaluate hypothesized links between environmental characteristics, community properties, and the dimensionality of community response to fertilization (``Response Dimensionality''). In our initial model, we specified pathways capturing site resource limitation and community characteristics. We incorporated pathways between composite variables describing soil nutrient availability (``Soil Resources'') and climatic conditions (``Climate'') on response dimensionality, also mediated through intermediate connections between community biomass (``Community Biomass'') and light availability (``Light Availability''). These same variables were also combined in pathways to estimate effects mediated by species turnover and the abundance of species in the legume functional group. After fitting this initial model, we evaluated model fit and pruned non-significant pathways to reduce model complexity.
+
+\emph{Statistical Software}
+
+All statistical analyses were performed in R version 4.0.2. Multivariate linear model fitting was conducted using RRPP (Collyer and Adams 2018). Semi-Major Axis (SMA) regression was performed using ``smatr'' (Warton et al.~2012). Linear mixed effects modeling was conducted using ``lme4'' and ``lmerTest'' packages (Bates et al.~2015, Kuznetsova et al.~2017). SEM analyses were conducted using ``lavaan'' (Rosseel 2012).
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\emph{Community Responses to Nutrient Enrichment}
+
+Of the 49 sites included in analysis, 37 showed significant (P \textless{} 0.05) community responses to nutrient addition treatments (Figure 2a). While a majority of sites (30) exhibited significant effects of N enrichment, significant impacts of P (20) and Kµ (17 sites) addition were also common. Community rate of change per year of treatment was greatest in response to N enrichment. Once accounting for site-level variation in average effect, estimated mean magnitude of community change (in net Euclidean distance per year) was significantly greater following N fertilization than either P or Kµ (F2,96 = 4.8, P \textless{} 0.05; Appendix 2).
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight]{figure/Fig1_2.png}
+\caption{\newline (a) Frequency of sites exhibiting significant (P \textless{} 0.05) effects of nutrient (N, P, or Kµ) fertilization on plant community composition. Of 49 total sites, 37 showed significant compositional changes to at least one of three fertilization treatments, while 12 sites showed non-significant compositional responses to all nutrient manipulations. \newline (b) Rate of estimated fertilization-driven change in species composition, prior to standardization of response coefficients. The rate of total compositional change was calculated as the magnitude of the vector of estimated species response coefficients, as net Euclidean change in log2-transformed community cover per year of treatment. Higher values indicate greater overall rate of compositional change. \label{fig-1-2}}
+\end{figure}
+\emph{Correlation Among Community Trajectories}
+
+After standardizing overall community trajectories to unit length within each site, semi major axis (SMA) regression was used to evaluate correlations among responses to treatments at the species level. Pairwise comparisons between nutrient addition treatments (N-P, N-Kµ, P-Kµ) revealed positively correlated responses among all treatments, generally (Figure 3, Table 1). However, these relationships varied as a function of plant functional group. Small intercept terms and slope coefficients nearly equal to 1 indicate that Forb, Graminoid and Woody species exhibited relatively equal responses across all treatment comparisons. For these functional groups, SMA models captured a statistically significant portion of total response variance. High R2 values of Woody species, in particular, suggest that this group exhibit a more consistent trend than others, though this result should be interpreted with caution given their limited occurrence in our dataset (n = 18, Table 1).
+In contrast, SMA regression fits to Legume species yielded slope coefficients and intercept terms that suggest stronger responses to P and Kµ treatments than would otherwise be predicted by response to N: positive intercept terms and slope coefficients greater than 1 produced when comparing responses to N and P treatments, for example, demonstrate the legumes exhibit more positive responses to P enrichment than N, which skew more strongly to P as total response magnitude increases (Figure 3, Table 1).
+Repeated SMA regression with respect to plant dominance or longevity showed no consistent deviations from general positive correlation in response coefficients (Appendix 3).
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.35\textheight]{figure/Fig1_3.png}
+\caption{Visualization of pairwise relationships between plant responses to nutrient addition treatments. Each point refers to a unique site x species combination, colored by functional group. Lines correspond to results of semi major axis (SMA) regression applied to each functional group. \label{fig-1-3}}
+\end{figure}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llllll}
+ Functional Group & Pair & n & Slope & Intercept & $R^2$ \\ 
+  \hline
+Forb & N-P & 307 & 0.99 & 0.02 & 0.20 \\ 
+  Graminoid & N-P & 241 & 1.04 & 0.04 & 0.11 \\ 
+  Legume & N-P & 46 & 1.13 & 0.34 & $0.032^{ns}$ \\ 
+  Woody & N-P & 18 & 0.81 & 0.04 & 0.76 \\ 
+   \hline
+Forb & N-K & 307 & 0.97 & 0.00 & 0.21 \\ 
+  Graminoid & N-K & 241 & 1.03 & 0.01 & 0.11 \\ 
+  Legume & N-K & 46 & 1.33 & 0.25 & 0.10 \\ 
+  Woody & N-K & 18 & 0.78 & -0.01 & 0.63 \\ 
+   \hline
+Forb & P-K & 307 & 0.99 & -0.03 & 0.21 \\ 
+  Graminoid & P-K & 241 & 0.99 & -0.03 & 0.27 \\ 
+  Legume & P-K & 46 & 1.18 & -0.15 & 0.09 \\ 
+  Woody & P-K & 18 & 0.96 & -0.05 & 0.67 \\ 
+  \end{tabular}
+\caption{Summary of semi major axis (SMA) regression model fits to each of 3 pairwise comparisons of response to fertilization treatment. A majority of models captured significantly more variation (P < 0.05) in response than models assuming no correlation between treatment responses; models with non-significant fits are denoted by superscript “ns”.} 
+\end{table}
+\emph{Global Scale Response Dimensionality}
+
+Across all sites and species, we found strong evidence that plant responses to fertilization treatments are characterized by a largely one-dimensional relationship. (Figure 4a). Projection of responses onto the y vector (assuming proportionally equal responses to treatment) captured 60.68\% of the total observed variance across all species; overall species response dimensionality, D, was equal to 0.29. This proportion is nearly identical to the fraction of variance captured by the first component in Principal Component Analysis (PCA) of our data, 60.77\%. Given that PCA attempts to transform data into a new coordinate basis that maximizes the fraction of variance present in the first component, projection onto the y vector under our null hypothesis achieves an equivalent fit to the best one-dimensional description of species responses to fertilization.
+In line with observations made in pairwise comparisons, plant functional groups exhibited consistent patterns of deviation from the null hypothesis of proportionally consistent responses to treatment (Figure 4b, Table 2). While mean coordinates of plant functional groups did not differ significantly on either y or b1 dimensions, the mean coordinate position of Legume species on the second rejection dimension, b2, was significantly larger than the means of all other functional groups. Given the loadings specified in our projection, P, larger average coordinate values in this second rejection dimension are correlated with proportionally more positive responses to P or Kµ treatments than N enrichment.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.45\textheight]{figure/Fig1_4.png}
+\caption{\newline (a) Three-dimensional visualization of species responses to nutrient enrichment across all sites, with line corresponding to 1:1:1 vector (y) assuming proportionally equal responses. \newline (b) Residual deviation from 1:1:1 vector displayed in two dimensions (b¬1, b2) orthogonal to y. Points are colored by functional group with 95\% confidence ellipses centered on group means. \label{fig-1-4}}
+\end{figure}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llll}
+  \hline
+ & $\bar{y}$ & $\bar{b_1}$ & $\bar{b_2}$ \\ 
+  \hline
+Forb & $-0.0331^1$ & $-0.0181^1$ & $0.0081^1$ \\ 
+  Graminoid & $-0.0561^1$ & $-0.0211^1$ & $0.0021^1$ \\ 
+  Legume & $-0.0051^1$ & $-0.0871^1$ & $0.2062^2$ \\ 
+  Woody & $-0.0581^1$ & $-0.0371^1$ & $0.0221^1$ \\ 
+   \hline
+\end{tabular}
+\caption{Mean coordinate position of functional groups along 1:1:1 vector ($\bar{y}$) and residual components ($\bar{b_1}$,$\bar{b_2}$). Superscripts correspond to significant (P < 0.05) contrasts between functional group means in each dimension.} 
+\end{table}
+\emph{Site Variation in Response Dimensionality}
+
+To evaluate the environmental and community determinants of response dimensionality, we subdivided data by sites to calculate community response dimensionality, D, that captures variation in fertilization response across all observed species. Estimates D ranged between 0.08 and 0.73 (Mean = 0.39; Appendix 4).
+Consistent with our hypotheses, SEM analysis identified significant relationships between soil resource availability, climatic characteristics, and response dimensionality (Figure 5). While increasing precipitation and lower growing season temperatures produced a positive, direct effect on response dimensionality, the effects of resource availability were primarily mediated through changes in average biomass and canopy light interception -- experiments performed in more productive environments characterized by stronger competition for available light were significantly correlated with greater variation in trajectories of community change across our three fertilization treatments.
+Site species richness, soil resources, and climate also had effects on response dimensionality through changes in pre-treatment spatial turnover in species diversity (Figure 5). Less species turnover, estimated as spatial beta diversity of communities prior to treatment, and pre-treatment abundance of legumes combined to have negative effects on the dimensionality of community response to treatment. Community responses to fertilization treatment appear directionally varied in systems where N-fixing functional strategies are common and species diversity is likely to rely less on spatial coexistence mechanisms.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.5\textheight]{figure/Fig1_5.png}
+\caption{Visual representation of structural equation model (SEM) used to evaluate pre-treatment site factors that explain variation in community response dimensionality (D) following multiple nutrient enrichment. All statistically significant (P \textless{} 0.05) pathways are presented. Solid lines correspond to positive effects, while dashed lines correspond to negative effects. Chi-square test statistic = 23.408 on 20 degrees of freedom indicates close model-data fit (P = 0.269; Comparative Fit Index = 0.943). \label{fig-1-5}}
+\end{figure}
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+In terrestrial plant communities, trade-offs among multiple niche axes are theorized to govern the coexistence of diverse, interacting species. Using data from a globally replicated experiment in grassland systems, we find support for the simultaneous contribution of two mechanisms -- a shift from belowground to aboveground resource limitation and multi-dimensional belowground tradeoffs -- that vary in their relative importance across sites.
+Consistent with other studies of nutrient limitation in grassland systems, including those using data from the Nutrient Network experiment, we found that nitrogen enrichment produced greater average effects on composition than either phosphorous or potassium and micronutrient fertilization (Crawley et al. \protect\hyperlink{ref-Crawley2005}{2005}, Fay et al. \protect\hyperlink{ref-Fay2015}{2015}, Harpole et al. \protect\hyperlink{ref-Harpole2016}{2016}, Soons et al. \protect\hyperlink{ref-Soons2017}{2017}).
+
+Given constraints on nitrogen fixation in many terrestrial systems (Vitousek and Howarth \protect\hyperlink{ref-Vitousek1991}{1991}), these results suggest that nitrogen availability may often act as a dominant niche axis of belowground resource availability. However, these findings may also be skewed by the disproportionate representation of Nutrient Network sites in temperate North America and Europe (Appendix 1). In arid environments and those composed of more weathered soils, plant demands for phosphorous and other micronutrients may exceed those of nitrogen (Handreck \protect\hyperlink{ref-Handreck1997}{1997}, Vitousek et al. \protect\hyperlink{ref-Vitousek2010}{2010}); experimental sites in Australia, for example, often exhibited the strongest community responses to phosphorous enrichment, on average (Appendix 4).
+Surprisingly, 24 percent (12 of 49) sites did not respond significantly to any of the three resource enrichment treatments, despite addition at a rate much greater than natural fluxes (({\textbf{???}}); Vitousek et al. (\protect\hyperlink{ref-Vitousek2010}{2010}); Appendix 4). This finding may be linked to other sources of resource limitation; qualitatively, sites with low precipitation (and likely higher interannual community turnover) appear more likely to exhibit non-significant responses to treatment. However, this may also be the result of our conservative analytical approach that first accounts for spatial and temporal variation in site community composition before testing for fertilization effects.
+After controlling for differences in the total magnitude of compositional change, directional comparison found support for a strongly one-dimensional pattern of variation at a global scale. The dominance of a single axis of variation implies the presence of a general trade-off between plant performance in low or high nutrient conditions, likely driven by asymmetric competition for light (Dybzinski and Tilman \protect\hyperlink{ref-Dybzinski2007a}{2007}, DeMalach et al. \protect\hyperlink{ref-DeMalach2017a}{2017}). This result supports other findings that identify light limitation as a primary mechanism of fertilization-driven compositional change ({\textbf{???}}, Hautier et al. \protect\hyperlink{ref-Hautier2018}{2018}).
+More broadly, our results likely reflect differentiation across a ``fast-slow'' economic spectrum of adaptation (Reich \protect\hyperlink{ref-Reich2014}{2014}). Absent other drivers, such as disturbance, herbivores, or pathogens, we find evidence that plant growth strategies increase performance under high soil nutrient conditions, generally, as opposed to nutrient-specific trade-offs ({\textbf{???}}, Grime \protect\hyperlink{ref-Grime1974}{1974}). Physiological requirements of primary producers are known to be largely consistent in stoichiometry (Ågren \protect\hyperlink{ref-Agren2004}{2004}, \protect\hyperlink{ref-Agren2008}{2008}), and as a result, interacting species are more likely to vary in total resource demand, rather than affinity for specific soil nutrients. The development of resource-specific trade-offs appears an unlikely coexistence strategy in many grassland systems. In response to other environmental changes, functional strategies that promote growth across multiple niche dimensions appear common -- grassland plant responses to elevated fertility and herbivore exclosure are generally correlated (Lind et al. \protect\hyperlink{ref-Lind2013}{2013}), and exhibit similar shifts in abundance across treatments removing different herbivore groups (Seabloom et al. \protect\hyperlink{ref-Seabloom2018}{2018}).
+Despite the strength of a one-dimensional relationship across all species, we also found key deviations from this pattern based on plant functional strategies and site-specific contexts. In all sites, species in the Legume functional group responded more positively to potassium and phosphorous addition than nitrogen enrichment. While we still observed generally correlated patterns of change among these species, our findings suggest that nitrogen fixation may provide an additional advantage to effective competitors when other resources are supplied (Bobbink (\protect\hyperlink{ref-Bobbink1991}{1991});Suding et al. (\protect\hyperlink{ref-Suding2005}{2005}), Tognetti et al.~\emph{in review}) . Enzymatic costs of nitrogen fixation, which result in steeper requirements for phosphorous, potassium, sulfate, and other micronutrients relative to other plant functional types, may also contribute to this response (McKey \protect\hyperlink{ref-McKey1994}{1994}).
+In turn, pre-treatment legume abundance served as an important predictor of site-level response dimensionality. It appears likely that greater diversity in plant functional strategy at the species level contributes to more directionally varied responses within a community to fertilization by different nutrients (Díaz and Cabido \protect\hyperlink{ref-Diaz2001}{2001}). However, distinctions between legumes and non-legume species are relatively coarse, and likely do not capture other key sources of plant functional variation and their relationship with fertilization. Further exploration of the links between plant nutrient response and other key trait dimensions, such as the leaf economic spectrum (Wright et al. \protect\hyperlink{ref-Wright2004}{2004}), tissue stoichiometry (Güsewell \protect\hyperlink{ref-Gusewell2004}{2004}), and root physiology (Kramer-Walter et al. \protect\hyperlink{ref-Kramer-Walter2016}{2016}) may better distinguish species groups at a global level, as well as their relationship to site-specific effects.
+At the site scale, we also found that community responses to fertilization treatments were strongly contingent on site-specific characteristics. Community variation in treatment response -- response dimensionality -- was positively correlated with a series of covariates related to pre-treatment patterns of resource limitation and community interactions. We found increased response dimensionality in sites with low light interception, high productivity, and low spatial community turnover. This suggests that trade-offs in the belowground nutrient use are more common in systems where coexistence is maintained through local competition. While not presenting a direct mechanistic link to plant resource use strategies, these findings are supported by reports that functional trade-offs are often more constrained in stressful environments (Dwyer and Laughlin \protect\hyperlink{ref-Dwyer2017}{2017}). In grasslands, disturbance and climatic stress frequently act as strong habitat filters, and their fluctuations are known to serve as important mechanisms of species coexistence (Chesson \protect\hyperlink{ref-Chesson2000}{2000}, Adler et al. \protect\hyperlink{ref-Adler2006}{2006}). Under conditions where growing season precipitation strongly controls plant growth and fitness, for example, viable functional strategies are primarily distributed along a single axis related to relative growth rate and stress tolerance (Angert et al. \protect\hyperlink{ref-Angert2009}{2009}).
+Like all studies exploring plant responses at the community, our results are subject to the properties of unique community assemblages occurring at each site. While able to infer some of these properties based on aggregate community attributes, such as biomass and functional group abundance, our results do not provide a link to species-level responses. Moreover, by limiting our analysis to species with well-characterized abundance shifts following fertilization, we necessarily exclude transient ones. These species can have important roles governing community response to nutrient enrichment and may exhibit functional strategies that are distinct from more persistent taxa (Wilfhart et al.~\emph{in review}).
+Together, our findings present evidence for a generally one-dimensional axis of variation in plant response to fertilization, yet underscore the importance of site-specific constraints. Outcomes of plant competition for limiting soil nutrients are best predicted by relative differences in resource use ({\textbf{???}}), and represent a subset of many potential axes of niche differentiation (Kraft et al. \protect\hyperlink{ref-Kraft2015}{2015}). As a result, the relative contribution of trade-offs mediated by light competition or competition for individual belowground resources will depend on the unique set of factors structuring community interactions in each context.
+Just as functional diversity and environmental characteristics are known to control ecosystem sensitivity global change, this study suggests that these same factors likely influence what mechanisms govern plant community response. Consideration of the direction of community change across multiple stressors thus forms an important complement to differences in their magnitude. Given that many ecosystems are subject to many global changes simultaneously, nuanced understand of their effects depends on identifying the trade-offs on which they operate. Stressors applied in tandem often have additive or super-additive effects on plant diversity and community composition (Zavaleta et al. \protect\hyperlink{ref-Zavaleta2003}{2003}, Harpole et al. \protect\hyperlink{ref-Harpole2016}{2016}, Komatsu et al. \protect\hyperlink{ref-Komatsu2019}{2019}), though effect sizes alone do not indicate whether communities shift along one dimension or several. While plant responses to nutrient enrichment may be captured along a single axis in general, broad assumptions of community dynamics are unlikely to apply in all contexts. Instead, we emphasize that cross-site comparisons and deep consideration of the unique factors shaping compositional responses to global change are essential to effective management and conservation of ecosystem diversity and function.
 
 \hypertarget{nitrogen-enrichment-has-scale-dependent-effects-on-plant-diversity-in-california-grasslands.}{%
 \chapter{Nitrogen enrichment has scale-dependent effects on plant diversity in California grasslands.}\label{nitrogen-enrichment-has-scale-dependent-effects-on-plant-diversity-in-california-grasslands.}}
@@ -218,25 +527,426 @@ Evan E. Batzer\textsuperscript{1*} and Valerie T. Eviner\textsuperscript{1}
 \item
   Department of Plant Sciences, University of California, Davis
 \end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{figure/Fig2_1.png}
+\caption{\label{fig-2-1}}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.4\textheight]{figure/Fig2_2.png}
+\caption{\label{fig-2-2}}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.4\textheight]{figure/Fig2_3.png}
+\caption{\label{fig-2-3}}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.4\textheight]{figure/Fig2_4.png}
+\caption{\label{fig-2-4}}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.4\textheight]{figure/Fig2_5.png}
+\caption{\label{fig-2-5}}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.4\textheight]{figure/Fig2_6.png}
+\caption{\label{fig-2-6}}
+\end{figure}
 \hypertarget{climate-drives-transitions-between-vegetation-states-in-california-grasslands.}{%
 \chapter{Climate drives transitions between vegetation states in California grasslands.}\label{climate-drives-transitions-between-vegetation-states-in-california-grasslands.}}
 
-Placeholder
+\chaptermark{Vegetation state transitions}
 
+Evan E. Batzer\textsuperscript{1*},
+Carolyn Malmstrom\textsuperscript{2},
+and Valerie T. Eviner\textsuperscript{1}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Department of Plant Sciences, University of California, Davis, USA
+\item
+  Department of Plant Biology, Michigan State University, East Lansing, MI, USA
+\end{enumerate}
 \hypertarget{abstract}{%
 \section{Abstract}\label{abstract}}
+
+Climate change is forecast to influence plant community composition through shifts in climate variability and increased frequency of extreme events.
+In arid- and semi-arid grassland systems, community turnover is known to depend on both climate conditions and historical contingency, where prior community configurations affect future dynamics.
+These contingencies are likely to act as an important driver of vegetation responses to climate events; their capture may enhance forecasts of community change and identify targets for active management.
+In this study, we planted various California grassland plant community types and observed changes in their composition during a ten-year period that included a drought of historic magnitude, followed by one of the wettest years on record. Using algorithmic partitioning methods and multistate modeling, we evaluated both the number of discrete vegetation types that best captured community turnover and the probability of transition between them.
+We found that compositional variance was best partitioned in 4 discrete groups, distinguishing between two sets of annual grasses often considered as one species group in expert models.
+Moreover, vegetation states differed in their persistence under variable climate conditions, and often exhibited directional patterns of transition.
+Certain vegetation states, such as communities dominated by native perennial grasses, demonstrated strong persistence across a range of climatic conditions;
+persistence of others, including invasive annual grasses, exhibited linear relationships with precipitation.
+These findings indicate that ecosystem resilience may be enhanced by certain vegetation states, while eradication efforts are likely to be most effective when climate conditions are favorable.
+Quantification of the unique properties of community states may greatly improve models of community dynamics under a changing climate in grassland systems.
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
+Across ecosystems, climate change forecasts emphasize the increasing frequency of extreme events, in addition to changes in average climatic conditions (IPCC 2014).
+Changing climatic extremes are important drivers of compositional dynamics, responsible for shifts in species distributions, invasion events, and biodiversity loss (Smith 2011, Felton and Smith 2017).
+As ecological communities are increasingly subject to climate patterns outside historical bounds of variation, capturing the effects of unprecedented climatic extremes will be critical to generating new paradigms for conservation and management (Hobbs et al.~2009).
+However, given the complexity of many factors that control species abundances, these changes are often difficult to predict.
+
+While species may exhibit varied tolerances to conditions imposed by heatwaves, droughts, and extreme cold, climate-driven changes in species relative abundances are also constrained by local interactions that govern community assembly (Tylianakis et al.~2008, Fukami 2015).
+Compensatory responses to climate change, for example, may be limited by competitors that inhibit growth and colonization (Alexander et al.~2015).
+At the community scale, such local interactions depend on key emergent properties that vary as a function of community attributes, including species richness, functional diversity, or dominant taxa (Chapin et al.~1997, Emery and Gross 2007).
+As a result, short-term compositional responses to climatic events are likely to depend on prior community configuration, where the responses of different species assemblages vary in magnitude and direction (Fukami 2015).
+
+These complex interactions between climatic drivers and species assemblages are often summarized through conceptual models (Ogden et al.~2005, Galatowitsch 2012).
+Models of arid- and semi-arid systems emphasize the importance of historical contingency in community assembly, where vegetation is often characterized by non-equilibrium dynamics.
+In these systems, applied ecologists often make management recommendations on ``state-transition models'' that identify the properties of different species groups (``states'') and their likely direction of change under various contexts (``transitions''; Bestelmeyer et al.~2003).
+In response to changing climate patterns, managers may use these models to predict which community states are likely to persist under climate extremes or reduce incursion of unfavorable vegetation types.
+
+Long-term monitoring, particularly under changing conditions, provides an important way to evaluate and refine conceptual models.
+As climate change effects continue to mount, management efforts are expected to increasingly rely on these models to predict vegetation dynamics under ``no-analog'' conditions (Williams and Jackson 2007, Hobbs et al.~2009).
+However, the emergence of novel species assemblages and non-intuitive mechanisms of change may complicate the use of classic models, which are often based on qualitative observation by experts.
+Instead, climate change will likely increase the demand for data-driven approaches (Allen-Diaz and Bartolome 1998, Bartolome et al.~2008).
+Though still limited by available observations, these computational methods may better capture potential mechanisms of change and rapidly update predictions as new information becomes available.
+In grassland systems, clustering algorithms have shown promise in tests of expert models and in the tracking of community responses to variable grazing regimes and species invasions (e.g.~Jackson and Bartolome 2002, Stringham et al.~2003, Bagchi et al.~2012, Stein et al.~2016).
+However, there appear to be few tests of their application to climate-driven vegetation turnover.
+
+California grasslands have long been a focal system in the study of non-equilibrium dynamics.
+In California, climate change is predicted to produce a 50\% increase in the frequency of extreme events by the end of the 21st century (Yoon et al.~2015).
+California grasslands are particularly sensitive to climatic extremes, given compositional dynamics defined by a predominantly annual life history, climate sensitivity (Hobbs et al.~2007), non-hierarchical competitive relationships (Uricchio et al.~2019), and strong priority effects (Young et al.~2014).
+In this system, state-transition models often decompose compositional turnover into variation between three species groups defined by shared life history strategy and history of colonization: (1) naturalized exotic annual grasses and forbs, (2) native perennial grasses and forbs, and (3) recently invasive exotic annual grasses.
+
+Compositional shifts in California grasslands are thought to be governed by differences in fecundity, phenology, and plant-soil feedbacks that characterize these species groups (Corbin et al.~2007).
+While this functional variation may govern responses to interannual climate variation (Pitt and Heady 1978), communities composed of different dominant species may also exhibit emergent properties that constrain subsequent compositional change.
+Invasive annual grasses, for example, produce thick litter layers that suppress competitor growth (DiTomaso et al.~2008).
+These litter feedbacks may enhance invasive grass persistence when future climatic conditions favor other species groups, particularly those that may exhibit limited recruitment capacity, such as native perennial grasses (Seabloom et al.~2003a).
+
+While warming average temperatures in California are forecast to produce increases in the distribution and abundance of annual grasses across the state (Sandel and Dangremond 2012), the effects of changing climate variance are less understood.
+Recent extreme climatic events, however, may provide insight into future vegetation dynamics.
+A drought from 2011-2015, which included the driest period in recorded history, was observed to produce significant changes in the composition and diversity of many grassland communities (Harrison et al.~2015, Prugh et al.~2018).
+This event provides a unique opportunity to test conceptual models of California grassland community dynamics through monitoring of species abundance changes across different vegetation types.
+
+In turn, the capture of these contingencies may actively inform ecosystem management.
+Often focused on the establishment of native species and reduction in invasive species abundances, management of California's grasslands under novel climatic conditions is likely to benefit from the application of modern computational tools to characterize vegetation change.
+Quantitative description of community transitions between dominant species groups may supplement largely qualitative models generated during climatic norms. Are certain desirable species groups more resistant to variable climatic conditions than others? Can extreme climatic events provide opportunities for targeted management action?
+
+Here, we assess interactions between community assembly and climatic variation on vegetation composition in California annual grasslands across a 10-year period encompassing extreme drought.
+Using data from experimental plantings of three key grassland species groups -- naturalized annual, native perennial, and invasive annual grasses --- we test key assumptions of grassland community dynamics under extreme drought stress.
+Specifically, we aim to identify (1) the species groups that best partition compositional change, and (2) how drought interacts with other drivers of vegetation turnover --- assembly order and biotic resistance --- to affect community composition.
+
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
+
+\emph{Study site and Experimental Methods}
+
+Plantings were conducted in research fields at the University of California, Davis (38.545751, -121.784780).
+Previously used in crop production, these fields were left fallow from 1985 to the start of experimental plantings in 2007.
+75\% of the experiment was set on Reiff series soil (coarse-loamy, mixed, superactive, nonacid, thermic Mollic Xerofluvents), with the rest on Brentwood soil series (fine, smectitic, thermic Typic Haploxerepts) with a 0-2\% slope (USDA Web Soil Survey).
+The site has a Mediterranean climate, experiencing a mean annual rainfall of 457mm and mean daily temperature of 15.5 deg C between 1983-2018.
+
+In order to minimize the previously established seedbank, soil was disked, irrigated to stimulate germination, and sprayed with a broad-spectrum herbicide (glyphosate). Irrigation and herbicide treatments occurred twice in the early fall of 2007.
+
+Seeds were planted to establish vegetation treatments representing commonly used species groups in California's grasslands --- native perennial grasses and forbs (``native''), naturalized annual grasses and forbs (``naturalized''), and invasive annual grasses (``invasive''; Table 1 ).
+
+Each group was planted alone, in all possible 2-group combinations, and all together in a 3-group combination.
+Plots were 1.5m x 1.5m (2.25 m2), with 1m buffer between plots, and 8 replicates per treatment (56 plots total) laid out in a randomized block design.
+In each plot, a total of 139 grams of seed was added, reflecting an average of 8,000 plants/m2 - a typical mature plant density in this system (Heady 1958).
+For each monotypic community (e.g.~native vs.~invasive vs.~naturalized), an equal proportion of seeds of each species were added. For community mixtures, an equal proportion of community type seed was added (e.g.~in invasive + naturalized, 50\% invasive, 50\% naturalized seed), with equal proportion of individual species within each community type.
+
+From 2008 - 2018, total areal cover of all species was estimated to the nearest 10\%. Cover observations for each species were performed in early and late spring to capture maximum percent cover for each species when varying in phenology. The highest percent cover value in each year for each species was used in analysis.
+\begin{table}[ht]
+\centering
+\begin{tabular}{lll}
+  \hline
+Native & Naturalized & Invasive \\ 
+  \hline
+Acmispon americanus & Avena fatua & Aegilops triuncialis \\ 
+  Bromus carinatus & Bromus hordeacous & Elymus caput-medusae \\ 
+  Elymus glaucus & Festuca perennis var. multiflorum &  \\ 
+  Elymus triticoides & Trifolium subterraneum &  \\ 
+  Festuca microstachys &  &  \\ 
+  Lupinus bicolor &  &  \\ 
+  Poa secunda &  &  \\ 
+  Stipa pulchra &  &  \\ 
+   \hline
+\end{tabular}
+\caption{Results of indicator species analysis follow-
+ing K-medoids clustering. High values of the indica-
+tor species statistic reflect strong associations between a
+taxon and a given state assignment. P-values calculated
+using 1,000 permutations.} 
+\end{table}
+\emph{State Classification}
+
+Prior to vegetation group classification, plant community observations were filtered to include only those species present within initial seeding mixtures and Bromus diandrus, a locally abundant annual grass that self-recruited into the experiment and is an important component of the California grassland type.
+Despite regular weeding, a number of agricultural weeds (largely Convolvulus arvensis) occasionally recruited into plots from the seedbank and nearby fields and roadways over the course of our experiment.
+Due to the effects of weeding and generally low abundance, these species were removed from community analysis.
+The resulting dataset captured 93\% of the total vegetation abundance observed over the course of the experiment.
+
+Algorithmic partitioning was used to determine core species groups that correlated in abundance over the course of our study.
+It is important to note that partitioning is limited to the suite of observations made between 2008 - 2018, capturing n = 560 plot:year combinations.
+This period includes a historic drought (2011-2015) and significantly wet year (2017), resulting in statistical groupings that are contingent upon the climatic regime and starting conditions imposed in experimental design.
+
+Partitioning was performed using an unsupervised clustering algorithm, K-medoids clustering.
+The K-medoids algorithm clusters data into k unique groups by identifying k medoid samples that best partition the total distance-based inertia of all observations.
+Distance between observations was calculated using Bray-Curtis dissimilarity.
+
+Because the number of relevant clusters in our study was not pre-defined, we applied K-medoids clustering across values of k from 2-10, yielding a number of clustering solutions.
+We then compared the output of each of these clustering solutions using numerous tests---Hartigan, CH, Beale, KL, Cindex, DB, Silhouette, and Duda indices (Charrad et al.~2014).
+The value of k with the best performance across all tests was chosen as the number of clusters that best represented vegetation partitions within this dataset.
+
+Following the partitioning of states, we then conducted indicator species analysis to establish which species are associated with each state.
+Indicator species analysis was performed using 9999 random permutations of state assignments to quantify statistical significance.
+Clustering and diagnostics were generated using ``cluster'' (Maechler et al.~2019) and ``nbclust'' (Charrad et al.~2014).
+Community analyses were performed using ``vegan'' (Oksanen et al.~2019).
+
+\emph{Weather data}
+
+To contextualize drought stress observed during our experiment, we quantified precipitation and evapotranspiration using data provided by a local California Irrigation Management Information System (CIMIS) monitoring station in Davis, CA (38.535694, -121.777636).
+CIMIS automated dataloggers collect weather data on a minute-by-minute basis, including air temperature, soil temperature, precipitation, solar radiation, vapor pressure, and wind speed.
+We aggregated these data into monthly intervals, where we calculated Standardized Precipitation-Evapotranspiration Index (SPEI).
+This metric can be used to quantify the magnitude of drought stress relative to historic norms (Vicente-Serrano et al.~2010, Slette et al.~2019).
+
+SPEI defines drought stress (\(D\)) at a given timepoint, i:
+
+\[
+D_i = P_i - ETo_i
+\]
+
+Where represents observed precipitation and \(ETo_i\) represents estimated evapotransporation. ETo was calculated using the Penman-Monteith equation, defined as:
+
+\[
+ETo = \frac{\Delta(R_n - G) + \rho_a c_p \frac{e_s - e_a}{r_a}}{\Delta + \gamma(1 + \frac{r_s}{r_a})}
+\]
+
+Here, Rn is net radiation, \(G\) is soil heat flux, (\(e_s - e_a\)) is the vapor pressure deficit of air, \(\rho_a\) is the mean air density at constant pressure, \(cp\) is the specific heat of air, \(\Delta\) is the slope of the saturation vapor pressure temperature relationship, \(\gamma\) is the psychometric constant, and \(r_s\) and \(r_a\) are the surface and aerodynamic resistances (Vicente-Serrano et al.~2010).
+
+To contextualize observed climate patterns relative to long-term variation, we calculated SPEI for a 35-year span between 2018 and 1983 (the first year that sufficient climate data was collected by the CIMIS system).
+To account for potential temporal lag in the effects of climate variation on grassland species abundance (Sala et al.~2012, Dudney et al.~2017), we created drought indices across several cumulative water year durations.
+For each year of available data, we calculated SPEI for a single water year (October -- May; 8 months), two consecutive water years (20 months), and three consecutive water years (32 months).
+We then standardized these values by fitting the drought index series to a log-logistic distribution.
+Resulting values of SPEI were centered at the mean drought stress across overall observations (\(D = 0\)), and individual years range between extreme droughts (\(D < -2\)) and significant water surplus (\(D > +2\)).
+
+SPEI calculations were performed with the ``SPEI'' package (Beguirea and Vicente-Serrano 2017).
+
+\emph{Construction of Multistate Models}
+
+To quantify the probability of vegetation transitions, we fit a multistate model (syn. Markov model) to community state assignments over time.
+In this model, the probability that a given plot transitions from one vegetation state to another is estimated by a transition matrix, whose terms may also interact with different covariates.
+
+We fit 8 candidate multi-state models to our data, beginning with a baseline model consisting of a transition matrix without influence of any covariates.
+This base model was then further modified through inclusion of additional terms reflecting the influence of drought stress calculated over 1-, 2-, and 3-year intervals (SPEI), in addition initial planting composition (temporal priority effects).
+Temporal priority was defined as a binary (1/0) variable describing whether indicator species of a given state were a component of the seeded species mixture.
+We fit models consisting of only drought effects as covariates , temporal priority as a covariate, and models containing both drought and temporal priority as additive effects.
+
+AIC scores were used to compare the relative fit of all potential candidate models. We selected the model with the lowest AIC score as our best fit model.
+A table consisting of model descriptions and AIC scores is presented in Appendix 7. Multistate model fitting and model selection was performed using the ``msm'' package. (Jackson 2011)
+
+All analyses were conducted in R version 3.06 (R Development Core Team).
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
+Seeding treatment effects on community composition
+
+In the first year of observation (2008), plant communities were highly segregated as a function of seeded species mixture (PERMANOVA, pseudo-\(F_{6, 49} = 32.815, P < 0.001\); Appendix 1).
+Pairwise contrasts of community dissimilarity indicate clear distinctions in vegetation group establishment following seeding -- all planting mixtures containing the ``naturalized annuals'' group were similar in their species composition, as were mixtures composed of ``invasive grasses'' and ``invasive grasses + native species''.
+The single group ``native species'' treatment composition was also compositionally segregated from others.
+
+Partitioning vegetation into discrete states
+
+Community composition observed in 2008 - 2018 was highly dynamic.
+On average, plant communities in the same plot compared in two consecutive years were observed to share roughly 50\% of their total relative species cover (mean Bray-Curtis dissimilarity = 0.52 +/- 0.01 standard error).
+Clustering captured a substantial proportion of total compositional variation(Pseudo-R2 = 0.39; Figure 2).
+However, residual variation suggests that fluctuations in cover within clusters were still common.
+This indicates that our method best captured broad changes in the dominance of correlated groups of species, rather than the varying abundance of individual species.
+
+Partitioning of community variance into vegetation states was best characterized by 4 discrete clusters (Appendix 2).
+Indicator species analysis of these assignments demonstrated that 2 of 4 vegetation states largely followed established conceptions of vegetation types within this system (Figure 2).
+State 1 (hereafter, Native Perennials) was characterized by a group of native perennial grasses, while State 3 (Invasive Annuals) was composed of the two planted invasive annual species.
+However, State 2 (B. hordeaceus-Festuca Annuals) and State 4 (Avena-B. diandrus Annuals) reflected the partitioning of the ``Naturalized Annual'' group into two separate types.
+Cluster assignments reflected a 75\% cumulative relative abundance of associated indicator species, on average. Less than one tenth of observations had cumulative indicator species relative abundances of less than 40\% (Appendix 3).
+\begin{figure}
+\centering
+\includegraphics{figure/Fig3_2.png}
+\caption{Visualization of clustering assignments following K-medoids clustering. Non-metric multidimensional scaling (NMDS) ordination was conducted on all community observations from 2008 -- 2018 (n=560). Pairwise community distance was calculated using Bray-Curtis dissimilarity index. Species vectors correspond to taxa that were found to be significantly associated (p \textless{} 0.05) with state assignments using indicator species analysis. \label{fig-3-2}}
+\end{figure}
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlrr}
+  \hline
+State & Species & Statistic & P-value \\ 
+  \hline
+1.00 & E. glaucus & 0.80 & 0.00 \\ 
+  1.00 & S. pulchra & 0.57 & 0.00 \\ 
+  1.00 & B. carinatus & 0.55 & 0.00 \\ 
+  1.00 & F. microstachys & 0.28 & 0.00 \\ 
+  2.00 & F. perennis & 0.82 & 0.00 \\ 
+  2.00 & B. hordeaceus & 0.72 & 0.00 \\ 
+  2.00 & T. subterraneum & 0.61 & 0.00 \\ 
+  3.00 & E. caput-medusae & 0.87 & 0.00 \\ 
+  3.00 & A. triuncialis & 0.74 & 0.00 \\ 
+  4.00 & A. fatua & 0.82 & 0.00 \\ 
+  4.00 & B. diandrus & 0.55 & 0.00 \\ 
+  4.00 & E. triticoides & 0.30 & 0.04 \\ 
+  4.00 & A. americanus & 0.27 & 0.01 \\ 
+   \hline
+\end{tabular}
+\caption{Results of indicator species analysis following K-medoids clustering. High values of the indicator species statistic reflect strong associations between a taxon and a given state assignment. P-values calculated using 1,000 permutations.} 
+\end{table}
+\emph{Frequency of state assignments over time}
+
+The climatic conditions we observed included a period of normal to above-average water availability (2008 -- 2011), followed by drought (2012 -- 2016), and substantial water surplus (2017; Figure 1A).
+During this period, community transitions between vegetation states were common in all plots (mean number of total transitions observed per plot = 3.73 +/- 0.16 SE).
+The frequency of these transition events---summarized in a contingency table (Appendix 4)---were highly non-random, varying as a function of a plot's state assignment in a previous year, in addition to current climatic conditions (plot-level state assignments presented in Appendix 5).
+
+Following seeding, a majority of communities were characterized by a single state assignment, as each of the 32 plots that received naturalized annual seed (including Avena fatua and Trifolium subterraneum) assumed the Festuca-B. hordeaceus state (Figure 1B).
+The predominance of this community configuration was short-lived, however, and subsequent community dynamics were largely driven by a series of sequential, unidirectional transitions.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.3\textheight]{figure/Fig3_1.png}
+\caption{Variation in total water year drought severity (A) and frequencies of state assignments (B) from 2008-2018. Average drought stress (SPEI = 0) between 1983-2008 is presented as a dotted line in panel A. Drought in California from 2012-2016 included several years of substantially below-average water availability, including a single year with recorded drought stress greater than two standard deviations beyond historic norms (SPEI \textless{} -2). \label{fig-3-1}}
+\end{figure}
+Invasive Annual communities increased in frequency during the years following seeding, peaking in 2012 after two successive years of above-average precipitation (Figure 1).
+While these transitions were largely driven by dominance of Invasive Annual species in plots previously characterized by the Festuca-B. hordeaceus state, the onset of drought in 2012 did not prompt a reversal back to this prior configuration.
+Instead, many Invasive Annual communities experienced a transition to the Avena-B. diandrus state type between 2013-2015, a change which persisted in many plots until the end of monitoring in 2018.
+
+Curiously, the frequency of Native Perennial communities increased slowly, yet steadily over the course of our experiment (Figure 1B).
+Closer inspection of plot-level state assignments demonstrated that conversion of any vegetation type to the Native Perennial state was rare in cases where native perennial grasses were not included in seeding mixtures (Appendix 5).
+Once established, however, these communities were quite resistant to state transition, often maintaining their assignment for multiple years under variable climatic conditions.
+
+\emph{Model selection}
+
+We fit multi-state models to observed state assignment data to quantify likely pathways of vegetation transition across different state types, treatment combinations, and environmental contexts.
+From model comparison, we found that that best fit models included both the influence of initial seeding composition and climate variation (Appendix 6).
+While both 1-year and 3-year cumulative drought stress models provided comparable fits, here we present results from the former due to lower AIC score and greater parsimony.
+Chi-squared goodness of fit test of observed and expected state frequencies showed no significant deviations from model assumptions (\(\chi_9^2 = 12, p > 0.20\)).
+
+\emph{State Transitions}
+
+Multi-state modeling attributed our observed variation in state frequencies to several mechanisms of community turnover---drought response, invasion resistance, and recruitment limitation ---that differed significantly between species groups (Figure 3, Table 2).
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=0.8\textheight]{figure/Fig3_3.png}
+\caption{State-transition representation of fitted multi-state model coefficients at baseline, assuming no effects of temporal priority and average drought stress (SPEI = 0). Labels refer to the probability a plot transitions between 2 different state assignments (arrows) or the probability a plot retains its assignment (circles) in consecutive years. Circles and arrows are scaled in diameter or color, respectively, by the probability of state assignment transition. \label{fig-3-3}}
+\end{figure}
+State resistance, the probability of a community changing its state assignment in a subsequent year, varied significantly across the four vegetation types.
+Baseline transition matrix values in our model, which assume drought stress equivalent to the long-term average (i.e.~SPEI = 0) and no effects of temporal priority, estimated that the Festuca-B.hordeaceus state was more likely to undergo transition than any of the other state types (Figure 3, Table 2).
+Whether driven by competitive differences or interannual feedbacks, the short-term predominance of this community type may be the result of an inherent lack of resistance to colonization by other species groups.
+
+Invasive Annual and Avena-B. diandrus vegetation states that characterized most plant communities exhibited contrasting relationships with drought stress (SPEI; Table 2).
+Estimated transition probabilities from the Invasive Annual state were negatively correlated with drought stress (SPEI hazard ratio \textless{} 1), indicating increased state stability when precipitation is above average.
+Avena-B. diandrus communities, on the other hand, were estimated to arise more frequently from the Invasive Annual state and maintain this configuration with greater probability under drought (SPEI hazard ratio \textgreater{} 1).
+These state-specific responses to water availability appears likely to mediate long-term patterns of vegetation turnover between these community types, though our inference is limited by available data on observed community trajectories post-drought.
+\begin{table}[ht]
+\centering
+\begin{tabular}{lllll}
+  \hline
+Assignment & Transition & Probability & Temporal Priority & Drought Stress (SPEI) \\ 
+  \hline
+State 1 & State 1 & 0.74 (0.65,0.8) & - & - \\ 
+  State 1 & State 2 & 0.05 (0.03,0.08) & 4.77\verb|^| & 0.8 \\ 
+  State 1 & State 3 & 0.05 (0.03,0.1) & 2.96 & 0.95 \\ 
+  State 1 & State 4 & 0.16 (0.11,0.23) & 1.53 & 0.86 \\ 
+  State 2 & State 1 & 0.07 (0.04,0.11) & 3.31\verb|^| & 0.83 \\ 
+  State 2 & State 2 & 0.58 (0.48,0.65) & - & - \\ 
+  State 2 & State 3 & 0.16 (0.11,0.23) & 1.71 & 1.41 \\ 
+  State 2 & State 4 & 0.2 (0.14,0.27) & 0.54 & 0.71 \\ 
+  State 3 & State 1 & 0.06 (0.03,0.11) & 12.74** & 0.56* \\ 
+  State 3 & State 2 & 0.04 (0.02,0.07) & 0.55 & 0.55\verb|^| \\ 
+  State 3 & State 3 & 0.83 (0.75,0.88) & - & - \\ 
+  State 3 & State 4 & 0.08 (0.05,0.12) & 3.26* & 0.56* \\ 
+  State 4 & State 1 & 0.09 (0.06,0.15) & 2.53* & 1.43* \\ 
+  State 4 & State 2 & 0.11 (0.08,0.17) & 0.77 & 1.02 \\ 
+  State 4 & State 3 & 0.06 (0.04,0.11) & 1.93 & 0.98 \\ 
+  State 4 & State 4 & 0.73 (0.65,0.79) & - & - \\ 
+   \hline
+\end{tabular}
+\caption{Parameter estimates of the best fit multi-state model (Model 6). For each state assignment, potential state assignments in subsequent years (Transitions) and their associated probabilities (with 95 percent confidence intervals) are reported. Covariate effects reported as hazard ratios, where superscripts correspond to statistical significance: $` = P < 0.1; * = P < 0.05; ** = P < 0.01$} 
+\end{table}
+In contrast to states which exhibited linearly correlated responses to drought stress, plots characterized by the Native Perennial state displayed complex interactions between effects of drought stress and initial planting composition (Figure 4, Table 2).
+The probability of community transition to the Native Perennial state significantly increased under both positive and negative values of SPEI, depending on prior configuration; Invasive Annual communities were more likely to transition to a Native Perennial state under drought, while Avena-B. diandrus communities were more likely to do so with increased water availability.
+Critically, these transitions were strongly affected by seeding treatments, where plots seeded with native perennial grasses were significantly more likely to transition (Temporal Priority hazard ratios \textgreater{} 1; Table 3).
+This finding suggests that Native Perennial species may be broadly tolerant of climatic variation but limited in their capacity to dominate communities when their propagules are not supplemented.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=0.4\textheight]{figure/Fig3_4.png}
+\caption{The effects of temporal priority and drought stress on the probability of transition of a plot to the Native Perennial state given other previous state assignments. Transition probabilities presented are a function of drought stress (SPEI) and whether native species were included/absent from the seeded species mixture (+/- Priority). Solid lines indicate significant (p \textless{} 0.05) covariate effects of both SPEI and priority; dashed lines correspond to non-significant effects. \label{fig-3-4}}
+\end{figure}
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
+
+\emph{Species response groups under climate extremes}
+
+The emergence of unique community assemblages under climate change is expected to pose a major challenge to the study and management of natural systems in the near future (Hobbs et al.~2009).
+California, like many Mediterranean systems, is projected to experience increasing temperatures and fewer, more extreme rainfall events (Yoon et al.~2015).
+Unprecedented climatic extremes will likely produce unintuitive patterns of community assembly that are poorly predicted by prior observations (Williams and Jackson 2007); however, contemporary observation of extreme events can shed light onto future dynamics.
+
+In this study, we found evidence that core community assemblages under extreme drought differed from historic norms.
+Classic conceptual models that describe vegetation through three discrete state types failed to capture community turnover as effectively as a four-state model that partitioned the traditional ``Naturalized Annual Grasses'' state into two separate groups defined by B. hordeaceous and F. perennis, or A. fatua and B. diandrus.
+This result is particularly striking given the structure imposed by our initial planting composition.
+
+While exotic grasses in California are often expected to share similar climatic tolerances due to their annual life history strategy (Sandel and Dangremond 2012), the unique conditions imposed by extreme drought may have crossed previously unobserved thresholds to separate ``winners'' and ``losers'' within functional groups (Prugh et al.~2018).
+The mechanism of this partitioning is unclear, but it appears likely that extreme events may operate on secondary divisions within the ``Naturalized Annual Grass'' group.
+B. diandrus, for example, is a more common dominant in Southern California grasslands (Barbour et al.~2007), and may exhibit adaptations that provide a competitive advantage under lower water availability.
+In contrast, F. perennis tends to be active later into the dry season, and likely fares poorly in drought.
+
+Our partitioning results highlight the potential difficulty in extending species-environment relationships to unobserved conditions (Nippert et al.~2006).
+In semi-arid systems, predictions of ecosystem responses to extreme drought are likely to perform poorly when extrapolated from less extreme events.
+Drought severity is defined by a suite of characteristics related to event size, frequency, and soil water content, whose combined effect on vegetation may not scale linearly with an aggregate measure of drought stress (Fay et al.~2008).
+In addition, drought responses of locally interacting species are further controlled by factors such as resource competition, mutualism, and herbivory (Suttle et al.~2007, Tylianakis et al.~2008).
+In some cases, these complex interactions under novel climate conditions may produce nonlinear relationships or unintuitive mechanisms of change (Stuble et al.~2017).
+Warmer temperatures and decreased rainfall has been observed to favor cold-adapted species in the Chihuahuan desert (Kimball et al.~2010), for example, while species abundances following an extreme drought in Switzerland were best predicted by seed production in a system formerly governed by competitive outcomes (Stampfli and Zeiter 2004).
+
+As these results collectively demonstrate, refinement of conceptual ecosystem models following extreme events may increase their utility under future climate conditions.
+Our findings underscore the need for analytical approaches able to critically evaluate these conceptual tools.
+Particularly in rangeland systems, which decompose community dynamics into fluctuations between species groups, clustering approaches may effectively capture the novel, site-specific community assemblages that are likely to arise under climate change.
+
+\emph{Contingency in vegetation dynamics}
+
+In this study, we found that species turnover in California grasslands is contingent on both climatic variation and prior patterns of community assembly.
+Early abundance of the Festuca-B. hordeaceous state gave rise to communities dominated by Invasive Annual species under above-average precipitation.
+Under drought, however, many of these communities failed to return to this initial state type, instead transitioning to the Avena-B. diandrus state.
+Transitions to a fourth state, Native Perennials, increased under both drought and water surplus, but depended strongly on a community's prior state type and experimental seed addition.
+
+These state-specific patterns of change are likely driven by variation in the dominant species which characterize each state.
+Dominant species are often observed to be primary determinants of key community attributes in grassland systems, such as productivity (Smith and Knapp 2003), drought tolerance (Hoover et al.~2014), and resistance to invasion (Smith et al.~2004).
+And like other studies of California grassland dynamics in a state-transition perspective (Jackson and Bartolome 2002, Stein et al.~2016), the species that define our vegetation states may be linked to a number of potential mechanisms that influence community turnover.
+
+Across the four vegetation groups we identified, known species characteristics related to competitor inhibition and recruitment appear correlated with observed persistence and transition probabilities, respectively.
+Invasive annual grasses, A. triuncialis and E. caput-medusae, facilitate their persistence through deposition of dense thatch layers that inhibit germination and growth of competitors (Eviner and Hawkes 2012).
+While native perennial grasses are effective competitors once mature, increased transition probabilities following experiment seeding likely reflects recruitment limitation that is thought to limit colonization (Seabloom et al.~2003a, 2003b).
+This contrasts with many naturalized annual grasses, whose large investment into seed production may facilitate rapid colonization and contribute to positive nutrient cycling feedbacks (Hillerislambers et al.~2010, Eviner and Hawkes 2012).
+
+While climate variation may favor certain species groups in isolation, the pathways of community change we observed suggest that climatic effects interact strongly with other state properties -- rather than exhibiting a consistent relationship with precipitation, state frequencies in a given year depended on both climate conditions and state frequencies in years prior.
+Though limited to short-term recovery, our findings indicate that state persistence and variable susceptibility to community change may help explain lagged recovery or a failure to return to previous ecosystem states following drought (Smith et al.~2015).
+Compositional changes following climate events can produce long-lasting effects on successional trajectories, where post-drought species assemblages exhibit strong persistence or altered pathways of community change (Kreyling et al.~2011).
+Other studies of drought effects in California grasslands show similar trends, in which community recovery lags behind climate trends (Harrison et al.~2018); or exhibits selective pathways of change, where return to only a subset of initial state types is possible (Larios et al.~2013).
+
+\emph{Implications for Restoration and Management}
+
+While drought is often linked to a number of negative ecosystem changes, such as reduced biodiversity and invasive species spread, the novel conditions imposed by extreme climatic events may also facilitate management efforts (Hobbs et al.~2006, 2009, Seastedt et al.~2008).
+By quantifying the persistence of species assemblages under various contexts, our results provide a foundation to better predict windows of opportunity and design effective interventions.
+The establishment of native perennial grasses is a common restoration target in California annual grasslands, though success is limited and highly contingent on year-to-year variation (Stromberg et al.~2007, Young et al.~2014).
+Many restoration efforts in this system utilize temporal or spatial priority to manipulate competitive relationships during planting, in the hope that early establishment delays or prevents encroachment by less desirable species (Wainwright et al.~2012, Fry et al.~2017, Young et al.~2017).
+For native perennial grasses in California annual grasslands, we found strong evidence that priority seeding can assist in establishing and maintaining a desired community that remains relatively persistent after planting or provide the basis for subsequent dominance when conditions are favorable (Porensky et al.~2012).
+
+In contrast, our study suggests that eradication of invasive annual grasses may be facilitated by targeted management during drought.
+Common interventions--grazing, herbicide application, and targeted burning--may be more effective when conditions naturally disadvantage E. caput-medusae and A. triucialis (DiTomaso et al.~2008).
+However, given that vegetation states may vary in persistence, managers must take care to ensure that colonizing vegetation is robust to re-invasion.
+Growth of ruderal weeds appears common following management in California grasslands, which often do little to resist colonization of invasive grasses (Young 1992, DiTomaso et al.~2008).
+
+Generally, our findings underscore the potential value of maintaining functional and taxonomic diversity in restoration and management (Funk et al.~2008).
+Particularly in highly dynamic systems where environmental fluctuations drive turnover, long-term ecosystem health may depend on turnover among desirable community types--the maintenance of multiple potential vegetation states can maintain favorable pathways of compositional change following disturbance that may otherwise favor spread of undesirable species (Hoover et al.~2014, Griffin-Nolan et al.~2019, Wilcox et al.~2020).
+
+\emph{Future Directions}
+
+This study highlights the need to employ analytical approaches capable of distinguishing novel assemblages as they arise.
+Reliance on long-standing divisions between species groups to characterize system responses to climate change may fail to capture emergent complexity.
+However, while we were able to capture the immediate effects of a historic drought on grassland plant communities, the scope of our study is focused on a relatively narrow time period that may be insufficient to capture long-term changes to vegetation dynamics.
+Continued observation, particularly over a broader range of climatic conditions, may further refine partitions between core species groups and better capture ecosystem recovery to extreme events.
 
 \hypertarget{conclusion}{%
 \chapter*{Conclusion}\label{conclusion}}
@@ -250,8 +960,8 @@ And here's some other random info: the first paragraph after a chapter title or 
 
 \appendix
 
-\hypertarget{supporting-information-for-chapter-1}{%
-\chapter{Supporting information for Chapter 1}\label{supporting-information-for-chapter-1}}
+\hypertarget{chapter-1-supporting-information}{%
+\chapter{Chapter 1 Supporting Information}\label{chapter-1-supporting-information}}
 \begin{table}[ht]
 \centering
 \scalebox{0.6}{
@@ -384,11 +1094,11 @@ Azi & 0.4 & 0.68 & 0.47 & 1.3 & 1.35 & 1.44 & 0.32 \\
 \includegraphics[width=\textwidth,height=0.4\textheight]{figure/AppFig1_2.png}
 \caption{Bivariate relationships between treatments colored by provenance (introduced / native). \label{app-1-2}}
 \end{figure}
-\hypertarget{supporting-information-for-chapter-2}{%
-\chapter{Supporting information for Chapter 2}\label{supporting-information-for-chapter-2}}
+\hypertarget{chapter-2-supporting-information}{%
+\chapter{Chapter 2 Supporting Information}\label{chapter-2-supporting-information}}
 
-\hypertarget{supporting-information-for-chapter-3}{%
-\chapter{Supporting information for Chapter 3}\label{supporting-information-for-chapter-3}}
+\hypertarget{chapter-3-supporting-information}{%
+\chapter{Chapter 3 Supporting Information}\label{chapter-3-supporting-information}}
 \begin{table}[ht]
 \centering
 \begin{tabular}{lllllll}
@@ -496,11 +1206,170 @@ Model & DF & Priority & 1 Year SPEI & 2 Year SPEI & 3 Year SPEI & deltaAIC & AIC
 \includegraphics[width=0.65\textwidth,height=0.8\textheight]{figure/AppFig3_3.png}
 \caption{Plot-level shifts in state assignment over time. For each observed community (grid cell), the state assignment of a community is presented as a function of initial seeding treatment (row) and time (column). \label{app-3-3}}
 \end{figure}
+\backmatter
+
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
 
-Placeholder
+\markboth{References}{References}
+
+\noindent
+
+\setlength{\parindent}{-0.20in}
+\setlength{\leftskip}{0.20in}
+\setlength{\parskip}{8pt}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-Adler2006}{}%
+Adler, P. B., J. HilleRisLambers, P. C. Kyriakidis, Q. Guan, and J. M. Levine. 2006. Climate variability has a stabilizing effect on the coexistence of prairie grasses. Proceedings of the National Academy of Sciences of the United States of America 103:12793--12798.
+
+\leavevmode\hypertarget{ref-Angert2009}{}%
+Angert, A. L., T. E. Huxman, P. Chesson, and D. L. Venable. 2009. Functional tradeoffs determine species coexistence via the storage effect. Proceedings of the National Academy of Sciences of the United States of America 106:11641--11645.
+
+\leavevmode\hypertarget{ref-Agren2004}{}%
+Ågren, G. I. 2004. The C:N:P stoichiometry of autotrophs - Theory and observations. Ecology Letters 7:185--191.
+
+\leavevmode\hypertarget{ref-Agren2008}{}%
+Ågren, G. I. 2008. Stoichiometry and nutrition of plant growth in natural communities. Annual Review of Ecology, Evolution, and Systematics 39:153--170.
+
+\leavevmode\hypertarget{ref-Bobbink1991}{}%
+Bobbink, R. 1991. Effects of Nutrient Enrichment in Dutch Chalk Grassland. The Journal of Applied Ecology 28:28.
+
+\leavevmode\hypertarget{ref-Brauer2012}{}%
+Brauer, V. S., M. Stomp, and J. Huisman. 2012. The nutrient-load hypothesis: Patterns of resource limitation and community structure driven by competition for nutrients and light. American Naturalist 179:721--740.
+
+\leavevmode\hypertarget{ref-Chapin2000}{}%
+Chapin, F. S., E. S. Zavaleta, V. T. Eviner, R. L. Naylor, P. M. Vitousek, H. L. Reynolds, D. U. Hooper, S. Lavorel, O. E. Sala, S. E. Hobbie, M. C. Mack, and S. Díaz. 2000. Consequences of changing biodiversity. Nature 405:234--242.
+
+\leavevmode\hypertarget{ref-Chesson2000}{}%
+Chesson, P. 2000. Mechanisms of maintenance of species diversity. Annual Review of Ecology and Systematics 31:343--66.
+
+\leavevmode\hypertarget{ref-Clark2018}{}%
+Clark, A. T., C. Lehman, and D. Tilman. 2018. Identifying mechanisms that structure ecological communities by snapping model parameters to empirically observed tradeoffs. Ecology Letters 21:494--505.
+
+\leavevmode\hypertarget{ref-Crawley2005}{}%
+Crawley, M. J., A. E. Johnston, J. Silvertown, M. Dodd, C. De Mazancourt, M. S. Heard, D. F. Henman, and G. R. Edwards. 2005. Determinants of species richness in the park grass experiment. American Naturalist 165:179--192.
+
+\leavevmode\hypertarget{ref-DeMalach2017b}{}%
+DeMalach, N., and R. Kadmon. 2017. Light competition explains diversity decline better than niche dimensionality. Functional Ecology 31:1834--1838.
+
+\leavevmode\hypertarget{ref-DeMalach2017a}{}%
+DeMalach, N., E. Zaady, and R. Kadmon. 2017. Light asymmetry explains the effect of nutrient enrichment on grassland diversity. Ecology Letters 20:60--69.
+
+\leavevmode\hypertarget{ref-Diaz2001}{}%
+Díaz, S., and M. Cabido. 2001. Vive la différence: Plant functional diversity matters to ecosystem processes. Trends in Ecology and Evolution 16:646--655.
+
+\leavevmode\hypertarget{ref-Diaz2016}{}%
+Díaz, S., J. Kattge, J. H. C. Cornelissen, I. J. Wright, S. Lavorel, S. Dray, B. Reu, M. Kleyer, C. Wirth, I. Colin Prentice, E. Garnier, G. Bönisch, M. Westoby, H. Poorter, P. B. Reich, A. T. Moles, J. Dickie, A. N. Gillison, A. E. Zanne, J. Chave, S. Joseph Wright, S. N. Sheremet Ev, H. Jactel, C. Baraloto, B. Cerabolini, S. Pierce, B. Shipley, D. Kirkup, F. Casanoves, J. S. Joswig, A. Günther, V. Falczuk, N. Rüger, M. D. Mahecha, and L. D. Gorné. 2016. The global spectrum of plant form and function. Nature 529:167--171.
+
+\leavevmode\hypertarget{ref-Dwyer2017}{}%
+Dwyer, J. M., and D. C. Laughlin. 2017. Constraints on trait combinations explain climatic drivers of biodiversity: the importance of trait covariance in community assembly. Ecology Letters 20:872--882.
+
+\leavevmode\hypertarget{ref-Dybzinski2007a}{}%
+Dybzinski, R., and D. Tilman. 2007. Resource use patterns predict long-term outcomes of plant competition for nutrients and light. American Naturalist 170:305--318.
+
+\leavevmode\hypertarget{ref-Elser2007}{}%
+Elser, J. J., M. E. S. Bracken, E. E. Cleland, D. S. Gruner, W. S. Harpole, H. Hillebrand, J. T. Ngai, E. W. Seabloom, J. B. Shurin, and J. E. Smith. 2007. Global analysis of nitrogen and phosphorus limitation of primary producers in freshwater, marine and terrestrial ecosystems. Ecology Letters 10:1135--1142.
+
+\leavevmode\hypertarget{ref-Fay2015}{}%
+Fay, P. A., S. M. Prober, W. S. Harpole, J. M. H. Knops, J. D. Bakker, E. T. Borer, E. M. Lind, A. S. MacDougall, E. W. Seabloom, P. D. Wragg, P. B. Adler, D. M. Blumenthal, Y. M. Buckley, C. Chu, E. E. Cleland, S. L. Collins, K. F. Davies, G. Du, X. Feng, J. Firn, D. S. Gruner, N. Hagenah, Y. Hautier, R. W. Heckman, V. L. Jin, K. P. Kirkman, J. Klein, L. M. Ladwig, Q. Li, R. L. McCulley, B. A. Melbourne, C. E. Mitchell, J. L. Moore, J. W. Morgan, A. C. Risch, M. Schütz, C. J. Stevens, D. A. Wedin, and L. H. Yang. 2015. Grassland productivity limited by multiple nutrients. Nature Plants 1:1--5.
+
+\leavevmode\hypertarget{ref-Grace2016a}{}%
+Grace, J. B., T. M. Anderson, E. W. Seabloom, E. T. Borer, P. B. Adler, W. S. Harpole, Y. Hautier, H. Hillebrand, E. M. Lind, M. Pärtel, J. D. Bakker, Y. M. Buckley, M. J. Crawley, E. I. Damschen, K. F. Davies, P. A. Fay, J. Firn, D. S. Gruner, A. Hector, J. M. H. Knops, A. S. MacDougall, B. A. Melbourne, J. W. Morgan, J. L. Orrock, S. M. Prober, and M. D. Smith. 2016. Integrative modelling reveals mechanisms linking productivity and plant species richness. Nature 529:390--393.
+
+\leavevmode\hypertarget{ref-Grime1974}{}%
+Grime, J. P. 1974. Vegetation classification by reference to strategies. Nature 250:26--31.
+
+\leavevmode\hypertarget{ref-Gusewell2004}{}%
+Güsewell, S. 2004. N:P ratios in terrestrial plants: Variation and functional significance. New Phytologist 164:243--266.
+
+\leavevmode\hypertarget{ref-Handreck1997}{}%
+Handreck, K. A. 1997. Phosphorus requirements of Australian native plants. Australian Journal of Soil Research 35:241--289.
+
+\leavevmode\hypertarget{ref-Harpole2017}{}%
+Harpole, W. S., L. L. Sullivan, E. M. Lind, J. Firn, P. B. Adler, E. T. Borer, J. Chase, P. A. Fay, Y. Hautier, H. Hillebrand, A. S. MacDougall, E. W. Seabloom, J. D. Bakker, M. W. Cadotte, E. J. Chaneton, C. Chu, N. Hagenah, K. Kirkman, K. J. La Pierre, J. L. Moore, J. W. Morgan, S. M. Prober, A. C. Risch, M. Schuetz, and C. J. Stevens. 2017. Out of the shadows: multiple nutrient limitations drive relationships among biomass, light and plant diversity. Functional Ecology 31:1839--1846.
+
+\leavevmode\hypertarget{ref-Harpole2016}{}%
+Harpole, W. S., L. L. Sullivan, E. M. Lind, J. Firn, P. B. Adler, E. T. Borer, J. Chase, P. A. Fay, Y. Hautier, H. Hillebrand, A. S. MacDougall, E. W. Seabloom, R. Williams, J. D. Bakker, M. W. Cadotte, E. J. Chaneton, C. Chu, E. E. Cleland, C. D'Antonio, K. F. Davies, D. S. Gruner, N. Hagenah, K. Kirkman, J. M. H. Knops, K. J. La Pierre, R. L. McCulley, J. L. Moore, J. W. Morgan, S. M. Prober, A. C. Risch, M. Schuetz, C. J. Stevens, and P. D. Wragg. 2016. Addition of multiple limiting resources reduces grassland diversity. Nature 537:93--96.
+
+\leavevmode\hypertarget{ref-Harpole2007}{}%
+Harpole, W. S., and D. Tilman. 2007. Grassland species loss resulting from reduced niche dimension. Nature 446:791--793.
+
+\leavevmode\hypertarget{ref-Hautier2009}{}%
+Hautier, Y., P. a Niklaus, and A. Hector. 2009. Competition for light causes plant biodiversity loss after eutrophication. Science (New York, N.Y.) 324:636--638.
+
+\leavevmode\hypertarget{ref-Hautier2018}{}%
+Hautier, Y., E. Vojtech, and A. Hector. 2018. The importance of competition for light depends on productivity and disturbance. Ecology and Evolution 8:10655--10661.
+
+\leavevmode\hypertarget{ref-Hector2007}{}%
+Hector, A., and R. Bagchi. 2007. Biodiversity and ecosystem multifunctionality. Nature 448:188--190.
+
+\leavevmode\hypertarget{ref-Isbell2015}{}%
+Isbell, F., D. Craven, J. Connolly, M. Loreau, B. Schmid, C. Beierkuhnlein, T. M. Bezemer, C. Bonin, H. Bruelheide, E. De Luca, A. Ebeling, J. N. Griffin, Q. Guo, Y. Hautier, A. Hector, A. Jentsch, J. Kreyling, V. Lanta, P. Manning, S. T. Meyer, A. S. Mori, S. Naeem, P. A. Niklaus, H. W. Polley, P. B. Reich, C. Roscher, E. W. Seabloom, M. D. Smith, M. P. Thakur, D. Tilman, B. F. Tracy, W. H. Van Der Putten, J. Van Ruijven, A. Weigelt, W. W. Weisser, B. Wilsey, and N. Eisenhauer. 2015. Biodiversity increases the resistance of ecosystem productivity to climate extremes. Nature 526:574--577.
+
+\leavevmode\hypertarget{ref-Komatsu2019}{}%
+Komatsu, K. J., M. L. Avolio, N. P. Lemoine, F. Isbell, E. Grman, G. R. Houseman, S. E. Koerner, D. S. Johnson, K. R. Wilcox, J. M. Alatalo, J. P. Anderson, R. Aerts, S. G. Baer, A. H. Baldwin, J. Bates, C. Beierkuhnlein, R. T. Belote, J. Blair, J. M. G. Bloor, P. J. Bohlen, E. W. Bork, E. H. Boughton, W. D. Bowman, A. J. Britton, J. F. Cahill, E. Chaneton, N. R. Chiariello, J. Cheng, S. L. Collins, J. H. C. Cornelissen, G. Du, A. Eskelinen, J. Firn, B. Foster, L. Gough, K. Gross, L. M. Hallet, X. Han, H. Harmens, M. J. Hovenden, A. Jagerbrand, A. Jentsch, C. Kern, K. Klanderud, A. K. Knapp, J. Kreyling, W. Li, Y. Luo, R. L. McCulley, J. R. McLaren, J. P. Megonigal, J. W. Morgan, V. Onipchenko, S. C. Pennings, J. S. Prevéy, J. N. Price, P. B. Reich, C. H. Robinson, F. L. Russell, O. E. Sala, E. W. Seabloom, M. D. Smith, N. A. Soudzilovskaia, L. Souza, K. Suding, K. B. Suttle, T. Svejcar, D. Tilmand, P. Tognetti, R. Turkington, S. White, Z. Xu, L. Yahdjian, Q. Yu, P. Zhang, and Y. Zhang. 2019. Global change effects on plant communities are magnified by time and the number of global change factors imposed. Proceedings of the National Academy of Sciences of the United States of America 116:17867--17873.
+
+\leavevmode\hypertarget{ref-Kraft2015}{}%
+Kraft, N. J. B., O. Godoy, and J. M. Levine. 2015. Plant functional traits and the multidimensional nature of species coexistence. Proceedings of the National Academy of Sciences of the United States of America 112:797--802.
+
+\leavevmode\hypertarget{ref-Kramer-Walter2016}{}%
+Kramer-Walter, K. R., P. J. Bellingham, T. R. Millar, R. D. Smissen, S. J. Richardson, and D. C. Laughlin. 2016. Root traits are multidimensional: specific root length is independent from root tissue density and the plant economic spectrum. Journal of Ecology 104:1299--1310.
+
+\leavevmode\hypertarget{ref-Lind2013}{}%
+Lind, E. M., E. Borer, E. Seabloom, P. Adler, J. D. Bakker, D. M. Blumenthal, M. Crawley, K. Davies, J. Firn, D. S. Gruner, W. Stanley Harpole, Y. Hautier, H. Hillebrand, J. Knops, B. Melbourne, B. Mortensen, A. C. Risch, M. Schuetz, C. Stevens, and P. D. Wragg. 2013. Life-history constraints in grassland plant species: A growth-defence trade-off is the norm. Ecology Letters 16:513--521.
+
+\leavevmode\hypertarget{ref-Mattson1992}{}%
+Mattson, D. A., and W. J. Herms. 1992. The dilemma of plants: To grow or defend. The Quarterly Review of Biology 67:283--335.
+
+\leavevmode\hypertarget{ref-McKey1994}{}%
+McKey, D. 1994. Legumes and nitrogen: The evolutionary ecology of a nitrogen-demanding lifestyle. Advances in Legume Systematics 5: The Nitrogen Factor 5:211--228.
+
+\leavevmode\hypertarget{ref-Pacala1998}{}%
+Pacala, S. W., and M. Rees. 1998. Models suggesting field experiments to test two hypotheses explaining successional diversity. The American naturalist 152:729--737.
+
+\leavevmode\hypertarget{ref-Reich2014}{}%
+Reich, P. B. 2014. The world-wide 'fast-slow' plant economics spectrum: A traits manifesto. Journal of Ecology 102:275--301.
+
+\leavevmode\hypertarget{ref-Seabloom2018}{}%
+Seabloom, E. W., E. T. Borer, and L. L. Kinkel. 2018. No evidence for trade-offs in plant responses to consumer food web manipulations. Ecology 99:1953--1963.
+
+\leavevmode\hypertarget{ref-Soons2017}{}%
+Soons, M. B., M. M. Hefting, E. Dorland, L. P. M. Lamers, C. Versteeg, and R. Bobbink. 2017. Nitrogen effects on plant species richness in herbaceous communities are more widespread and stronger than those of phosphorus. Biological Conservation 212:390--397.
+
+\leavevmode\hypertarget{ref-Suding2005}{}%
+Suding, K. N., S. L. Collins, L. Gough, C. Clark, E. E. Cleland, K. L. Gross, D. G. Milchunas, and S. Pennings. 2005. Functional- and abundance-based mechanisms explain diversity loss due to N fertilization. Proceedings of the National Academy of Sciences of the United States of America 102:4387--4392.
+
+\leavevmode\hypertarget{ref-tilman1982resource}{}%
+Tilman, D. 1982. Resource competition and community structure. Princeton University Press.
+
+\leavevmode\hypertarget{ref-Tilman1994}{}%
+Tilman, D. 1994. Competition and Biodiversity in Spatially Structured Habitats. Ecology 75:2--16.
+
+\leavevmode\hypertarget{ref-Tilman2001}{}%
+Tilman, D., and C. Lehman. 2001. Human-caused environmental change: impacts on plant diversity and evolution. Proceedings of the National Academy of Sciences 98:5433--5440.
+
+\leavevmode\hypertarget{ref-Tilman1984}{}%
+Tilman, G. D. 1984. Plant Dominance Along an Experimental Nutrient Gradient. Ecology 65:1445--1453.
+
+\leavevmode\hypertarget{ref-Vitousek1997b}{}%
+Vitousek, P. M., J. D. Aber, R. W. Howarth, G. E. Likens, P. a. Matson, D. W. Schindler, W. H. Schlesinger, and D. G. Tilman. 1997. Human alteration of the global nitrogen cycle: Sources and consequences. Ecological Applications 7:737--750.
+
+\leavevmode\hypertarget{ref-Vitousek1991}{}%
+Vitousek, P. M., and R. W. Howarth. 1991. Nitrogen limitation on land and in the sea: How can it occur? Biogeochemistry 13:87--115.
+
+\leavevmode\hypertarget{ref-Vitousek2010}{}%
+Vitousek, P. M., S. Porder, B. Z. Houlton, and O. A. Chadwick. 2010. Terrestrial phosphorus limitation: Mechanisms, implications, and nitrogen-phosphorus interactions. Ecological Applications 20:5--15.
+
+\leavevmode\hypertarget{ref-Wilson1991}{}%
+Wilson, S. D., and D. Tilman. 1991. Components of Plant Competition Along an Experimental Gradient of Nitrogen Availability Author. Ecology 72:1050--1065.
+
+\leavevmode\hypertarget{ref-Wright2004}{}%
+Wright, I. J., P. B. Reich, M. Westoby, D. D. Ackerly, Z. Baruch, F. Bongers, J. Cavender-Bares, T. Chapin, J. H. C. Cornellssen, M. Diemer, J. Flexas, E. Garnier, P. K. Groom, J. Gulias, K. Hikosaka, B. B. Lamont, T. Lee, W. Lee, C. Lusk, J. J. Midgley, M. L. Navas, Ü. Niinemets, J. Oleksyn, H. Osada, H. Poorter, P. Pool, L. Prior, V. I. Pyankov, C. Roumet, S. C. Thomas, M. G. Tjoelker, E. J. Veneklaas, and R. Villar. 2004. The worldwide leaf economics spectrum. Nature 428:821--827.
+
+\leavevmode\hypertarget{ref-Zavaleta2003}{}%
+Zavaleta, E. S., M. R. Shaw, N. R. Chiariello, B. D. Thomas, E. E. Cleland, C. B. Field, and H. a. Mooney. 2003. Grassland responses to three years of elevated temperature, CO 2, precipitation, and N deposition. Ecological Monographs 73:585--604.
 
 \end{ucmainmatter}
 \end{document}

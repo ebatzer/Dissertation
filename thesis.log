@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.9)  15 SEP 2020 09:32
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.28)  28 SEP 2020 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-09-06> (./ucthesis-CA2012.cls
+L3 programming layer <2020-09-24> (./ucthesis-CA2012.cls
 Document Class: ucthesis-CA2012 2012/05/08 Revision by Curtis Asplund of 1996/0
 6/26 JTW's modification of 1994/10/31 v3.0 University of California Thesis Clas
 s
@@ -37,7 +37,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 )
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.s
 ty
-Package: caption3 2020/09/11 v2.0b caption3 kernel (AR)
+Package: caption3 2020/09/17 v2.1b caption3 kernel (AR)
 \captionmargin=\dimen135
 \captionmargin@=\dimen136
 \captionwidth=\dimen137
@@ -223,7 +223,7 @@ Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
 )
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.st
 y
-Package: caption 2020/09/02 v3.5a Customizing captions (AR)
+Package: caption 2020/09/12 v3.5b Customizing captions (AR)
 \c@caption@flags=\count196
 \c@continuedfloat=\count197
 )
@@ -363,7 +363,7 @@ Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.
 sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetk
 eys.sty
@@ -382,11 +382,11 @@ sty
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
 xparse.sty
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-09-06 L3 programming layer (loader) 
+Package: expl3 2020-09-24 L3 programming layer (loader) 
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-xetex.def
-File: l3backend-xetex.def 2020-09-11 L3 backend support: XeTeX
+File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
 \g__graphics_track_int=\count282
 \l__pdf_internal_box=\box60
 \g__pdf_backend_object_int=\count283
@@ -606,7 +606,23 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 98.
 LaTeX Warning: Unused global option(s):
     [12pt].
 
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `abstract' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `methods' multiply defined.
+
+
+LaTeX Warning: Label `results' multiply defined.
+
+
+LaTeX Warning: Label `discussion' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -794,47 +810,146 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 ] [3
 
-] [4
-
-] (./thesis.toc [5
+] (./thesis.toc [4
 
 ])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[6] (./thesis.lot)
+[5] (./thesis.lot [6
+
+])
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[7
-
-] (./thesis.lof)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
+[7] (./thesis.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [8
 
-]
+] [9] [10])
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
+
+[11]
 Chapter 1.
 [1
 
 
-]
-Chapter 2.
-[2
+] [2]
+Overfull \hbox (0.38054pt too wide) in paragraph at lines 272--283
+\TU/lmr/m/n/12 Human alterations of the earth’s biogeochemical cycles have prod
+uced widespread changes
+ []
 
-]
-Chapter 3.
-[3
-
-]
-Chapter 4.
-
+[3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[4
+[4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [5] [6
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[6] [7] [8] [9]
+File: figure/Fig1_1.png Graphic file (type bmp)
+<figure/Fig1_1.png>
+
+LaTeX Warning: Float too large for page by 126.79584pt on input line 339.
+
+[10] [11] [12] [13] [14]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[15]
+File: figure/Fig1_2.png Graphic file (type bmp)
+<figure/Fig1_2.png>
+File: figure/Fig1_3.png Graphic file (type bmp)
+<figure/Fig1_3.png>
+[16] [17]
+File: figure/Fig1_4.png Graphic file (type bmp)
+<figure/Fig1_4.png>
+[18]
+File: figure/Fig1_5.png Graphic file (type bmp)
+<figure/Fig1_5.png>
+
+Underfull \vbox (badness 6542) has occurred while \output is active []
+
+[19] [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21] [22]
+Underfull \vbox (badness 1708) has occurred while \output is active []
+
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[26] [27]
+Chapter 2.
+File: figure/Fig2_1.png Graphic file (type bmp)
+<figure/Fig2_1.png>
+
+LaTeX Warning: Float too large for page by 24.59676pt on input line 534.
+
+File: figure/Fig2_2.png Graphic file (type bmp)
+<figure/Fig2_2.png>
+File: figure/Fig2_3.png Graphic file (type bmp)
+<figure/Fig2_3.png>
+File: figure/Fig2_4.png Graphic file (type bmp)
+<figure/Fig2_4.png>
+File: figure/Fig2_5.png Graphic file (type bmp)
+<figure/Fig2_5.png>
+File: figure/Fig2_6.png Graphic file (type bmp)
+<figure/Fig2_6.png>
+[28
+
+] [29] [30] [31] [32]
+Chapter 3.
+[33
+
+] [34]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[35]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[36] [37] [38] [39] [40] [41] [42] [43]
+File: figure/Fig3_2.png Graphic file (type bmp)
+<figure/Fig3_2.png>
+[44] [45]
+File: figure/Fig3_1.png Graphic file (type bmp)
+<figure/Fig3_1.png>
+
+Underfull \vbox (badness 6542) has occurred while \output is active []
+
+[46] [47]
+File: figure/Fig3_3.png Graphic file (type bmp)
+<figure/Fig3_3.png>
+
+Overfull \hbox (8.8486pt too wide) in paragraph at lines 845--867
+ [][] 
+ []
+
+File: figure/Fig3_4.png Graphic file (type bmp)
+<figure/Fig3_4.png>
+[48] [49] [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[51] [52]
+Underfull \hbox (badness 2418) in paragraph at lines 896--902
+[]\TU/lmr/m/n/12 Our partitioning results highlight the potential difficulty in
+ extending species-
+ []
+
+
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[53] [54] [55] [56] [57] [58
 
 ]
 Appendix A.
@@ -842,21 +957,24 @@ File: figure/AppFig1_1.png Graphic file (type bmp)
 <figure/AppFig1_1.png>
 File: figure/AppFig1_2.png Graphic file (type bmp)
 <figure/AppFig1_2.png>
-[7
+[59
 
-] [8] [9] [10]
+] [60] [61] [62]
 Appendix B.
-[11
+[63
 
 ]
 Appendix C.
-[12
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[64
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13]
-Overfull \hbox (10.31267pt too wide) in paragraph at lines 468--482
+[65]
+Overfull \hbox (10.31267pt too wide) in paragraph at lines 1178--1192
  [][] 
  []
 
@@ -866,25 +984,51 @@ File: figure/AppFig3_2.png Graphic file (type bmp)
 <figure/AppFig3_2.png>
 File: figure/AppFig3_3.png Graphic file (type bmp)
 <figure/AppFig3_3.png>
-[14] [15] [16] [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
-[18
+[66] [67] [68] [69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[70
+
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[74]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[76]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1375.
+[77]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1375.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 506.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1375.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AD1124FBE08F5B58F2FD7DAD42B9D9C3;1227.
+(rerunfilecheck)             Checksum: D320B3DE9E95422C77337B28675EDFBA;1428.
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 19475 strings out of 481649
- 344372 string characters out of 5930265
- 696899 words of memory out of 5000000
- 36328 multiletter control sequences out of 15000+600000
- 542637 words of font info for 73 fonts, out of 8000000 for 9000
+ 19598 strings out of 481648
+ 346556 string characters out of 5930233
+ 709420 words of memory out of 5000000
+ 36432 multiletter control sequences out of 15000+600000
+ 542661 words of font info for 76 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 44i,10n,50p,812b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,50p,1889b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (26 pages).
+Output written on thesis.pdf (88 pages).

@@ -1,6 +1,6 @@
 ---
 # UCD thesis fields
-title: "Population genetics of a frog you've never heard of"
+title: "The Diversity and Composition of Grassland Ecosystems Under Global Change"
 author: "Evan E. Batzer"
 year: "2020"
 month: "October"
@@ -12,11 +12,10 @@ chair: "Valerie Eviner"
 signature1: "Susan Harrison"
 signature2: "Andrew Latimer"
 abstract: |
-  "Frogs are great. Ribbit Ribbit."
+  ""
 acknowledgments: |
-  "My acknowledgments"
-dedication: |
-  "My dedication"
+  "Thank you to everyone"
+
 # End of UCD thesis fields
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site

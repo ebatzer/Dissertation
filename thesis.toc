@@ -1,17 +1,21 @@
-\contentsline {chapter}{Abstract}{iv}{Doc-Start}%
-\contentsline {chapter}{List of Tables}{vii}{chapter*.2}%
+\contentsline {chapter}{Abstract}{iii}{Doc-Start}%
+\contentsline {chapter}{List of Tables}{vi}{chapter*.2}%
 \contentsline {chapter}{List of Figures}{viii}{chapter*.3}%
-\contentsline {chapter}{\numberline {1}UCD thesis fields}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}The ``Neutral Theory'' of Niche Dimensionality}{2}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Nitrogen enrichment has scale-dependent effects on plant diversity in California grasslands.}{3}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Climate drives transitions between vegetation states in California grasslands.}{4}{chapter.4}%
-\contentsline {section}{Abstract}{5}{section*.4}%
-\contentsline {section}{Introduction}{5}{section*.5}%
-\contentsline {section}{Methods}{5}{section*.6}%
-\contentsline {section}{Results}{5}{section*.7}%
-\contentsline {section}{Discussion}{5}{section*.8}%
-\contentsline {chapter}{Conclusion}{6}{chapter*.9}%
-\contentsline {chapter}{\numberline {A}Supporting information for Chapter 1}{7}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Supporting information for Chapter 2}{11}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Supporting information for Chapter 3}{12}{appendix.C}%
-\contentsline {chapter}{References}{18}{appendix*.21}%
+\contentsline {chapter}{\numberline {1}The ``Neutral Theory'' of Niche Dimensionality}{1}{chapter.1}%
+\contentsline {section}{Abstract}{2}{section*.4}%
+\contentsline {section}{Introduction}{3}{section*.5}%
+\contentsline {section}{Methods}{7}{section*.6}%
+\contentsline {section}{Results}{16}{section*.8}%
+\contentsline {section}{Discussion}{23}{section*.15}%
+\contentsline {chapter}{\numberline {2}Nitrogen enrichment has scale-dependent effects on plant diversity in California grasslands.}{28}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Climate drives transitions between vegetation states in California grasslands.}{33}{chapter.3}%
+\contentsline {section}{Abstract}{33}{section*.22}%
+\contentsline {section}{Introduction}{34}{section*.23}%
+\contentsline {section}{Methods}{38}{section*.24}%
+\contentsline {section}{Results}{43}{section*.26}%
+\contentsline {section}{Discussion}{52}{section*.33}%
+\contentsline {chapter}{Conclusion}{58}{chapter*.34}%
+\contentsline {chapter}{\numberline {A}Chapter 1 Supporting Information}{59}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Chapter 2 Supporting Information}{63}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Chapter 3 Supporting Information}{64}{appendix.C}%
+\contentsline {chapter}{References}{70}{appendix*.46}%
