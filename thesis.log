@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.28)  29 SEP 2020 10:51
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.28)  29 SEP 2020 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -816,34 +816,35 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[5] (./thesis.lot [6
-
-])
+[5] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[7] (./thesis.lof
+[6
+
+] (./thesis.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8
+[7
 
-] [9] [10])
+])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[11]
+[8]
 Chapter 1.
 [1
 
 
-] [2]
-Overfull \hbox (0.38054pt too wide) in paragraph at lines 272--283
+]
+Chapter 2.
+[2
+
+] [3]
+Overfull \hbox (0.38054pt too wide) in paragraph at lines 277--288
 \TU/lmr/m/n/12 Human alterations of the earth’s biogeochemical cycles have prod
 uced widespread changes
  []
-
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -851,36 +852,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[6] [7] [8] [9]
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[7] [8]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[9] [10]
 File: figure/Fig1_1.png Graphic file (type bmp)
 <figure/Fig1_1.png>
 
-LaTeX Warning: Float too large for page by 126.79584pt on input line 339.
+LaTeX Warning: Float too large for page by 126.79584pt on input line 344.
 
-[10] [11] [12] [13] [14]
+[11] [12] [13] [14] [15]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[15]
+[16]
 File: figure/Fig1_2.png Graphic file (type bmp)
 <figure/Fig1_2.png>
 File: figure/Fig1_3.png Graphic file (type bmp)
 <figure/Fig1_3.png>
-[16] [17]
+[17] [18]
 File: figure/Fig1_4.png Graphic file (type bmp)
 <figure/Fig1_4.png>
-[18]
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[20]
 File: figure/Fig1_5.png Graphic file (type bmp)
 <figure/Fig1_5.png>
 
-Underfull \vbox (badness 6542) has occurred while \output is active []
-
-[19] [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[21] [22]
-Underfull \vbox (badness 1708) has occurred while \output is active []
-
-[23]
+[21] [22] [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [24]
@@ -889,167 +893,48 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[26] [27]
-Chapter 2.
-File: figure/Fig2_1.png Graphic file (type bmp)
-<figure/Fig2_1.png>
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Float too large for page by 24.59676pt on input line 534.
-
-File: figure/Fig2_2.png Graphic file (type bmp)
-<figure/Fig2_2.png>
-File: figure/Fig2_3.png Graphic file (type bmp)
-<figure/Fig2_3.png>
-File: figure/Fig2_4.png Graphic file (type bmp)
-<figure/Fig2_4.png>
-File: figure/Fig2_5.png Graphic file (type bmp)
-<figure/Fig2_5.png>
-File: figure/Fig2_6.png Graphic file (type bmp)
-<figure/Fig2_6.png>
-[28
-
-] [29] [30] [31] [32]
+[27] [28]
 Chapter 3.
+[29
+
+]
+Chapter 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[30
+
+] [31] [32
+
+]
+Chapter 5.
 [33
 
-] [34] [35]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+] [34
 
-[36] [37] [38] [39] [40] [41]
-Underfull \vbox (badness 1189) has occurred while \output is active []
-
-[42] [43]
-File: figure/Fig3_2.png Graphic file (type bmp)
-<figure/Fig3_2.png>
-[44]
-File: figure/Fig3_1.png Graphic file (type bmp)
-<figure/Fig3_1.png>
-[45] [46] [47]
-File: figure/Fig3_3.png Graphic file (type bmp)
-<figure/Fig3_3.png>
-
-Overfull \hbox (8.8486pt too wide) in paragraph at lines 845--867
- [][] 
- []
-
-File: figure/Fig3_4.png Graphic file (type bmp)
-<figure/Fig3_4.png>
-[48] [49] [50] [51] [52]
-Underfull \hbox (badness 2418) in paragraph at lines 896--902
-[]\TU/lmr/m/n/12 Our partitioning results highlight the potential difficulty in
- extending species-
- []
-
-
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[53] [54]
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[55] [56] [57] [58
-
-]
-Appendix A.
-File: figure/AppFig1_1.png Graphic file (type bmp)
-<figure/AppFig1_1.png>
-File: figure/AppFig1_2.png Graphic file (type bmp)
-<figure/AppFig1_2.png>
-[59
-
-] [60] [61] [62]
-Appendix B.
-[63
-
-]
-Appendix C.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[64
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[65]
-Overfull \hbox (10.31267pt too wide) in paragraph at lines 1178--1192
- [][] 
- []
-
-File: figure/AppFig3_1.png Graphic file (type bmp)
-<figure/AppFig3_1.png>
-File: figure/AppFig3_2.png Graphic file (type bmp)
-<figure/AppFig3_2.png>
-File: figure/AppFig3_3.png Graphic file (type bmp)
-<figure/AppFig3_3.png>
-[66] [67] [68] [69]
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
-[70
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[71]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[72]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[74]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[77]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[78]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[79]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[81]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[82]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[83]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[84]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1579.
-[85]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1579.
+] [35] [36] [37] [38] [39] [40]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 742.
+[41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 742.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1579.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1579.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 742.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 742.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D320B3DE9E95422C77337B28675EDFBA;1428.
+(rerunfilecheck)             Checksum: 4CC8573E7A54910DA26D5058BC6139AE;1329.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19598 strings out of 481648
- 346556 string characters out of 5930233
- 709419 words of memory out of 5000000
- 36432 multiletter control sequences out of 15000+600000
+ 19491 strings out of 481648
+ 344671 string characters out of 5930233
+ 686738 words of memory out of 5000000
+ 36341 multiletter control sequences out of 15000+600000
  542661 words of font info for 76 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  44i,12n,50p,1889b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (96 pages).
+Output written on thesis.pdf (49 pages).
