@@ -12,19 +12,25 @@ signature1: "Susan Harrison"
 signature2: "Andrew Latimer"
 abstract: |
   The recent history of the Earth's biosphere is dominated by human activity.
-  This period, considered by some to be a distinct geologic age -- the _Anthropocene_ --
+  Considered by some to be a distinct geologic age -- the _Anthropocene_ -- this period
   is characterized by rapid changes in the diversity and distribution of both flora 
   and fauna. Industrialization, land use change, fossil fuel combustion, and a 
   host of other drivers have altered key biological processes that govern
-  the composition and function of natural communities.
+  the composition and function of natural communities. Among the two most impactful 
+  stressors are the increased concentrations of limiting soil nutrients -- including 
+  plant-available nitrogen, phosphorous, and other micronutrients -- and shifting
+  patterns of temperature and precipitation through climate change. 
   
-  Like many ecologists, my dissertation explores the effects of these
-  human-caused environmental changes. I chose to focus on grasslands; a highly 
-  complex, dynamic ecosystem type that serve multiple roles in conservation,
-  carbon sequestration, and agriculture. Grasslands cover between 30 and 40 percent
-  of the earth's land area, including a large portion of California's Central Valley,
-  foothill, and coastal plain environments.
-  
+  Human-driven changes in soil nutrients and climate dynamics can be viewed through the 
+  lens of resource availability -- the growth of photosynthetic organisms is often controlled 
+  by the same set of factors, so changes to the distribution of limiting resources can
+  disrupt the core processes that allow species to coexist. While all ecosystems
+  may be expected to respond to these changes in some capacity, effects are best
+  captured in systems that are sensitive to many drivers: I chose to focus on grasslands. 
+  Grasslands cover between 30 and 40 percent of the earth's land area, including 
+  a large portion of California's Central Valley, foothills, and coastal plains. 
+  Their ubiquity and importance to both conservation and human enterprise underscores
+  the need to predict how grassland systems will change in coming years.
   
   This dissertation is organized in three chapters, each exploring relationships
   between resource availability and plant community composition from a different perspective.
@@ -36,20 +42,43 @@ abstract: |
   indicates that other mechanisms related to trade-offs in the use of specific soil 
   resources may also be an important driver. By comparing species responses following
   different nutrient enrichment treatments to a "neutral" model assuming identical
-  patterns of change, I develop a metric to quantify this treatment-specific variation.
+  patterns of change, I develop a metric to quantify this treatment-specific variation. 
+  Across sites, a one-dimensional pattern of change appears dominant, indicating that
+  the growth strategies of grassland plants tend to increase performance under low
+  or high resource environments, generally.
   
-  Following chapters focus more closely on California grasslands, a highly dynamic, 
-  species-rich, annual-dominated system. Chapter 2 explores the relationship
-  between sampling effort and nutrient-driven biodiversity loss. In experimental studies,
-  the area or duration used in sampling can have significant impacts on the 
-  direction or magnitude of observed results. However, the drivers responsible for
-  this _scale-dependence_ in experimental outcomes is not well understood. I expand
+  Following chapters focus more closely on California grasslands. 
+  Chapter 2 explores the relationship between sampling effort and nutrient-driven 
+  biodiversity loss. In experimental studies, the area or duration used in 
+  sampling can have significant impacts on the  direction or magnitude of 
+  observed results. However, the drivers responsible for this _scale-dependence_ 
+  in experimental outcomes is not well understood. I expand
   upon prior studies to provide a more complete evaluation of scale-dependent effects
   by relating richness changes to impacts on community evenness and spatial distribution.
   In California grasslands, I find that nitrogen enrichment rarely produces large-scale
   species extirpation, but effects on evenness are nearly constant across sampling areas.
+  While large-scale coexistence processes may facilitate species persistence at large
+  spatial extents, fertilization also appears to prompt increases in the spatial 
+  aggregation of individuals, which may produce species extirpation in the long term. 
   
-  In Chapter 3, I 
+  In Chapter 3, I evaluate changes in California grassland community composition 
+  in response to a different dimension of resource availability: interannual 
+  variation in temperature and precipitation. In Mediterranean systems, summer droughts
+  act as an important stressor that is hypothesized to control turnover between
+  distinct species groups. A key challenge to the evaluation of these species-climate
+  relationships, however, is historical contingency in vegetation composition --
+  non-independence between species abundances in a given year and the year previous, 
+  caused by local seed pools, plant-soil feedbacks, and other priority effects. To 
+  quantify how climate and priority interact, I employed a novel application of 
+  multi-state modeling to a long-term dataset capturing shifts in species abundances
+  during a period of wide-ranging variation in drought stress. I found that vegetation
+  change over time could be effectively captured through changes through several 
+  discrete community types, including an assemblage distinct from "classic" 
+  descriptions of vegetation dynamics. These states exhibited varied in their 
+  responses to drought stress and probability of transitioning to one another. Communities
+  dominated by invasive species, for example, performed poorly under severe drought,
+  but rarely transitioned to a native-dominated community when these species were 
+  seeding in previous years.
   
   
   
@@ -74,7 +103,7 @@ urlcolor: blue
 citecolor: blue
 lot: true
 lof: true
-# space_between_paragraphs: true
+space_between_paragraphs: true
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
 #header-includes:

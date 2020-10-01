@@ -133,12 +133,10 @@ In a separate subplot, aboveground biomass was collected yearly in two 1m x 10cm
 _Estimation of Treatment Response_
 
 Given that species abundances often form lognormal distributions in natural communities, raw species abundances were log¬2-transformed prior to model fitting [@Anderson2006]. Transformation yielded stronger adherence to model assumptions while providing a natural scale for model responses, where a coefficient value of 1 corresponds to a doubling in abundance per unit change of a given covariate.
-To estimate species responses to fertilization treatment, we fit multiple linear regression models to community composition data from each site: 
- 
+To estimate species responses to fertilization treatment, we fit multiple linear regression models to community composition data from each site:
 $$\mathbf{Y} = \mathbf{XB} + \mathbf{E}$$
 
 Where $\mathbf{Y}$ is an $[n x s]$ matrix of abundances of all $s$ species present within a site, $\mathbf{X}$ is an $[n \times p]$ matrix of covariates, $\mathbf{B}$ is a $[p \times s]$ matrix of coefficients, and $\mathbf{E}$ is an $[n x s]$ matrix of residuals. For sites containing three nutrient treatments, $i$ plots, and $j$ years, the coefficient matrix consists of the following terms:
-
 $$\mathbf{B} = \begin{matrix}
     [{\beta}_N, {\beta}_P , {\beta}_K, {\beta}_{Plot_1}, ... {\beta}_{Plot_i},
     {\beta}_{Year_1}, ... {\beta}_{Year_j}]
@@ -160,8 +158,6 @@ fig_nums_chap01(name = "fig-1-1")
 While multivariate linear modelling approaches may be used to estimate the rate of community change in response to treatment, their output does not provide a quantification of similarity among directions of change. To evaluate correlations among different trajectories of community response – proportional consistency across the responses of individual species that contribute to overall community response – we derive a geometric approach based on work of [@Cardinale2009]. 
 
 In the context of this study, we evaluate trajectories of community change based on experimental manipulations of three limiting nutrients -- N, P, and Kµ. While the following description presents details for this three-dimensional case, our approach may extend to any n-dimensional set of treatments. First, we define $\mathbf{X}$ as a matrix describing the treatment responses (columns) of all $S$ species observed in a community (rows). For simplicity in notation, we define each row vector consisting of the $i$th species responses to different treatments as $x_i$; column vectors describing the response of all species within the $j$th community to a given treatment as $x_{:,j}$. 
-  
-
 $$
 \mathbf{X} = 
 \begin{matrix}
@@ -186,7 +182,6 @@ Sp & Trt_1 & Trt_2 & Trt_3\\
 $$
 
 In this study, $\mathbf{X}$ was composed of the three vectors of estimated nutrient response coefficients computed in multiple regression model, B.We captured to total magnitude of compositional change in response to treatments using the Euclidean ($L_2$) norm of column (treatment response) vectors, defined as:
-
 $$\|\mathbf{x}_{:,j}\| = \sqrt{\sum_{i = 1}^{S} x_{i,j}^2}$$
 
 Where $i$ iterates over the $S$ species present within each community. 
@@ -200,26 +195,21 @@ However, bivariate relationships do not provide an aggregate measure of similari
 First, we define a vector of 1’s, $\mathbf{y}$, to form an estimate of species responses under our “neutral” null hypothesis. Under this neutral expectation, proportionally equal responses to treatment will be perfectly captured by variation along this 1:1:1 vector (Figure 1.1b).
 
 To evaluate the degree to which this null hypothesis captures the responses of species i, we define a vector, a, as the projection of observed responses onto the 1:1:1 vector, $\mathbf{y}$:
- 
 $$\mathbf{a}_i = \frac{\mathbf{y} \cdot \mathbf{x}_i}{\|\mathbf{y}\|}$$
   
 The orthogonal compliment of the projection, $\mathbf{b}$, defines the elements of $\mathbf{x}$ not captured by projection onto $\mathbf{y}$:
- 
 $$\mathbf{b}_i = \mathbf{x}_i - \mathbf{a}_i$$
  
 The fraction of variance in species response that is captured by this projection is thus defined as the ratio of squared norms (sums of squares) of $\mathbf{a}$ and $\mathbf{x}$:
-
 $$D = 1 - \frac{\|\mathbf{a}_i\|^2}{\|\mathbf{x}_i\|^2}$$
  
 Under our null hypothesis, the set of responses observed for species $i$, $\mathbf{x}_i$, will be of equal magnitude to the projection, $\mathbf{a}_i$,. The proportional magnitude of these vectors thus serves as a measure of response dimensionality for a given species, $i$.
 
 Extending this method to all $S$ observed species gives an aggregate measure of community dimensionality, bounded between 0 and 1:
-
 $$D = 1 - \frac{\sum_{i = 1}^{S}\|\mathbf{a}_i\|^2}{\sum_{i = 1}^{S}\|\mathbf{x}_i\|^2}$$
 
 Where dimensionality ($D$) is equal to one minus the ratio of summed magnitudes of change when projected on y over their observed magnitudes. When trajectories of community change are directionally identical (low dimensional), response vectors will be perfectly captured by this projection ($D = 0$). Orthogonal responses (high dimensional), where community responses to treatment are uncorrelated, will be poorly captured by this projection ($D = 1$).
 When possible, elements of the rejection, $\mathbf{b}$, may be used to visualize deviations from this 1:1:1 line (Figure 1.1c). In this study, we project this rejection component to two other dimensions orthogonal to $\mathbf{y}$, constituting a change of basis. Thus, the overall projection onto y and residual coordinates may be expressed as $XP^\top$, with projection matrix:
- 
 $$
 \mathbf{P} = 
 \begin{matrix}
@@ -341,10 +331,22 @@ Consistent with other studies of nutrient limitation in grassland systems, inclu
 Given constraints on nitrogen fixation in many terrestrial systems [@Vitousek1991], these results suggest that nitrogen availability may often act as a dominant niche axis of belowground resource availability. However, these findings may also be skewed by the disproportionate representation of Nutrient Network sites in temperate North America and Europe (Table A.1). In arid environments and those composed of more weathered soils, plant demands for phosphorous and other micronutrients may exceed those of nitrogen [@Handreck1997; @Vitousek2010]; experimental sites in Australia, for example, often exhibited the strongest community responses to phosphorous enrichment, on average (Table A.1). 
 Surprisingly, 24 percent (12 of 49) sites did not respond significantly to any of the three resource enrichment treatments, despite addition at a rate much greater than natural fluxes (@Vitousek1997; @Vitousek2010; Table A.1). This finding may be linked to other sources of resource limitation; qualitatively, sites with low precipitation (and likely higher interannual community turnover) appear more likely to exhibit non-significant responses to treatment. However, this may also be the result of our conservative analytical approach that first accounts for spatial and temporal variation in site community composition before testing for fertilization effects.
 After controlling for differences in the total magnitude of compositional change, directional comparison found support for a strongly one-dimensional pattern of variation at a global scale. The dominance of a single axis of variation implies the presence of a general trade-off between plant performance in low or high nutrient conditions, likely driven by asymmetric competition for light [@DeMalach2017a; @Dybzinski2007a]. This result supports other findings that identify light limitation as a primary mechanism of fertilization-driven compositional change [@Borer2014a; @Hautier2018]. 
+
+
 More broadly, our results likely reflect differentiation across a “fast-slow” economic spectrum of adaptation [@Reich2014]. Absent other drivers, such as disturbance, herbivores, or pathogens, we find evidence that plant growth strategies increase performance under high soil nutrient conditions, generally, as opposed to nutrient-specific trade-offs [@Grime1974;@Grime2006]. Physiological requirements of primary producers are known to be largely consistent in stoichiometry [@Agren2004; @Agren2008], and as a result, interacting species are more likely to vary in total resource demand, rather than affinity for specific soil nutrients. The development of resource-specific trade-offs appears an unlikely coexistence strategy in many grassland systems. In response to other environmental changes, functional strategies that promote growth across multiple niche dimensions appear common -- grassland plant responses to elevated fertility and herbivore exclosure are generally correlated [@Lind2013], and exhibit similar shifts in abundance across treatments removing different herbivore groups [@Seabloom2018].
 Despite the strength of a one-dimensional relationship across all species, we also found key deviations from this pattern based on plant functional strategies and site-specific contexts. In all sites, species in the Legume functional group responded more positively to potassium and phosphorous addition than nitrogen enrichment. While we still observed generally correlated patterns of change among these species, our findings suggest that nitrogen fixation may provide an additional advantage to effective competitors when other resources are supplied (@Bobbink1991;@Suding2005, Tognetti et al. _in review_) . Enzymatic costs of nitrogen fixation, which result in steeper requirements for phosphorous, potassium, sulfate, and other micronutrients relative to other plant functional types, may also contribute to this response [@McKey1994]. 
+
+
 In turn, pre-treatment legume abundance served as an important predictor of site-level response dimensionality. It appears likely that greater diversity in plant functional strategy at the species level contributes to more directionally varied responses within a community to fertilization by different nutrients [@Diaz2001]. However, distinctions between legumes and non-legume species are relatively coarse, and likely do not capture other key sources of plant functional variation and their relationship with fertilization. Further exploration of the links between plant nutrient response and other key trait dimensions, such as the leaf economic spectrum [@Wright2004], tissue stoichiometry [@Gusewell2004], and root physiology [@Kramer-Walter2016] may better distinguish species groups at a global level, as well as their relationship to site-specific effects. 
+
+
 At the site scale, we also found that community responses to fertilization treatments were strongly contingent on site-specific characteristics. Community variation in treatment response -- response dimensionality – was positively correlated with a series of covariates related to pre-treatment patterns of resource limitation and community interactions. We found increased response dimensionality in sites with low light interception, high productivity, and low spatial community turnover. This suggests that trade-offs in the belowground nutrient use are more common in systems where coexistence is maintained through local competition. While not presenting a direct mechanistic link to plant resource use strategies, these findings are supported by reports that functional trade-offs are often more constrained in stressful environments [@Dwyer2017]. In grasslands, disturbance and climatic stress frequently act as strong habitat filters, and their fluctuations are known to serve as important mechanisms of species coexistence [@Adler2006; @Chesson2000]. Under conditions where growing season precipitation strongly controls plant growth and fitness, for example, viable functional strategies are primarily distributed along a single axis related to relative growth rate and stress tolerance [@Angert2009].
+
+
 Like all studies exploring plant responses at the community, our results are subject to the properties of unique community assemblages occurring at each site. While able to infer some of these properties based on aggregate community attributes, such as biomass and functional group abundance, our results do not provide a link to species-level responses. Moreover, by limiting our analysis to species with well-characterized abundance shifts following fertilization, we necessarily exclude transient ones. These species can have important roles governing community response to nutrient enrichment and may exhibit functional strategies that are distinct from more persistent taxa (Wilfhart et al. _in review_). 
+
+
 Together, our findings present evidence for a generally one-dimensional axis of variation in plant response to fertilization, yet underscore the importance of site-specific constraints. Outcomes of plant competition for limiting soil nutrients are best predicted by relative differences in resource use [@Tilman1982], and represent a subset of many potential axes of niche differentiation [@Kraft2015]. As a result, the relative contribution of trade-offs mediated by light competition or competition for individual belowground resources will depend on the unique set of factors structuring community interactions in each context.
+
+
 Just as functional diversity and environmental characteristics are known to control ecosystem sensitivity global change, this study suggests that these same factors likely influence what mechanisms govern plant community response. Consideration of the direction of community change across multiple stressors thus forms an important complement to differences in their magnitude. Given that many ecosystems are subject to many global changes simultaneously, nuanced understand of their effects depends on identifying the trade-offs on which they operate. Stressors applied in tandem often have additive or super-additive effects on plant diversity and community composition [@Harpole2016; @Komatsu2019; @Zavaleta2003], though effect sizes alone do not indicate whether communities shift along one dimension or several. While plant responses to nutrient enrichment may be captured along a single axis in general, broad assumptions of community dynamics are unlikely to apply in all contexts. Instead, we emphasize that cross-site comparisons and deep consideration of the unique factors shaping compositional responses to global change are essential to effective management and conservation of ecosystem diversity and function. 

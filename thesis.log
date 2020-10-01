@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.28)  1 OCT 2020 10:27
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.28)  1 OCT 2020 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -810,37 +810,40 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 ] [3
 
-] [4] (./thesis.toc [5
+]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[4] [5] (./thesis.toc [6
 
 ])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[6] (./thesis.lot [7
+[7] (./thesis.lot [8
 
 ])
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[8] (./thesis.lof
+[9] (./thesis.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[9
+[10
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[10])
+[11])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[11] [12]
+[12] [13]
 Chapter 1.
 [1
 
 
 ] [2]
-Overfull \hbox (0.38054pt too wide) in paragraph at lines 312--323
+Overfull \hbox (0.38054pt too wide) in paragraph at lines 342--353
 \TU/lmr/m/n/12 Human alterations of the earth’s biogeochemical cycles have prod
 uced widespread changes
  []
@@ -861,42 +864,39 @@ Underfull \vbox (badness 4608) has occurred while \output is active []
 File: figure/Fig1_1.png Graphic file (type bmp)
 <figure/Fig1_1.png>
 [10] [11] [12] [13] [14]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [15]
 File: figure/Fig1_2.png Graphic file (type bmp)
 <figure/Fig1_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--477
+Underfull \hbox (badness 10000) in paragraph at lines 491--498
 
  []
 
 File: figure/Fig1_3.png Graphic file (type bmp)
 <figure/Fig1_3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--511
+Underfull \hbox (badness 10000) in paragraph at lines 501--532
 
  []
 
 [16] [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[18]
 File: figure/Fig1_4.png Graphic file (type bmp)
 <figure/Fig1_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--536
+Underfull \hbox (badness 10000) in paragraph at lines 535--557
 
  []
 
-
-Underfull \vbox (badness 6542) has occurred while \output is active []
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [19]
 File: figure/Fig1_5.png Graphic file (type bmp)
 <figure/Fig1_5.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1371) has occurred while \output is active []
 
 [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -908,10 +908,10 @@ Underfull \vbox (badness 1708) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4608) has occurred while \output is active []
 
 [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4608) has occurred while \output is active []
 
 [26] [27]
 Chapter 2.
@@ -949,7 +949,7 @@ Underfull \vbox (badness 6542) has occurred while \output is active []
 File: figure/Fig3_3.png Graphic file (type bmp)
 <figure/Fig3_3.png>
 
-Overfull \hbox (8.8486pt too wide) in paragraph at lines 887--909
+Overfull \hbox (8.8486pt too wide) in paragraph at lines 914--936
  [][] 
  []
 
@@ -959,7 +959,7 @@ File: figure/Fig3_4.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [51] [52]
-Underfull \hbox (badness 2418) in paragraph at lines 938--944
+Underfull \hbox (badness 2418) in paragraph at lines 965--971
 []\TU/lmr/m/n/12 Our partitioning results highlight the potential difficulty in
  extending species-
  []
@@ -990,7 +990,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [64]
-Overfull \hbox (10.31267pt too wide) in paragraph at lines 1214--1228
+Overfull \hbox (10.31267pt too wide) in paragraph at lines 1241--1255
  [][] 
  []
 
@@ -1052,12 +1052,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [84]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1633.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1660.
 [85]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1633.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1660.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1633.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1633.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1660.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1660.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: A51F90CA6F2B88B4DA02609CCDF14505;1380.
@@ -1074,4 +1074,4 @@ Here is how much of TeX's memory you used:
  15 hyphenation exceptions out of 8191
  44i,12n,50p,1514b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (97 pages).
+Output written on thesis.pdf (98 pages).
