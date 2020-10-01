@@ -1,7 +1,6 @@
 ---
-# UCD thesis fields
-title: "The Diversity and Composition of Grassland Ecosystems Under Global Change"
-author: "Evan E. Batzer"
+title: "Some Title Here -- Global Change? Grasslands?"
+author: "Evan Elliot Batzer"
 year: "2020"
 month: "October"
 program: "ECOLOGY"
@@ -12,11 +11,51 @@ chair: "Valerie Eviner"
 signature1: "Susan Harrison"
 signature2: "Andrew Latimer"
 abstract: |
-  ""
+  The recent history of the Earth's biosphere is dominated by human activity.
+  This period, considered by some to be a distinct geologic age -- the _Anthropocene_ --
+  is characterized by rapid changes in the diversity and distribution of both flora 
+  and fauna. Industrialization, land use change, fossil fuel combustion, and a 
+  host of other drivers have altered key biological processes that govern
+  the composition and function of natural communities.
+  
+  Like many ecologists, my dissertation explores the effects of these
+  human-caused environmental changes. I chose to focus on grasslands; a highly 
+  complex, dynamic ecosystem type that serve multiple roles in conservation,
+  carbon sequestration, and agriculture. Grasslands cover between 30 and 40 percent
+  of the earth's land area, including a large portion of California's Central Valley,
+  foothill, and coastal plain environments.
+  
+  
+  This dissertation is organized in three chapters, each exploring relationships
+  between resource availability and plant community composition from a different perspective.
+  
+  Chapter 1 uses data from a global experimental cooperative -- the _Nutrient Network_ --
+  to test hypotheses about compositional change driven by soil nutrient enrichment. While 
+  classic perspectives on resource competition suggest that nutrient enrichment controls
+  plant species abundances through increasing limitation by light, recent experimental evidence
+  indicates that other mechanisms related to trade-offs in the use of specific soil 
+  resources may also be an important driver. By comparing species responses following
+  different nutrient enrichment treatments to a "neutral" model assuming identical
+  patterns of change, I develop a metric to quantify this treatment-specific variation.
+  
+  Following chapters focus more closely on California grasslands, a highly dynamic, 
+  species-rich, annual-dominated system. Chapter 2 explores the relationship
+  between sampling effort and nutrient-driven biodiversity loss. In experimental studies,
+  the area or duration used in sampling can have significant impacts on the 
+  direction or magnitude of observed results. However, the drivers responsible for
+  this _scale-dependence_ in experimental outcomes is not well understood. I expand
+  upon prior studies to provide a more complete evaluation of scale-dependent effects
+  by relating richness changes to impacts on community evenness and spatial distribution.
+  In California grasslands, I find that nitrogen enrichment rarely produces large-scale
+  species extirpation, but effects on evenness are nearly constant across sampling areas.
+  
+  In Chapter 3, I 
+  
+  
+  
 acknowledgments: |
-  "Thank you to everyone"
+  Thank you
 
-# End of UCD thesis fields
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
@@ -35,7 +74,7 @@ urlcolor: blue
 citecolor: blue
 lot: true
 lof: true
-#space_between_paragraphs: true
+# space_between_paragraphs: true
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
 #header-includes:

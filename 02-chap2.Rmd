@@ -33,7 +33,7 @@ tab2_2 <- read_csv("data/Table2_2.csv")
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-1")
 ```
-![\label{fig-2-1}](figure/Fig2_1.png){width=30%}
+![\label{fig-2-1}](figure/Fig2_1.png){width=50% height=40%}
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-2")
@@ -43,19 +43,19 @@ fig_nums_chap02(name = "fig-2-2")
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-3")
 ```
-![\label{fig-2-3}](figure/Fig2_3.png){height=40%}
+![\label{fig-2-3}](figure/Fig2_3.png){height=50%}
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-4")
 ```
-![\label{fig-2-4}](figure/Fig2_4.png){height=40%}
+![\label{fig-2-4}](figure/Fig2_4.png){height=60%}
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-5")
 ```
-![\label{fig-2-5}](figure/Fig2_5.png){height=40%}
+![\label{fig-2-5}](figure/Fig2_5.png){height=30%}
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-6")
 ```
-![\label{fig-2-6}](figure/Fig2_6.png){height=40%}
+![\label{fig-2-6}](figure/Fig2_6.png){height=35%}
