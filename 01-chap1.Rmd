@@ -121,6 +121,8 @@ We examined 49 study sites that are part of the Nutrient Network, a cooperative,
 All nutrient enrichment treatments were applied at a rate of 10 g N, P, or K m-2 year-1 as time-release urea, triple-super-phosphate, and potassium sulfate, respectively. A micronutrient mix (17% Fe, 12% S , 6% Ca, 3% Mg, 2.5% Mn, 1% Zn, 1% Cu, 0.1% B, and 0.05% Mo) supplied as part of the Kµ treatment occurred only during the first treatment year at a rate of 100g m-2 to avoid accumulation toxicity.
 Because sites were initialized at different years and observed for different durations, we filtered our dataset to focus on sites with at least 5 years of treatment, a sufficient number of treatment years to have confidence in observed community responses. All sites used in this analysis also included a pre-treatment year (Median = 9.36, Min = 5, Max = 13), which  was used to establish baseline community composition metrics used in structural equation modeling. A full list of sites and their characteristics is presented in Table A.1.
 
+&nbsp;
+
 _Response Measurements_
 
 In each 5m x 5m plot, a 1m x 1m subplot was designated for community observation. Observers evaluated community composition annually, visually estimating areal cover of all species to the nearest 1 percent. Cover for each species was estimated independently, yielding total cover values that often exceeded 100% in vertically stratified communities. We focused our analysis on species with well-characterized responses to nutrient enrichment by including taxa that were observed in all treatments and present in at least 33% of all community observations within a site. Our filtering criteria included species across a range of mean abundance, and in most sites, captured a large proportion of the total observed community cover in control plots (Median = 0.88, Min = 0.36, Max = 0.99).
@@ -129,6 +131,8 @@ To evaluate relationships between plant life history strategy and fertilization 
 In most sites, photosynthetically active radiation (PAR) was measured using a ceptometer placed above the grassland canopy and at the soil surface. Light interception was estimated as the fraction of available PAR above the canopy relative to available PAR on the soil surface. 
 
 In a separate subplot, aboveground biomass was collected yearly in two 1m x 10cm strips of vegetation, air dried to a constant mass at 60º C, and weighed to the nearest 0.01 g. Biomass harvest locations were moved each year, to avoid effects of the destructive sampling. In the first year of study, 250g of soil was collected to estimate pre-treatment soil nutrient availability. Soil was analyzed for total %C and %N using dry combustion gas chromatography (COSTECH ESC 4010 Element Analyzer) at the University of Nebraska. Assessment of elemental soil phosphorous, potassium, soil pH, and soil texture were performed at A&L Analytical Laboratory in Memphis, TN. For more detail, please visit http://www.nutnet.org/exp_protocol.
+
+&nbsp;
 
 _Estimation of Treatment Response_
 
@@ -146,7 +150,7 @@ where community abundance is estimated as a function of the quantity of fertiliz
 
 Significance of model terms was evaluated using permutation-based ANOVA. We ordered model terms in an ANOVA with type “I” sums of squares to account for the spatial and temporal variation in community composition before testing for effects of fertilization treatment.  
 
-_Response Dimensionality_
+
 
 ```{r, results = "hide"}
 fig_nums_chap01(name = "fig-1-1")
@@ -154,6 +158,10 @@ fig_nums_chap01(name = "fig-1-1")
 
 ![Conceptual diagram illustrating the method used to assess dimensionality of community enrichment response. \newline (a) _Bivariate relationships between responses_: In this hypothetical example, a community of 3 species is subject to enrichment by three different resources. Estimated responses to these nutrients are standardized such that the total magnitude of community response to each nutrient is of unit length.  \newline (b) _Three-dimensional representation of responses_: The responses above are presented as a three-dimensional plot, with the vector $y$ representing the null hypothesis. The vector of responses estimated for each species, $x$, is projected onto $y$, producing the projection, $a$, and rejection, $b$ In this community, strong positive correlation across all three treatment dimensions yielded low overall response dimensionality, D = 0.04. \newline (c) _Two-dimensional plot of rejection vectors_: Residual elements of the response vector not captured by projection onto y may be visualized in two dimensions, $b_1$ and $b_2$.  \label{fig-1-1}](figure/Fig1_1.png){height=60%}
 
+
+\newline
+
+_Response Dimensionality_ 
 
 While multivariate linear modelling approaches may be used to estimate the rate of community change in response to treatment, their output does not provide a quantification of similarity among directions of change. To evaluate correlations among different trajectories of community response – proportional consistency across the responses of individual species that contribute to overall community response – we derive a geometric approach based on work of [@Cardinale2009]. 
 
@@ -210,6 +218,7 @@ $$D = 1 - \frac{\sum_{i = 1}^{S}\|\mathbf{a}_i\|^2}{\sum_{i = 1}^{S}\|\mathbf{x}
 
 Where dimensionality ($D$) is equal to one minus the ratio of summed magnitudes of change when projected on y over their observed magnitudes. When trajectories of community change are directionally identical (low dimensional), response vectors will be perfectly captured by this projection ($D = 0$). Orthogonal responses (high dimensional), where community responses to treatment are uncorrelated, will be poorly captured by this projection ($D = 1$).
 When possible, elements of the rejection, $\mathbf{b}$, may be used to visualize deviations from this 1:1:1 line (Figure 1.1c). In this study, we project this rejection component to two other dimensions orthogonal to $\mathbf{y}$, constituting a change of basis. Thus, the overall projection onto y and residual coordinates may be expressed as $XP^\top$, with projection matrix:
+
 $$
 \mathbf{P} = 
 \begin{matrix}
@@ -223,11 +232,19 @@ $$
 
 Where column vectors above are standardized to unit length.
 
+&nbsp;
+
 _Structural Equation Modeling_
 
 To capture variation in site-level community properties and abiotic characteristics, we generated a series of derived variables to supplement observations made during sampling. Climate characteristics were obtained from each site using BioClim, a publicly available dataset of global climate layers. Following prior analyses of the Nutrient Network dataset [@Grace2016a], we chose to represent climatic effects on plant growth through site mean temperature at the wettest quarter of year (BIO8) and site mean precipitation during the warmest quarter of the year (BIO18). 
+
+
 Community properties were generated from compositional data collected during pre-treatment sampling. To estimate community spatial heterogeneity (“Species Turnover”), we calculated beta diversity using the ratio of site-level species richness to mean plot-level species richness ($\beta=\frac{\gamma}{\alpha}$). Pre-treatment community composition was also used to calculate the relative abundance of plant functional groups present within each site (e.g. “Legume Abundance”), defined as the mean proportion of total cover across all plots. Estimates of the total site species pool (“Species Pool’) were calculated by the total number of unique species observed in the first 5 years of sampling, to account for varying durations of observation across sites.
+
+
 From sites with complete data (n = 35), we used structural equation modeling (SEM) to evaluate hypothesized links between environmental characteristics, community properties, and the dimensionality of community response to fertilization (“Response Dimensionality”). In our initial model, we specified pathways capturing site resource limitation and community characteristics. We incorporated pathways between composite variables describing soil nutrient availability (“Soil Resources”) and climatic conditions (“Climate”) on response dimensionality, also mediated through intermediate connections between community biomass (“Community Biomass”) and light availability (“Light Availability”). These same variables were also combined in pathways to estimate effects mediated by species turnover and the abundance of species in the legume functional group. After fitting this initial model, we evaluated model fit and pruned non-significant pathways to reduce model complexity. 
+
+&nbsp;
 
 _Statistical Software_
 

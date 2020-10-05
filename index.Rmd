@@ -1,5 +1,5 @@
 ---
-title: "Some Title Here -- Global Change? Grasslands?"
+title: "The effects of nutrient enrichment and drought on the composition and diversity of grassland plant communities across sites and scales"
 author: "Evan Elliot Batzer"
 year: "2020"
 month: "October"
@@ -11,79 +11,18 @@ chair: "Valerie Eviner"
 signature1: "Susan Harrison"
 signature2: "Andrew Latimer"
 abstract: |
-  The recent history of the Earth's biosphere is dominated by human activity.
-  Considered by some to be a distinct geologic age -- the _Anthropocene_ -- this period
-  is characterized by rapid changes in the diversity and distribution of both flora 
-  and fauna. Industrialization, land use change, fossil fuel combustion, and a 
-  host of other drivers have altered key biological processes that govern
-  the composition and function of natural communities. Among the two most impactful 
-  stressors are the increased concentrations of limiting soil nutrients -- including 
-  plant-available nitrogen, phosphorous, and other micronutrients -- and shifting
-  patterns of temperature and precipitation through climate change. 
+  The recent history of the Earth’s biosphere -- the Anthropocene -- is characterized by human activity. Increasingly, industrialization, land use change, fossil fuel combustion, and other drivers have altered key biological processes that govern the composition and function of natural communities. Among the two most impactful stressors are increased concentrations of limiting soil nutrients and shifting patterns of temperature and precipitation through climate change. Grasslands, like many plant ecosystems, are highly sensitive to these changes. Their widespread distribution and importance to both conservation and human enterprise underscores the need to understand how these global changes operate in grassland systems. However, climate change and nutrient deposition are known to produce complex effects on plant community structure; to effectively predict vegetation change, studies must integrate across multiple stressors, mechanisms, and scales of interest. This dissertation contributes to a deeper understanding of these complexities through a synthesis of large-scale experimentation and novel statistical methodology. 
+
+  Chapter 1 uses data from a global experimental cooperative -- the Nutrient Network -- to test contrasting hypotheses about compositional change driven by soil nutrient enrichment. While traditional perspectives on resource competition suggest that nutrient enrichment controls plant species abundances through increasing limitation by light, experimental evidence indicates that other mechanisms related to trade-offs in the use of specific soil resources may also be an important driver. Across 49 experimental sites, there was strong support for a “neutral” model, where plants respond similarly to the increased availability of soil nitrogen, phosphorous, or potassium. However, I also find that responses to treatments were more varied in sites characterized by higher average productivity and pre-treatment light limitation. Together, these findings indicate that grassland responses to fertilization tend to be driven by a trade-off between belowground and aboveground resource use, yet the predictability of these effects will depend on the inherent productivity and community structure of a given site.  
   
-  Human-driven changes in soil nutrients and climate dynamics can be viewed through the 
-  lens of resource availability -- the growth of photosynthetic organisms is often controlled 
-  by the same set of factors, so changes to the distribution of limiting resources can
-  disrupt the core processes that allow species to coexist. While all ecosystems
-  may be expected to respond to these changes in some capacity, effects are best
-  captured in systems that are sensitive to many drivers: I chose to focus on grasslands. 
-  Grasslands cover between 30 and 40 percent of the earth's land area, including 
-  a large portion of California's Central Valley, foothills, and coastal plains. 
-  Their ubiquity and importance to both conservation and human enterprise underscores
-  the need to predict how grassland systems will change in coming years.
+  Chapters 2 and 3 focus on California grasslands. Chapter 2 explores the effects of nitrogen enrichment on plant community diversity at multiple scales of organization, highlighting how shifts in community structure and distribution shape observed diversity loss at different sampling areas. Most nutrient addition studies have utilized small-scale plots (1m2), though it has been shown that the area sampled can have significant impacts on the direction or magnitude of observed results. While a few studies have demonstrated scale-dependence in effects on species richness, I expand upon these findings by relating effects across scales to impacts on total community richness, community evenness, and spatial organization of vegetation. I find that nitrogen enrichment rarely produces large-scale species extirpation, but effects on evenness are nearly constant across sampling areas. While large-scale coexistence processes may facilitate species persistence at large spatial extents, fertilization also prompts increases in individual spatial aggregation, which may produce species extirpation in the long term.
   
-  This dissertation is organized in three chapters, each exploring relationships
-  between resource availability and plant community composition from a different perspective.
+  In Chapter 3, I evaluate changes in California grassland community composition in response to interannual variation in temperature and precipitation. In Mediterranean systems, the quantity and timing of rainfall is hypothesized to control turnover between distinct species groups. A key challenge to the evaluation of these species-climate relationships, however, is historical contingency in vegetation composition – non-independence between species abundances in a given year and the year previous, caused by local seed pools, plant-soil feedbacks, and other priority effects. To quantify how climate and prior community composition interact, I employ a novel application of multi-state modeling to a long-term dataset. This approach expands on traditional methods, which qualitatively describe variation among a priori species groups, to directly quantify the number of discrete vegetation states within a system and the probability of transition between them. When applied to ten years of community observation across a range of climatic conditions, this method produced a revised partitioning of vegetation states: one “classic” species group was split into two separate states based on performance under extreme drought. In turn, climate patterns interacted with the emergent properties of each vegetation state to control which community types were most likely to dominate. Invasive species, for example, were unlikely to persist under drought; yet low precipitation only tended to favor vegetation transitions to a native dominated state when these species were previously seeded. 
   
-  Chapter 1 uses data from a global experimental cooperative -- the _Nutrient Network_ --
-  to test hypotheses about compositional change driven by soil nutrient enrichment. While 
-  classic perspectives on resource competition suggest that nutrient enrichment controls
-  plant species abundances through increasing limitation by light, recent experimental evidence
-  indicates that other mechanisms related to trade-offs in the use of specific soil 
-  resources may also be an important driver. By comparing species responses following
-  different nutrient enrichment treatments to a "neutral" model assuming identical
-  patterns of change, I develop a metric to quantify this treatment-specific variation. 
-  Across sites, a one-dimensional pattern of change appears dominant, indicating that
-  the growth strategies of grassland plants tend to increase performance under low
-  or high resource environments, generally.
-  
-  Following chapters focus more closely on California grasslands. 
-  Chapter 2 explores the relationship between sampling effort and nutrient-driven 
-  biodiversity loss. In experimental studies, the area or duration used in 
-  sampling can have significant impacts on the  direction or magnitude of 
-  observed results. However, the drivers responsible for this _scale-dependence_ 
-  in experimental outcomes is not well understood. I expand
-  upon prior studies to provide a more complete evaluation of scale-dependent effects
-  by relating richness changes to impacts on community evenness and spatial distribution.
-  In California grasslands, I find that nitrogen enrichment rarely produces large-scale
-  species extirpation, but effects on evenness are nearly constant across sampling areas.
-  While large-scale coexistence processes may facilitate species persistence at large
-  spatial extents, fertilization also appears to prompt increases in the spatial 
-  aggregation of individuals, which may produce species extirpation in the long term. 
-  
-  In Chapter 3, I evaluate changes in California grassland community composition 
-  in response to a different dimension of resource availability: interannual 
-  variation in temperature and precipitation. In Mediterranean systems, summer droughts
-  act as an important stressor that is hypothesized to control turnover between
-  distinct species groups. A key challenge to the evaluation of these species-climate
-  relationships, however, is historical contingency in vegetation composition --
-  non-independence between species abundances in a given year and the year previous, 
-  caused by local seed pools, plant-soil feedbacks, and other priority effects. To 
-  quantify how climate and priority interact, I employed a novel application of 
-  multi-state modeling to a long-term dataset capturing shifts in species abundances
-  during a period of wide-ranging variation in drought stress. I found that vegetation
-  change over time could be effectively captured through changes through several 
-  discrete community types, including an assemblage distinct from "classic" 
-  descriptions of vegetation dynamics. These states exhibited varied in their 
-  responses to drought stress and probability of transitioning to one another. Communities
-  dominated by invasive species, for example, performed poorly under severe drought,
-  but rarely transitioned to a native-dominated community when these species were 
-  seeding in previous years.
-  
-  
+  It is increasingly understood that integration across interacting sets of processes is needed to effectively understand the effects of global change on the diversity and composition of plant communities. Together, these three chapters highlight how local environmental characteristics, the scale of observation, and prior vegetation type combine to structure grassland responses to environmental changes. In doing so, my work contributes to a more complete understanding of ecological dynamics that is needed to better conserve and manage ecosystems in a rapidly changing world. 
   
 acknowledgments: |
-  Thank you
+  Placeholder
 
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site

@@ -55,43 +55,36 @@ Changing climatic extremes are important drivers of compositional dynamics, resp
 As ecological communities are increasingly subject to climate patterns outside historical bounds of variation, capturing the effects of unprecedented climatic extremes will be critical to generating new paradigms for conservation and management [@Hobbs2009]. 
 However, given the complexity of many factors that control species abundances, these changes are often difficult to predict.
 
-
-While species may exhibit varied tolerances to conditions imposed by heatwaves, droughts, and extreme cold, climate-driven changes in species relative abundances are also constrained by local interactions that govern community assembly [@Fukami2015; @Tylianakis2008].
+A central challenge to predicting climate-driven shifts in plant community composition is the influence of local biotic conditions that constrain species responses to environmental change. 
+While species may exhibit varied tolerances to conditions imposed by heatwaves, droughts, and extreme cold, local interactions are also known to moderate the effects of these stressors [@Fukami2015; @Tylianakis2008].
 Compensatory responses to climate change, for example, may be limited by competitors that inhibit growth and colonization [@Alexander2015]. 
 At the community scale, such local interactions depend on key emergent properties that vary as a function of community attributes, including species richness, functional diversity, or dominant taxa [@Chapin1997; @Emery2007]. 
-As a result, short-term compositional responses to climatic events are likely to depend on prior community configuration,  where the responses of different species assemblages vary in magnitude and direction [@Fukami2015].
+As a result, short-term compositional changes are likely to be historically contingent, where community responses to climate events vary in magnitude or direction depending on their prior composition [@Fukami2015].
 
+While it is understood that climate change will result in greater frequency of extreme events, it is often unclear to what degree ecosystem responses to these events will be contingent on community assembly. 
+As "no-analog" conditions are increasingly encountered in many systems [@Williams2007;@Hobbs2009], contemporary observation of climatic extremes presents an opportunity to evaluate the interaction of environmental change and biotic context. 
+In arid- and semi-arid grasslands, conceptual models of ecosystem dynamics [_sensu_ @Galatowitsch2012; @Ogden2005] provide a natural framework to examine complex relationships between climatic drivers and species assemblages. Applied ecologists in these systems often make management recommendations on “state-transition models” that identify the properties of different species groups (“states”) and their likely direction of change under various contexts ["transitions"; @Bestelmeyer2003]. 
+In response to climate events, these state-transition models can predict which communities are likely to persist in their current figuration and which are expected to transition to other state types.
 
-These complex interactions between climatic drivers and species assemblages are often summarized through conceptual models [@Galatowitsch2012; @Ogden2005]. 
-Models of arid- and semi-arid systems emphasize the importance of historical contingency in community assembly, where vegetation is often characterized by non-equilibrium dynamics. 
-In these systems, applied ecologists often make management recommendations on “state-transition models” that identify the properties of different species groups (“states”) and their likely direction of change under various contexts ["transitions"; @Bestelmeyer2003]. 
-In response to changing climate patterns, managers may use these models to predict which community states are likely to persist under climate extremes or reduce incursion of unfavorable vegetation types.
-
-
-Long-term monitoring, particularly under changing conditions, provides an important way to evaluate and refine conceptual models. 
-As climate change effects continue to mount, management efforts are expected to increasingly rely on these models to predict vegetation dynamics under “no-analog” conditions [@Williams2007;@Hobbs2009]. 
-However, the emergence of novel species assemblages and non-intuitive mechanisms of change may complicate the use of classic models, which are often based on qualitative observation by experts. 
-Instead, climate change will likely increase the demand for data-driven approaches [@Allen-Diaz1998; @Bartolome2008]. 
+In contrast to traditional development of state-transition models, which are often based on qualitative observation by experts, data-driven approaches are better predisposed to capture effects of climate and historical contingency [@Allen-Diaz1998; @Bartolome2008. 
 Though still limited by available observations, these computational methods may better capture potential mechanisms  of change and rapidly update predictions as new information becomes available. 
-In grassland systems, clustering algorithms have shown promise in tests of expert models and in the tracking of community responses to variable grazing regimes and species invasions [e.g.; @Jackson2002; @Stein2016; @Stringham2003]. However, there appear to be few tests of their application to climate-driven vegetation turnover.
+In grassland systems, clustering algorithms have shown promise in tests of expert models and in the tracking of community responses to variable grazing regimes and species invasions [e.g.; @Jackson2002; @Stein2016; @Stringham2003].
+While there are few tests of their application to vegetation dynamics under climate change, quantitative state-transition models may provide a rigorous assessment of both the key community configurations that structure plant communities in a system, and their associated interactions with extreme events.
 
 
-California grasslands have long been a focal system in the study of non-equilibrium dynamics. 
 In California, climate change is predicted to produce a 50% increase in the frequency of extreme events by the end of the 21st century [@Yoon2015]. 
 California grasslands are particularly sensitive to climatic extremes, given compositional dynamics defined by a predominantly annual life history, climate sensitivity [@Hobbs2007], non-hierarchical competitive relationships [@Uricchio2019], and strong priority effects [@Young2014]. 
 In this system, state-transition models often decompose compositional turnover into variation between three species groups defined by shared life history strategy and history of colonization: (1) naturalized exotic annual grasses and forbs, (2) native perennial grasses and forbs, and (3) recently invasive exotic annual grasses. 
 
 Compositional shifts in California grasslands are thought to be governed by differences in fecundity, phenology, and plant-soil feedbacks that characterize these species groups [@Corbin2007]. 
-While this functional variation may govern responses to interannual climate variation [@Pitt1978], communities composed of different dominant species may also exhibit emergent properties that constrain subsequent compositional change.
-Invasive annual grasses, for example, produce thick litter layers that suppress competitor growth [@DiTomaso2008]. 
+While this functional variation may govern responses to interannual climate variation [@Pitt1978; @Laforgia2018], communities composed of different dominant species may also exhibit emergent properties that constrain subsequent compositional change.
+Invasive annual grasses, for example, produce thick litter layers that suppress competitor growth [@DiTomaso2008; @Laforgia2020]. 
 These litter feedbacks may enhance invasive grass persistence when future climatic conditions favor other species groups, particularly those that may exhibit limited recruitment capacity, such as native perennial grasses [@Seabloom2003].	
-
 
 While warming average temperatures in California are forecast to produce increases in the distribution and abundance of annual grasses across the state [@Sandel2012], the effects of changing climate variance are less understood. 
 Recent extreme climatic events, however, may provide insight into future vegetation dynamics. 
 A drought from 2011-2015, which included the driest period in recorded history, was observed to produce significant changes in the composition and diversity of many grassland communities [@Harrison2015; @Prugh2018].
 This event provides a unique opportunity to test conceptual models of California grassland community dynamics through monitoring of species abundance changes across different vegetation types.  
-
 
 In turn, the capture of these contingencies may actively inform ecosystem management. 
 Often focused on the establishment of native species and reduction in invasive species abundances, management of California’s grasslands under novel climatic conditions is likely to benefit from the application of modern computational tools to characterize vegetation change.
@@ -100,10 +93,15 @@ Quantitative description of community transitions between dominant species group
 
 Here, we assess interactions between community assembly and climatic variation on vegetation composition in California annual grasslands across a 10-year period encompassing extreme drought. 
 Using data from experimental plantings of three key grassland species groups – naturalized annual, native perennial, and invasive annual grasses — we test key assumptions of grassland community dynamics under extreme drought stress. 
-Specifically, we aim to identify (1) the species groups that best partition compositional change, and (2) how drought interacts with other drivers of vegetation turnover — assembly order and biotic resistance — to affect community composition. 
+
+Specifically, we ask: 
+
+1. What species groups best capture the key community configurations under varying climate conditions?
+
+2. How does prior community configuration constrain vegetation responses to climate shifts, including extreme drought? 
+
 
 ## Methods
-
 
 _Study site and Experimental Methods_
 
@@ -115,10 +113,12 @@ The site has a Mediterranean climate, experiencing a mean annual rainfall of 457
 In order to minimize the previously established seedbank, soil was disked, irrigated to stimulate germination, and sprayed with a broad-spectrum herbicide (glyphosate). Irrigation and herbicide treatments occurred twice in the early fall of 2007. 
 
 Seeds were planted to establish vegetation treatments representing commonly used species groups in California’s grasslands — native perennial grasses and forbs (“native”), naturalized annual grasses and forbs (“naturalized”), and invasive annual grasses (“invasive”; Table 3.1). 
+Species chosen for planting are commonly found in annual grasslands near our study site, and reflect distinctions often made in management applications. 
+"Native" species, for example, include a mixture of perennial grasses and native forbs commonly used in local restoration efforts that contrast with "invasive" grasses that are highly undesirable for both conservation and range management.
 
 Each group was planted alone, in all possible 2-group combinations, and all together in a 3-group combination. 
-Plots were 1.5m x 1.5m (2.25 m2), with 1m buffer between plots, and 8 replicates per treatment (56 plots total) laid out in a randomized block design. 
-In each plot, a total of 139 grams of seed was added, reflecting an average of 8,000 plants/m2 - a typical mature plant density in this system [@Heady1958]. 
+Plots were 1.5m x 1.5m (2.25 m^2^), with 1m buffer between plots, and 8 replicates per treatment (56 plots total) laid out in a randomized block design. 
+In each plot, a total of 139 grams of seed was added, reflecting an average of 8,000 plants/m^2^ - a typical mature plant density in this system [@Heady1958]. 
 For each monotypic community (e.g. native vs. invasive vs. naturalized), an equal proportion of seeds of each species were added. For community mixtures, an equal proportion of community type seed was added (e.g. in invasive + naturalized, 50% invasive, 50% naturalized seed), with equal proportion of individual species within each community type.
 
 
@@ -133,17 +133,18 @@ tab3_1[is.na(tab3_1)] = ""
 xtable(tab3_1, caption = "Species mixtures used in initial plot seeding. Distinctions between “Native”, “Naturalized”, and “Invasive” species groups reflect species origins in California grasslands.")
 ```
 
+\newline
 
 _State Classification_
 
-Prior to vegetation group classification, plant community observations were filtered to include only those species present within initial seeding mixtures and Bromus diandrus, a locally abundant annual grass that self-recruited into the experiment and is an important component of the California grassland type. 
-Despite regular weeding, a number of agricultural weeds (largely Convolvulus arvensis) occasionally recruited into plots from the seedbank and nearby fields and roadways over the course of our experiment. 
+Prior to vegetation group classification, plant community observations were filtered to include only those species present within initial seeding mixtures and _Bromus diandrus_, a locally abundant annual grass that self-recruited into the experiment and is an important component of the California grassland type. 
+Despite regular weeding, a number of agricultural weeds (largely _Convolvulus arvensis_) occasionally recruited into plots from the seedbank and nearby fields and roadways over the course of our experiment. 
 Due to the effects of weeding and generally low abundance, these species were removed from community analysis. 
 The resulting dataset captured 93% of the total vegetation abundance observed over the course of the experiment. 
 
 Algorithmic partitioning was used to determine core species groups that correlated in abundance over the course of our study. 
 It is important to note that partitioning is limited to the suite of observations made between 2008 - 2018, capturing n = 560 plot:year combinations. 
-This period includes a historic drought (2011-2015) and significantly wet year (2017), resulting in statistical groupings that are contingent upon the climatic regime and starting conditions imposed in experimental design.  
+This period includes a historic drought (2011-2015) and significantly wet year (2017). Statistical clustering of compositional variation was therefore a function of both the range of climatic conditions observed during our experiment, in addition to starting conditions imposed in experimental design.  
 
 Partitioning was performed using an unsupervised clustering algorithm, K-medoids clustering. 
 The K-medoids algorithm clusters data into k unique groups by identifying k medoid samples that best partition the total distance-based inertia of all observations. 
@@ -158,6 +159,7 @@ Indicator species analysis was performed using 9999 random permutations of state
 Clustering and diagnostics were generated using “cluster” [@Maechler2019] and “nbclust” [@Charrad2014]. 
 Community analyses were performed using “vegan” [@Oksanen2016].
 
+&nbsp;
 
 _Weather data_ 
 
@@ -190,6 +192,7 @@ Resulting values of SPEI were centered at the mean drought stress across overall
 
 SPEI calculations were performed with the “SPEI” package [@Begueria2014].
 
+&nbsp;
 
 _Construction of Multistate Models_
 
@@ -197,10 +200,9 @@ To quantify the probability of vegetation transitions, we fit a multistate model
 In this model, the probability that a given plot transitions from one vegetation state to another is estimated by a transition matrix, whose terms may also interact with different covariates. 
 
 We fit 8 candidate multi-state models to our data, beginning with a baseline model consisting of a transition matrix without influence of any covariates. 
-This base model was then further modified through inclusion of additional terms reflecting the influence of drought stress calculated over 1-, 2-, and 3-year intervals (SPEI), in addition initial planting composition (temporal priority effects). 
-Temporal priority was defined as a binary (1/0) variable describing whether indicator species of a given state were a component of the seeded species mixture. 
-We fit models consisting of only drought effects as covariates , temporal priority as a covariate, and models containing both drought and temporal priority as additive effects.
-
+This base model was then further modified through inclusion of additional terms reflecting the influence of drought stress calculated over 1-, 2-, and 3-year intervals (SPEI) in a given year, $t$, that modified the probability of transition from a state observed in a previous year, $t-1$. We also included covariates related to the influence of seeded species mixtures, which were assumed to have constant effects on transition probability across all years.
+Seeding effects (temporal priority) were defined as a binary (1/0) variable describing whether indicator species of a given state were a component of the seeded species mixture. 
+We fit models consisting of only drought effects as covariates, seeding as a covariate, and models containing both drought and seeding as additive effects.
 
 AIC scores were used to compare the relative fit of all potential candidate models. We selected the model with the lowest AIC score as our best fit model. 
 A table consisting of model descriptions and AIC scores is presented in Table C.4. Multistate model fitting and model selection was performed using the “msm” package. [@Jackson2011]
@@ -215,6 +217,7 @@ In the first year of observation (2008), plant communities were highly segregate
 Pairwise contrasts of community dissimilarity indicate clear distinctions in vegetation group establishment following seeding -- all planting mixtures containing the “naturalized annuals” group were similar in their species composition, as were mixtures composed of “invasive grasses” and “invasive grasses + native species”. 
 The single group “native species” treatment composition was also compositionally segregated from others.   
 
+&nbsp;
 
 _Partitioning vegetation into discrete states_
 
@@ -245,6 +248,8 @@ table_nums_chap03(name = "table3_3")
 xtable(tab3_3, caption = "Results of indicator species analysis following K-medoids clustering. High values of the indicator species statistic reflect strong associations between a taxon and a given state assignment. P-values calculated using 1,000 permutations.")
 ```
 
+\newline
+
 _Frequency of state assignments over time_
 
 The climatic conditions we observed included a period of normal to above-average water availability (2008 – 2011), followed by drought (2012 – 2016), and substantial water surplus  (2017; Figure 3.2a). 
@@ -268,32 +273,33 @@ Curiously, the frequency of Native Perennial communities increased slowly, yet s
 Closer inspection of plot-level state assignments demonstrated that conversion of any vegetation type to the Native Perennial state was rare in cases where native perennial grasses were not included in seeding mixtures (Table C.3).
 Once established, however, these communities were quite resistant to state transition, often maintaining their assignment for multiple years under variable climatic conditions.
 
+&nbsp;
 
-_Model selection_
+_Model Selection_
 
 We fit multi-state models to observed state assignment data to quantify likely pathways of vegetation transition across different state types, treatment combinations, and environmental contexts. 
 From model comparison, we found that that best fit models included both the influence of initial seeding composition and climate variation (Table C.4). 
 While both 1-year and 3-year cumulative drought stress models provided comparable fits, here we present results from the former due to lower AIC score and greater parsimony. 
 Chi-squared goodness of fit test of observed and expected state frequencies showed no significant deviations from model assumptions ($\chi_9^2 = 12, p > 0.20$). 
 
+&nbsp;
 
 _State Transitions_
 
-Multi-state modeling attributed our observed variation in state frequencies to several mechanisms of community turnover—drought response, invasion resistance, and recruitment limitation —that differed significantly between species groups (Figure 3.3, Table 3.3).
+Multi-state modeling attributed our observed variation in state frequencies to several mechanisms of community turnover that differed significantly between species groups (Figure 3.3, Table 3.3).
 	
 ```{r, results = "hide"}
 fig_nums_chap03(name = "fig-3-3")
 ```
-![State-transition representation of fitted multi-state model coefficients at baseline, assuming no effects of temporal priority and average drought stress (SPEI = 0). Labels refer to the probability a plot transitions between 2 different state assignments (arrows) or the probability a plot retains its assignment (circles) in consecutive years. Circles and arrows are scaled in diameter or color, respectively, by the probability of state assignment transition. \label{fig-3-3}](figure/Fig3_3.png){height=80% width=100%}
+![State-transition representation of fitted multi-state model coefficients at baseline, assuming no effects of seeding composition and average drought stress (SPEI = 0). Labels refer to the probability a plot transitions between 2 different state assignments (arrows) or the probability a plot retains its assignment (circles) in consecutive years. Circles and arrows are scaled in diameter or color, respectively, by the probability of state assignment transition. \label{fig-3-3}](figure/Fig3_3.png){height=80% width=100%}
 
 State resistance, the probability of a community changing its state assignment in a subsequent year, varied significantly across the four vegetation types. 
-Baseline transition matrix values in our model, which assume drought stress equivalent to the long-term average (i.e. SPEI = 0) and no effects of temporal priority, estimated that the Festuca-B.hordeaceus state was more likely to undergo transition than any of the other state types (Figure 3.3, Table 3.3).
+Baseline transition matrix values in our model, which assume drought stress equivalent to the long-term average (i.e. SPEI = 0) and no effects of seeding, estimated that the Festuca-B.hordeaceus state was more likely to undergo transition than any of the other state types (Figure 3.3, Table 3.3).
 Whether driven by competitive differences or interannual feedbacks, the short-term predominance of this community type may be the result of an inherent lack of resistance to colonization by other species groups.  
 
 Invasive Annual and Avena-B. diandrus vegetation states that characterized most plant communities exhibited contrasting relationships with drought stress (SPEI; Table 3.3). 
 Estimated transition probabilities from the Invasive Annual state were negatively correlated with drought stress (SPEI hazard ratio < 1), indicating increased state stability when precipitation is above average. 
 Avena-B. diandrus communities, on the other hand, were estimated to arise more frequently from the Invasive Annual state and maintain this configuration with greater probability under drought (SPEI hazard ratio > 1). 
-These state-specific responses to water availability appears likely to mediate long-term patterns of vegetation turnover between these community types, though our inference is limited by available data on observed community trajectories post-drought.   
 
 
 ```{r, results = "hide"}
@@ -304,10 +310,9 @@ table_nums_chap03(name = "table3_2")
 xtable(tab3_2, caption = "Parameter estimates of the best fit multi-state model (Model 6). For each state assignment, potential state assignments in subsequent years (Transitions) and their associated probabilities (with 95 percent confidence intervals) are reported. Covariate effects reported as hazard ratios, where superscripts correspond to statistical significance: $` = P < 0.1; * = P < 0.05; ** = P < 0.01$")
 ```
 
-In contrast to states which exhibited linearly correlated responses to drought stress, plots characterized by the Native Perennial state displayed complex interactions between effects of drought stress  and initial planting composition (Figure 3.4, Table 3.3). 
+In contrast to states which exhibited linearly correlated responses to drought stress, plots characterized by the Native Perennial state displayed complex interactions between effects of drought stress and initial planting composition (Figure 3.4, Table 3.3). 
 The probability of community transition to the Native Perennial state significantly increased under both positive and negative values of SPEI, depending on prior configuration;  Invasive Annual communities were more likely to transition to a Native Perennial state under drought, while Avena-B. diandrus communities were more likely to do so with increased water availability.
 Critically, these transitions were strongly affected by seeding treatments, where plots seeded with native perennial grasses were significantly more likely to transition (Temporal Priority hazard ratios > 1; Table 3.3). 
-This finding suggests that Native Perennial species may be broadly tolerant of climatic variation but limited in their capacity to dominate communities when their propagules are not supplemented.  
 
 ```{r, results = "hide"}
 fig_nums_chap03(name = "fig-3-4")
@@ -327,7 +332,7 @@ In this study, we found evidence that core community assemblages under extreme d
 Classic conceptual models that describe vegetation through three discrete state types failed to capture community turnover as effectively as a four-state model that partitioned the traditional “Naturalized Annual Grasses” state into two separate groups defined by B. hordeaceous and F. perennis, or A. fatua and B. diandrus. 
 This result is particularly striking given the structure imposed by our initial planting composition.
 
-While  exotic grasses in California are often expected to share similar climatic tolerances due to their annual life history strategy [@Sandel2012], the unique conditions imposed by extreme drought may have crossed previously unobserved thresholds to separate “winners” and “losers” within functional groups [@Prugh2018]. 
+Despite similar life history strategies and observed climate responses [@Sandel2012], short-term persistence of the B. hordeaceous-F.perennis state and subsequent increases in the A. fatua-B. diandrus state suggest that the unique conditions imposed by extreme drought may have crossed previously unobserved thresholds to separate “winners” and “losers” within functional groups [@Prugh2018]. 
 The mechanism of this partitioning is unclear, but it appears likely that extreme events may operate on secondary divisions within the “Naturalized Annual Grass” group. 
 B. diandrus, for example, is a more common dominant in Southern California grasslands [@Barbour2007], and may exhibit adaptations that provide a competitive advantage under lower water availability. 
 In contrast, F. perennis tends to be active later into the dry season, and likely fares poorly in drought.
@@ -345,6 +350,7 @@ As these results collectively demonstrate, refinement of conceptual ecosystem mo
 Our findings underscore the need for analytical approaches able to critically evaluate these conceptual tools. 
 Particularly in rangeland systems, which decompose community dynamics into fluctuations between species groups, clustering approaches may effectively capture the novel, site-specific community assemblages that are likely to arise under climate change. 
 
+&nbsp;
 
 _Contingency in vegetation dynamics_
 
@@ -368,6 +374,7 @@ Though limited to short-term recovery, our findings indicate that state persiste
 Compositional changes following climate events can produce long-lasting effects on successional trajectories, where post-drought species assemblages exhibit strong persistence or altered pathways of community change [@Kreyling2011]. 
 Other studies of drought effects in California grasslands show similar trends, in which community recovery lags behind climate trends [@Harrison2018]; or exhibits selective pathways of change, where return to only a subset of initial state types is possible [@Larios2013].
 
+&nbsp;
 
 _Implications for Restoration and Management_
 
@@ -387,6 +394,7 @@ Growth of ruderal weeds appears common following management in California grassl
 Generally, our findings underscore the potential value of maintaining functional and taxonomic diversity in restoration and management [@Funk2008] . 
 Particularly in highly dynamic systems where environmental fluctuations drive turnover, long-term ecosystem health may depend on turnover among desirable community types–the maintenance of multiple potential vegetation states can maintain favorable pathways of compositional change following disturbance that may otherwise favor spread of undesirable species [@Hoover2014; @Griffin-Nolan2019; @Wilcox2020]. 
 
+&nbsp;
 
 _Future Directions_
 
