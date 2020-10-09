@@ -4,7 +4,7 @@
 
 Evan E. Batzer^1\*^ and Valerie T. Eviner^1^
 
-1. Department of Plant Sciences, University of California, Davis
+1. Department of Plant Sciences, University of California, Davis, USA
 
 ```{r setup_chap02, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)

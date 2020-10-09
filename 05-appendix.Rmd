@@ -28,11 +28,17 @@ options(xtable.comment = FALSE, xtable.include.rownames=FALSE)
 apptab1_1 <-  read_csv("data/App1_1.csv", col_types = "ccccccccccc")
 apptab1_2 <-  read_csv("data/App1_2.csv", col_types = "cccccccc")
 
+apptab2_1 <- read_csv("data/App2_1.csv", col_types = "ccc")
+apptab2_2 <- read_csv("data/App2_2.csv", col_types = "ccccccc")
+apptab2_3 <- read_csv("data/App2_3.csv", col_types = "ccccccc")
+apptab2_4 <- read_csv("data/App2_4.csv")
+apptab2_5 <- read_csv("data/App2_5.csv")
+
 apptab3_1 <- read_csv("data/App3_1.csv", col_types = "ccccccc")
 apptab3_2 <- read_csv("data/App3_2.csv")
 apptab3_3 <- read_csv("data/App3_3.csv", col_names = FALSE)
 apptab3_4 <- read_csv("data/App3_4.csv",  col_types = "ccccc")
-apptab3_5 <- read_csv("data/App3_5.csv", col_types = "ccccccnn")
+apptab3_5 <- read_csv("data/App3_5.csv", col_types = "cccccccc")
 ```
 
 # Chapter 1 Supporting Information
@@ -83,6 +89,97 @@ table_nums_appendix(name = "tableA1_2")
 ```
 
 # Chapter 2 Supporting Information
+
+
+```{r, results = "hide"}
+fig_nums_appendix(name = "app-2-1")
+```
+
+![Mantel correlogram \label{app-2-1}](figure/AppFig2_1.png){height=40% width=40%}
+
+
+```{r, results = "hide"}
+fig_nums_appendix(name = "app-2-2")
+```
+
+![Pre-treatment species abundances \label{app-2-2}](figure/AppFig2_2.png){height=50% width=50%}
+
+
+
+```{r, results = "hide"}
+fig_nums_appendix(name = "app-2-5")
+```
+
+![Effects of spatial distribution \label{app-2-5}](figure/AppFig2_5.png){height=70% width=70%}
+
+
+
+```{r, results = "hide"}
+table_nums_appendix(name = "tableA2_1")
+```
+
+```{r tableA2_1, echo = FALSE, include = TRUE, results = 'asis'}
+xtable(apptab2_1,
+             caption = "")
+```
+
+
+```{r, results = "hide"}
+fig_nums_appendix(name = "app-2-3")
+```
+
+![MCLA PERMANOVA \label{app-2-3}](figure/AppFig2_3.png){height=80% width=80%}
+
+
+```{r, results = "hide"}
+table_nums_appendix(name = "tableA2_2")
+```
+
+```{r tableA2_2, echo = FALSE, include = TRUE, results = 'asis'}
+xtable(apptab2_3,
+             caption = "")
+```
+
+
+
+```{r, results = "hide"}
+fig_nums_appendix(name = "app-2-4")
+```
+
+![SFREC PERMANOVA \label{app-2-4}](figure/AppFig2_4.png){height=80% width=80%}
+
+
+```{r, results = "hide"}
+table_nums_appendix(name = "tableA2_3")
+```
+
+```{r tableA2_3, echo = FALSE, include = TRUE, results = 'asis'}
+xtable(apptab2_3,
+             caption = "")
+```
+
+
+```{r, results = "hide"}
+table_nums_appendix(name = "tableA2_4")
+```
+
+```{r tableA2_4, echo = FALSE, include = TRUE, results = 'asis'}
+print(xtable(apptab2_4,
+             caption = ""),
+       scalebox = .55)
+```
+
+
+```{r, results = "hide"}
+table_nums_appendix(name = "tableA2_5")
+```
+
+```{r tableA2_5, echo = FALSE, include = TRUE, results = 'asis'}
+print(xtable(apptab2_5,
+             caption = ""),
+       scalebox = .55)
+```
+
 
 # Chapter 3 Supporting Information
 

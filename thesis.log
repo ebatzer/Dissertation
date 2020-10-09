@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.5)  5 OCT 2020 13:44
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.9)  9 OCT 2020 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2020-10-01>
-L3 programming layer <2020-09-24> xparse <2020-03-03> (./ucthesis-CA2012.cls
+L3 programming layer <2020-10-05> xparse <2020-03-03> (./ucthesis-CA2012.cls
 Document Class: ucthesis-CA2012 2012/05/08 Revision by Curtis Asplund of 1996/0
 6/26 JTW's modification of 1994/10/31 v3.0 University of California Thesis Clas
 s
@@ -218,7 +218,7 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.
 sty
-Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count268
 )
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.st
@@ -376,13 +376,14 @@ Package: everypage 2007/06/20 1.1 Hooks to run on every page
 \c@theorem=\count288
 \bibdata{references}
 No file thesis.bbl.
+\cslhangindent=\skip75
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
 sty
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
 xparse.sty
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-09-24 L3 programming layer (loader) 
+Package: expl3 2020-10-05 L3 programming layer (loader) 
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-xetex.def
@@ -392,7 +393,7 @@ File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
 \g__pdf_backend_object_int=\count290
 \g__pdf_backend_annotation_int=\count291
 ))
-Package: xparse 2020-05-15 L3 Experimental document command parser
+Package: xparse 2020-10-05 L3 Experimental document command parser
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
 xparse-generic.tex))
@@ -598,9 +599,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip75
+\Hy@SectionHShift=\skip76
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 98.
+Package hyperref Info: Option `breaklinks' set `true' on input line 106.
 
 LaTeX Warning: Unused global option(s):
     [12pt].
@@ -624,38 +625,38 @@ LaTeX Warning: Label `discussion' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-09.
+17.
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 109.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 10
-9.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 117.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 11
+7.
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -672,58 +673,58 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 109.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 109.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 109.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 109.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 109.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 109.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 109.
-LaTeX Font Info:    Redeclaring math accent \check on input line 109.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 109.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 109.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 109.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 109.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 117.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 117.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 117.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 117.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 117.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 117.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 117.
+LaTeX Font Info:    Redeclaring math accent \check on input line 117.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 117.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 117.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 117.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 117.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 109.
+(Font)              `operators' in the math version `normal' on input line 117.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 109.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 117.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 109.
+(Font)              `operators' in the math version `bold' on input line 117.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 109.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 117.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 109.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 109.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 109.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 109.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 109.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 117.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 109.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 109.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 109.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 109.
-Package hyperref Info: Link coloring ON on input line 109.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 117.
+Package hyperref Info: Link coloring ON on input line 117.
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -739,63 +740,63 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count316
 )
-LaTeX Info: Redefining \ref on input line 109.
-LaTeX Info: Redefining \pageref on input line 109.
-LaTeX Info: Redefining \nameref on input line 109.
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 133
+LaTeX Font Info:    Trying to load font information for U+msa on input line 141
 .
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 133
+LaTeX Font Info:    Trying to load font information for U+msb on input line 141
 .
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
-3.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 14
+1.
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 133.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
 
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/se-asc
@@ -831,17 +832,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11])
+[11] [12])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[12] [13]
+[13]
 Chapter 1.
 [1
 
 
 ] [2]
-Overfull \hbox (0.38054pt too wide) in paragraph at lines 283--294
+Overfull \hbox (0.38054pt too wide) in paragraph at lines 291--302
 \TU/lmr/m/n/12 Human alterations of the earth’s biogeochemical cycles have prod
 uced widespread changes
  []
@@ -859,7 +860,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: figure/Fig1_1.png Graphic file (type bmp)
 <figure/Fig1_1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--352
+Underfull \hbox (badness 10000) in paragraph at lines 353--360
 
  []
 
@@ -870,7 +871,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: figure/Fig1_2.png Graphic file (type bmp)
 <figure/Fig1_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--460
 
  []
 
@@ -878,14 +879,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--452
 File: figure/Fig1_3.png Graphic file (type bmp)
 <figure/Fig1_3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--486
+Underfull \hbox (badness 10000) in paragraph at lines 463--494
 
  []
 
 File: figure/Fig1_4.png Graphic file (type bmp)
 <figure/Fig1_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--511
+Underfull \hbox (badness 10000) in paragraph at lines 497--519
 
  []
 
@@ -928,7 +929,7 @@ Chapter 3.
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
 [37] [38] [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 692--712
+Underfull \hbox (badness 10000) in paragraph at lines 700--720
 
  []
 
@@ -936,7 +937,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 692--712
 File: figure/Fig3_2.png Graphic file (type bmp)
 <figure/Fig3_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--838
+Underfull \hbox (badness 10000) in paragraph at lines 812--846
 
  []
 
@@ -950,14 +951,14 @@ Underfull \vbox (badness 6542) has occurred while \output is active []
 File: figure/Fig3_3.png Graphic file (type bmp)
 <figure/Fig3_3.png>
 
-Overfull \hbox (8.8486pt too wide) in paragraph at lines 888--910
+Overfull \hbox (8.8486pt too wide) in paragraph at lines 896--918
  [][] 
  []
 
 File: figure/Fig3_4.png Graphic file (type bmp)
 <figure/Fig3_4.png>
 [50] [51] [52] [53]
-Underfull \hbox (badness 2418) in paragraph at lines 938--944
+Underfull \hbox (badness 2418) in paragraph at lines 946--952
 []\TU/lmr/m/n/12 Our partitioning results highlight the potential difficulty in
  extending species-
  []
@@ -972,20 +973,30 @@ File: figure/AppFig1_2.png Graphic file (type bmp)
 
 ] [61] [62] [63]
 Appendix B.
+File: figure/AppFig2_1.png Graphic file (type bmp)
+<figure/AppFig2_1.png>
+File: figure/AppFig2_2.png Graphic file (type bmp)
+<figure/AppFig2_2.png>
+File: figure/AppFig2_5.png Graphic file (type bmp)
+<figure/AppFig2_5.png>
+File: figure/AppFig2_3.png Graphic file (type bmp)
+<figure/AppFig2_3.png>
+File: figure/AppFig2_4.png Graphic file (type bmp)
+<figure/AppFig2_4.png>
 [64
 
-]
+] [65] [66] [67] [68] [69] [70] [71] [72]
 Appendix C.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[65
+[73
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[66]
-Overfull \hbox (10.31267pt too wide) in paragraph at lines 1220--1234
+[74]
+Overfull \hbox (10.31267pt too wide) in paragraph at lines 1463--1477
  [][] 
  []
 
@@ -995,37 +1006,13 @@ File: figure/AppFig3_2.png Graphic file (type bmp)
 <figure/AppFig3_2.png>
 File: figure/AppFig3_3.png Graphic file (type bmp)
 <figure/AppFig3_3.png>
-[67] [68] [69] [70]
-Underfull \vbox (badness 1902) has occurred while \output is active []
+[75] [76] [77] [78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[71
+[79
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[72]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[74]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[77]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[78]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [80]
@@ -1046,20 +1033,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [85]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[86] [87] (./thesis.aux)
+[86]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[87]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[88]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[89]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[90]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[91]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[92]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[93]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[94]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[95] [96] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A51F90CA6F2B88B4DA02609CCDF14505;1380.
+(rerunfilecheck)             Checksum: EEEC5A76E56BF195CC3F2316EB027336;1380.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19213 strings out of 479441
- 336627 string characters out of 5879418
- 725607 words of memory out of 5000000
- 38252 multiletter control sequences out of 15000+600000
+ 19252 strings out of 479440
+ 337357 string characters out of 5879400
+ 758910 words of memory out of 5000000
+ 38286 multiletter control sequences out of 15000+600000
  542661 words of font info for 76 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 70i,12n,78p,1608b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,12n,78p,1608b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (100 pages).
+Output written on thesis.pdf (109 pages).

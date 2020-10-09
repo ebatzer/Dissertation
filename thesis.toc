@@ -16,6 +16,6 @@
 \contentsline {section}{Discussion}{53}{section*.33}%
 \contentsline {chapter}{\numberline {A}Chapter 1 Supporting Information}{60}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Chapter 2 Supporting Information}{64}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Chapter 3 Supporting Information}{65}{appendix.C}%
-\contentsline {subsection}{Clustering Index Ranking Methods:}{66}{subsection*.40}%
-\contentsline {chapter}{References}{71}{appendix*.46}%
+\contentsline {chapter}{\numberline {C}Chapter 3 Supporting Information}{73}{appendix.C}%
+\contentsline {subsection}{Clustering Index Ranking Methods:}{74}{subsection*.50}%
+\contentsline {chapter}{References}{79}{appendix*.56}%

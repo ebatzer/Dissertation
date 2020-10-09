@@ -51,6 +51,14 @@
 % extracted from the output of `pandoc -s`
 %% Make R markdown code chunks work
 
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+  {\par}
+
+
 \ifxetex
   \usepackage{fontspec,xltxtra,xunicode}
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
@@ -169,13 +177,13 @@
     \addcontentsline{toc}{chapter}{Abstract}
 
     The recent history of the Earth's biosphere -- the Anthropocene -- is characterized by human activity. Increasingly, industrialization, land use change, fossil fuel combustion, and other drivers have altered key biological processes that govern the composition and function of natural communities. Among the two most impactful stressors are increased concentrations of limiting soil nutrients and shifting patterns of temperature and precipitation through climate change. Grasslands, like many plant ecosystems, are highly sensitive to these changes. Their widespread distribution and importance to both conservation and human enterprise underscores the need to understand how these global changes operate in grassland systems. However, climate change and nutrient deposition are known to produce complex effects on plant community structure; to effectively predict vegetation change, studies must integrate across multiple stressors, mechanisms, and scales of interest. This dissertation contributes to a deeper understanding of these complexities through a synthesis of large-scale experimentation and novel statistical methodology.
-    
+
     Chapter 1 uses data from a global experimental cooperative -- the Nutrient Network -- to test contrasting hypotheses about compositional change driven by soil nutrient enrichment. While traditional perspectives on resource competition suggest that nutrient enrichment controls plant species abundances through increasing limitation by light, experimental evidence indicates that other mechanisms related to trade-offs in the use of specific soil resources may also be an important driver. Across 49 experimental sites, there was strong support for a ``neutral'' model, where plants respond similarly to the increased availability of soil nitrogen, phosphorous, or potassium. However, I also find that responses to treatments were more varied in sites characterized by higher average productivity and pre-treatment light limitation. Together, these findings indicate that grassland responses to fertilization tend to be driven by a trade-off between belowground and aboveground resource use, yet the predictability of these effects will depend on the inherent productivity and community structure of a given site.
-    
+
     Chapters 2 and 3 focus on California grasslands. Chapter 2 explores the effects of nitrogen enrichment on plant community diversity at multiple scales of organization, highlighting how shifts in community structure and distribution shape observed diversity loss at different sampling areas. Most nutrient addition studies have utilized small-scale plots (1m2), though it has been shown that the area sampled can have significant impacts on the direction or magnitude of observed results. While a few studies have demonstrated scale-dependence in effects on species richness, I expand upon these findings by relating effects across scales to impacts on total community richness, community evenness, and spatial organization of vegetation. I find that nitrogen enrichment rarely produces large-scale species extirpation, but effects on evenness are nearly constant across sampling areas. While large-scale coexistence processes may facilitate species persistence at large spatial extents, fertilization also prompts increases in individual spatial aggregation, which may produce species extirpation in the long term.
-    
+
     In Chapter 3, I evaluate changes in California grassland community composition in response to interannual variation in temperature and precipitation. In Mediterranean systems, the quantity and timing of rainfall is hypothesized to control turnover between distinct species groups. A key challenge to the evaluation of these species-climate relationships, however, is historical contingency in vegetation composition -- non-independence between species abundances in a given year and the year previous, caused by local seed pools, plant-soil feedbacks, and other priority effects. To quantify how climate and prior community composition interact, I employ a novel application of multi-state modeling to a long-term dataset. This approach expands on traditional methods, which qualitatively describe variation among a priori species groups, to directly quantify the number of discrete vegetation states within a system and the probability of transition between them. When applied to ten years of community observation across a range of climatic conditions, this method produced a revised partitioning of vegetation states: one ``classic'' species group was split into two separate states based on performance under extreme drought. In turn, climate patterns interacted with the emergent properties of each vegetation state to control which community types were most likely to dominate. Invasive species, for example, were unlikely to persist under drought; yet low precipitation only tended to favor vegetation transitions to a native dominated state when these species were previously seeded.
-    
+
     It is increasingly understood that integration across interacting sets of processes is needed to effectively understand the effects of global change on the diversity and composition of plant communities. Together, these three chapters highlight how local environmental characteristics, the scale of observation, and prior vegetation type combine to structure grassland responses to environmental changes. In doing so, my work contributes to a more complete understanding of ecological dynamics that is needed to better conserve and manage ecosystems in a rapidly changing world.
 
     %\abstractsignature
@@ -552,7 +560,7 @@ Evan E. Batzer\textsuperscript{1*} and Valerie T. Eviner\textsuperscript{1}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Department of Plant Sciences, University of California, Davis
+  Department of Plant Sciences, University of California, Davis, USA
 \end{enumerate}
 \begin{figure}
 \centering
@@ -1134,7 +1142,242 @@ Azi & 0.4 & 0.68 & 0.47 & 1.3 & 1.35 & 1.44 & 0.32 \\
 \end{figure}
 \hypertarget{chapter-2-supporting-information}{%
 \chapter{Chapter 2 Supporting Information}\label{chapter-2-supporting-information}}
-
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth,height=0.4\textheight]{figure/AppFig2_1.png}
+\caption{Mantel correlogram \label{app-2-1}}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=0.5\textheight]{figure/AppFig2_2.png}
+\caption{Pre-treatment species abundances \label{app-2-2}}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{figure/AppFig2_5.png}
+\caption{Effects of spatial distribution \label{app-2-5}}
+\end{figure}
+\begin{table}[ht]
+\centering
+\begin{tabular}{lll}
+  \hline
+Abbreviation & Taxon & Functional Type \\ 
+  \hline
+AcmPar & Acmispon parviflorus & Legume \\ 
+  AgoHet & Agoseris heterophylla & Forb \\ 
+  AirCar & Aira caryophyllaea & Grass \\ 
+  BroDia & Bromus diandrus & Grass \\ 
+  BroHor & Bromus hordeaceous & Grass \\ 
+  BroMad & Bromus madritensis & Grass \\ 
+  ElyCap & Elymus caput-medusae & Grass \\ 
+  EreSet & Eremocarpus setigerus & Forb \\ 
+  EroBot & Erodium botrys & Forb \\ 
+  FesMyu & Festuca myuros & Grass \\ 
+  FesPer & Festuca perennis & Grass \\ 
+  GalPar & Galium parisiense & Forb \\ 
+  HolVir & Holocarpha virgata & Forb \\ 
+  HypGla & Hypochaeris glabra & Forb \\ 
+  LagRam & Lagophylla ramosissima & Forb \\ 
+  LinBic & Linanthus bicolor & Forb \\ 
+  LupBic & Lupinus bicolor & Legume \\ 
+  MadGra & Madia gracilis & Forb \\ 
+  MicCal & Micropus californica & Forb \\ 
+  TorNod & Torilis nodosa & Forb \\ 
+  TriDon & Trifolium microdon & Legume \\ 
+  TriDub & Trifolium dubium & Legume \\ 
+  VicSat & Vicia sativa & Legume \\ 
+   \hline
+\end{tabular}
+\caption{} 
+\end{table}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{figure/AppFig2_3.png}
+\caption{MCLA PERMANOVA \label{app-2-3}}
+\end{figure}
+\begin{table}[ht]
+\centering
+\begin{tabular}{lllllll}
+  \hline
+Source & DF & SS & R2 & F & P & X7 \\ 
+  \hline
+Block & 3 & 1.53996 & 0.5931 & 21.9146 & 0.001 & *** \\ 
+  Year & 2 & 0.22878 & 0.08811 & 4.8836 & 0.002 & ** \\ 
+  Treatment & 3 & 0.17522 & 0.06749 & 2.4935 & 0.012 & * \\ 
+  Block x Treatment & 9 & 0.51194 & 0.19717 & 2.4284 & 0.003 & ** \\ 
+  Residual & 6 & 0.14054 & 0.05413 &  &  &  \\ 
+  Total & 23 & 2.59644 & 1 &  &  &  \\ 
+   \hline
+\end{tabular}
+\caption{} 
+\end{table}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight]{figure/AppFig2_4.png}
+\caption{SFREC PERMANOVA \label{app-2-4}}
+\end{figure}
+\begin{table}[ht]
+\centering
+\begin{tabular}{lllllll}
+  \hline
+Source & DF & SS & R2 & F & P & X7 \\ 
+  \hline
+Block & 3 & 1.53996 & 0.5931 & 21.9146 & 0.001 & *** \\ 
+  Year & 2 & 0.22878 & 0.08811 & 4.8836 & 0.002 & ** \\ 
+  Treatment & 3 & 0.17522 & 0.06749 & 2.4935 & 0.012 & * \\ 
+  Block x Treatment & 9 & 0.51194 & 0.19717 & 2.4284 & 0.003 & ** \\ 
+  Residual & 6 & 0.14054 & 0.05413 &  &  &  \\ 
+  Total & 23 & 2.59644 & 1 &  &  &  \\ 
+   \hline
+\end{tabular}
+\caption{} 
+\end{table}
+\begin{table}[ht]
+\centering
+\scalebox{0.55}{
+\begin{tabular}{lllllrrrrrr}
+  \hline
+Site & Genus & Species & Group & Origin & Cover 2017 & Effect 2017 & Cover 2018 & Effect 2018 & Cover 2019 & Effect 2019 \\ 
+  \hline
+SFREC & Lagophylla & ramosissma & Forb & Nat & 9.57 & -0.61 & 8.27 & -1.05 & 13.34 & 2.28 \\ 
+  SFREC & Agoseris & heterophylla & Forb & Int & 16.39 & 6.02 & 9.14 & 6.32 & 10.59 & 7.96 \\ 
+  SFREC & Bromus & hordeaceous & Grass & Int & 7.44 & 2.27 & 7.93 & 3.54 & 10.41 & -2.73 \\ 
+  SFREC & Bromus & madritensis & Grass & Int & 6.62 & -2.15 & 5.59 & 0.03 & 9.04 & -4.65 \\ 
+  SFREC & Elymus & caput-medusae & Grass & Int & 4.47 & 2.67 & 7.72 & 2.92 & 6.22 & 1.78 \\ 
+  SFREC & Bromus & diandrus & Grass & Int & 7.45 & -1.62 & 9.51 & -3.35 & 6.02 & -3.05 \\ 
+  SFREC & Trifolium & dubium & Legume & Int & 8.21 & -3.60 & 7.60 & -3.89 & 4.66 & -2.84 \\ 
+  SFREC & Torilis & nodosa & Forb & Nat & 4.97 & -1.92 & 4.56 & -0.30 & 4.59 & -1.81 \\ 
+  SFREC & Vicia & sativa & Legume & Int & 5.81 & -1.99 & 6.88 & 0.35 & 4.49 & -1.26 \\ 
+  SFREC & Geranium & dissectum & Forb & Int & 4.37 & 0.10 & 6.14 & -2.32 & 4.10 & -0.06 \\ 
+  SFREC & Clarkia & Purpurea & Forb & Nat & 2.07 & -1.28 & 1.85 & -0.89 & 2.44 & -1.29 \\ 
+  SFREC & Acmispon & purshianus & Legume & Nat & 2.47 & -1.79 & 3.85 & -2.61 & 2.42 & -0.93 \\ 
+  SFREC & Aira & caryophyllaea & Grass & Int & 2.88 & 0.92 & 2.30 & -0.35 & 2.32 & 1.71 \\ 
+  SFREC & Bromus & sterilis & Grass & Int & 1.00 & 1.59 & 0.90 & -0.07 & 2.25 & -0.85 \\ 
+  SFREC & Cynosurus & echinatus & Grass & Int & 0.80 & 1.10 & 2.38 & 0.29 & 2.15 & 0.42 \\ 
+  SFREC & Galium & parisiense & Forb & Int & 0.00 & -0.00 & 2.09 & -0.00 & 2.05 & -0.45 \\ 
+  SFREC & Vulpia & myuros & Grass & Int & 0.66 & 0.37 & 1.26 & 0.95 & 1.65 & 1.87 \\ 
+  SFREC & Dichlostemma & capitatum & Forb & Nat & 0.06 & -0.06 & 0.00 & -0.00 & 1.44 & 0.40 \\ 
+  SFREC & Crucianella & angustilfolia & Forb & Int & 0.00 & 0.00 & 1.39 & -1.03 & 1.40 & -0.73 \\ 
+  SFREC & Briza & minima & Grass & Int & 1.55 & 0.29 & 1.25 & 0.70 & 1.31 & 0.16 \\ 
+  SFREC & Carduus & pachnocephalus & Forb & Int & 0.96 & 0.64 & 1.65 & 0.22 & 1.26 & 0.37 \\ 
+  SFREC & Trifolium & hirtum & Legume & Int & 2.23 & 0.35 & 1.41 & -0.94 & 1.05 & -0.37 \\ 
+  SFREC & Acmispon & parviflorus & Legume & Nat & 0.35 & -0.02 & 0.00 & 0.00 & 0.77 & -0.72 \\ 
+  SFREC & Elymus & glaucus & Grass & Nat & 0.85 & -0.31 & 1.02 & -0.17 & 0.74 & -0.20 \\ 
+  SFREC & Euphorbia & spathulata & Forb & Int & 0.14 & 0.44 & 0.84 & -0.17 & 0.64 & 0.56 \\ 
+  SFREC & Centaurea & melitensis & Forb & Int & 0.00 & 0.00 & 0.38 & -0.23 & 0.51 & 0.11 \\ 
+  SFREC & Avena & barbata & Grass & Int & 1.42 & -0.38 & 1.06 & 1.29 & 0.44 & 1.73 \\ 
+  SFREC & Navarretia & pubescens & Forb & Nat & 0.19 & 0.27 & 0.35 & 0.31 & 0.39 & 0.77 \\ 
+  SFREC & Madia & gracilis & Forb & Nat & 0.03 & 0.17 & 0.21 & 0.02 & 0.31 & 0.11 \\ 
+  SFREC & Daucus & pusillus & Forb & Int & 0.21 & -0.21 & 0.04 & 0.09 & 0.18 & -0.04 \\ 
+  SFREC & Petrorhagia & dubia & Forb & Int & 1.60 & -0.54 & 0.54 & -0.38 & 0.14 & 0.25 \\ 
+  SFREC & Bromus & carinatus & Grass & Nat & 0.00 & 0.00 & 0.24 & -0.24 & 0.12 & -0.12 \\ 
+  SFREC & Festuca & perennis & Grass & Int & 0.04 & 0.26 & 0.00 & 1.07 & 0.10 & -0.10 \\ 
+  SFREC & Cerastium & glomeratum & Forb & Int & 0.24 & -0.09 & 0.04 & 0.16 & 0.08 & 0.08 \\ 
+  SFREC & Tritileia & hyacinthina & Forb & Nat & 0.62 & 0.47 & 0.26 & -0.13 & 0.07 & 0.09 \\ 
+  SFREC & Tritileia & hyacinthina & Forb & Nat & 0.62 & 0.47 & 0.26 & -0.13 & 0.07 & 0.09 \\ 
+  SFREC & Lomatium & californicum & Forb & Nat & 0.03 & -0.03 & 0.03 & -0.03 & 0.07 & -0.07 \\ 
+  SFREC & Hypochaeris & glabra & Forb & Int & 0.00 & 0.00 & 0.00 & 0.00 & 0.06 & 0.14 \\ 
+  SFREC & Clatonia & perfoliata & Forb & Nat & 0.00 & 0.11 & 0.00 & 0.00 & 0.03 & 0.04 \\ 
+  SFREC & Eremocarpus & setigerus & Forb & Nat & 0.01 & 0.02 & 0.10 & -0.09 & 0.02 & 0.06 \\ 
+  SFREC & Tritileia & laxa & Forb & Nat & 0.03 & -0.03 & 0.04 & -0.03 & 0.01 & -0.00 \\ 
+  SFREC & Anagallis & arvensis & Forb & Int & 0.12 & 0.06 & 0.17 & -0.17 & 0.01 & 0.12 \\ 
+  SFREC & Erodium & botrys & Forb & Int & 0.58 & 0.13 & 0.18 & 0.20 & 0.01 & 0.17 \\ 
+  SFREC & Athysanus & pusillus & Forb & Nat & 0.06 & 0.13 & 0.00 & 0.00 & 0.01 & 0.03 \\ 
+  SFREC & Linanthus & bicolor & Forb & Nat & 0.12 & 0.30 & 0.09 & -0.09 & 0.01 & 0.30 \\ 
+  SFREC & Cardamine & oligosperma & Forb & Nat & 0.00 & 0.08 & 0.04 & 0.10 & 0.00 & -0.00 \\ 
+  SFREC & Githopsis & specularioides & Forb & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.12 \\ 
+  SFREC & Lactuca & serriola & Forb & Int & 2.46 & -2.22 & 0.15 & -0.15 & 0.00 & -0.00 \\ 
+  SFREC & Sherardia & arvensis & Forb & Int & 0.26 & 0.12 & 0.01 & 0.03 & 0.00 & 0.04 \\ 
+  SFREC & Dichlostemma & multiflorum & Forb & Nat & 0.00 & 0.00 & 0.03 & -0.03 & 0.00 & -0.00 \\ 
+  SFREC & Centaurea & solstitialis & Forb & Int & 0.20 & -0.20 & 0.37 & -0.37 & 0.00 & 0.00 \\ 
+  SFREC & Epilobium & brachycarpum & Forb & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Filago & gallica & Forb & Int & 0.12 & -0.05 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Linanthus & parviflora & Forb & Nat & 0.00 & -0.00 & 0.00 & 0.06 & 0.00 & 0.00 \\ 
+  SFREC & Odontostomum & hartwegii & Forb & Nat & 0.00 & 0.44 & 0.00 & 0.47 & 0.00 & 0.50 \\ 
+  SFREC & Githopsis & specularioides & Forb & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Sanicula & bipinnatifida & Forb & Nat & 0.00 & 0.00 & 0.03 & -0.03 & 0.00 & 0.00 \\ 
+  SFREC & Thysanocarpus & curvipes & Forb & Nat & 0.00 & 0.00 & 0.04 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Trifolium & microcephalum & Legume & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  MCLA & Trifolium & microdon & Legume & Nat & 0.02 & -0.02 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  MCLA & Trifolium & wildenovii & Legume & Nat & 0.00 & 0.05 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  MCLA & Vicia & sativa & Legume & Int & 0.00 & 0.00 & 2.34 & 1.54 & 0.00 & 0.00 \\ 
+  MCLA & Navarretia & pubescens & Forb & Nat & 0.15 & 0.09 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+   \hline
+\end{tabular}
+}
+\caption{} 
+\end{table}
+\begin{table}[ht]
+\centering
+\scalebox{0.55}{
+\begin{tabular}{lllllrrrrrr}
+  \hline
+Site & Genus & Species & Group & Origin & Cover 2017 & Effect 2017 & Cover 2018 & Effect 2018 & Cover 2019 & Effect 2019 \\ 
+  \hline
+SFREC & Lagophylla & ramosissma & Forb & Nat & 9.57 & -0.61 & 8.27 & -1.05 & 13.34 & 2.28 \\ 
+  SFREC & Agoseris & heterophylla & Forb & Int & 16.39 & 6.02 & 9.14 & 6.32 & 10.59 & 7.96 \\ 
+  SFREC & Bromus & hordeaceous & Grass & Int & 7.44 & 2.27 & 7.93 & 3.54 & 10.41 & -2.73 \\ 
+  SFREC & Bromus & madritensis & Grass & Int & 6.62 & -2.15 & 5.59 & 0.03 & 9.04 & -4.65 \\ 
+  SFREC & Elymus & caput-medusae & Grass & Int & 4.47 & 2.67 & 7.72 & 2.92 & 6.22 & 1.78 \\ 
+  SFREC & Bromus & diandrus & Grass & Int & 7.45 & -1.62 & 9.51 & -3.35 & 6.02 & -3.05 \\ 
+  SFREC & Trifolium & dubium & Legume & Int & 8.21 & -3.60 & 7.60 & -3.89 & 4.66 & -2.84 \\ 
+  SFREC & Torilis & nodosa & Forb & Nat & 4.97 & -1.92 & 4.56 & -0.30 & 4.59 & -1.81 \\ 
+  SFREC & Vicia & sativa & Legume & Int & 5.81 & -1.99 & 6.88 & 0.35 & 4.49 & -1.26 \\ 
+  SFREC & Geranium & dissectum & Forb & Int & 4.37 & 0.10 & 6.14 & -2.32 & 4.10 & -0.06 \\ 
+  SFREC & Clarkia & Purpurea & Forb & Nat & 2.07 & -1.28 & 1.85 & -0.89 & 2.44 & -1.29 \\ 
+  SFREC & Acmispon & purshianus & Legume & Nat & 2.47 & -1.79 & 3.85 & -2.61 & 2.42 & -0.93 \\ 
+  SFREC & Aira & caryophyllaea & Grass & Int & 2.88 & 0.92 & 2.30 & -0.35 & 2.32 & 1.71 \\ 
+  SFREC & Bromus & sterilis & Grass & Int & 1.00 & 1.59 & 0.90 & -0.07 & 2.25 & -0.85 \\ 
+  SFREC & Cynosurus & echinatus & Grass & Int & 0.80 & 1.10 & 2.38 & 0.29 & 2.15 & 0.42 \\ 
+  SFREC & Galium & parisiense & Forb & Int & 0.00 & -0.00 & 2.09 & -0.00 & 2.05 & -0.45 \\ 
+  SFREC & Vulpia & myuros & Grass & Int & 0.66 & 0.37 & 1.26 & 0.95 & 1.65 & 1.87 \\ 
+  SFREC & Dichlostemma & capitatum & Forb & Nat & 0.06 & -0.06 & 0.00 & -0.00 & 1.44 & 0.40 \\ 
+  SFREC & Crucianella & angustilfolia & Forb & Int & 0.00 & 0.00 & 1.39 & -1.03 & 1.40 & -0.73 \\ 
+  SFREC & Briza & minima & Grass & Int & 1.55 & 0.29 & 1.25 & 0.70 & 1.31 & 0.16 \\ 
+  SFREC & Carduus & pachnocephalus & Forb & Int & 0.96 & 0.64 & 1.65 & 0.22 & 1.26 & 0.37 \\ 
+  SFREC & Trifolium & hirtum & Legume & Int & 2.23 & 0.35 & 1.41 & -0.94 & 1.05 & -0.37 \\ 
+  SFREC & Acmispon & parviflorus & Legume & Nat & 0.35 & -0.02 & 0.00 & 0.00 & 0.77 & -0.72 \\ 
+  SFREC & Elymus & glaucus & Grass & Nat & 0.85 & -0.31 & 1.02 & -0.17 & 0.74 & -0.20 \\ 
+  SFREC & Euphorbia & spathulata & Forb & Int & 0.14 & 0.44 & 0.84 & -0.17 & 0.64 & 0.56 \\ 
+  SFREC & Centaurea & melitensis & Forb & Int & 0.00 & 0.00 & 0.38 & -0.23 & 0.51 & 0.11 \\ 
+  SFREC & Avena & barbata & Grass & Int & 1.42 & -0.38 & 1.06 & 1.29 & 0.44 & 1.73 \\ 
+  SFREC & Navarretia & pubescens & Forb & Nat & 0.19 & 0.27 & 0.35 & 0.31 & 0.39 & 0.77 \\ 
+  SFREC & Madia & gracilis & Forb & Nat & 0.03 & 0.17 & 0.21 & 0.02 & 0.31 & 0.11 \\ 
+  SFREC & Daucus & pusillus & Forb & Int & 0.21 & -0.21 & 0.04 & 0.09 & 0.18 & -0.04 \\ 
+  SFREC & Petrorhagia & dubia & Forb & Int & 1.60 & -0.54 & 0.54 & -0.38 & 0.14 & 0.25 \\ 
+  SFREC & Bromus & carinatus & Grass & Nat & 0.00 & 0.00 & 0.24 & -0.24 & 0.12 & -0.12 \\ 
+  SFREC & Festuca & perennis & Grass & Int & 0.04 & 0.26 & 0.00 & 1.07 & 0.10 & -0.10 \\ 
+  SFREC & Cerastium & glomeratum & Forb & Int & 0.24 & -0.09 & 0.04 & 0.16 & 0.08 & 0.08 \\ 
+  SFREC & Tritileia & hyacinthina & Forb & Nat & 0.62 & 0.47 & 0.26 & -0.13 & 0.07 & 0.09 \\ 
+  SFREC & Tritileia & hyacinthina & Forb & Nat & 0.62 & 0.47 & 0.26 & -0.13 & 0.07 & 0.09 \\ 
+  SFREC & Lomatium & californicum & Forb & Nat & 0.03 & -0.03 & 0.03 & -0.03 & 0.07 & -0.07 \\ 
+  SFREC & Hypochaeris & glabra & Forb & Int & 0.00 & 0.00 & 0.00 & 0.00 & 0.06 & 0.14 \\ 
+  SFREC & Clatonia & perfoliata & Forb & Nat & 0.00 & 0.11 & 0.00 & 0.00 & 0.03 & 0.04 \\ 
+  SFREC & Eremocarpus & setigerus & Forb & Nat & 0.01 & 0.02 & 0.10 & -0.09 & 0.02 & 0.06 \\ 
+  SFREC & Tritileia & laxa & Forb & Nat & 0.03 & -0.03 & 0.04 & -0.03 & 0.01 & -0.00 \\ 
+  SFREC & Anagallis & arvensis & Forb & Int & 0.12 & 0.06 & 0.17 & -0.17 & 0.01 & 0.12 \\ 
+  SFREC & Erodium & botrys & Forb & Int & 0.58 & 0.13 & 0.18 & 0.20 & 0.01 & 0.17 \\ 
+  SFREC & Athysanus & pusillus & Forb & Nat & 0.06 & 0.13 & 0.00 & 0.00 & 0.01 & 0.03 \\ 
+  SFREC & Linanthus & bicolor & Forb & Nat & 0.12 & 0.30 & 0.09 & -0.09 & 0.01 & 0.30 \\ 
+  SFREC & Cardamine & oligosperma & Forb & Nat & 0.00 & 0.08 & 0.04 & 0.10 & 0.00 & -0.00 \\ 
+  SFREC & Githopsis & specularioides & Forb & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.12 \\ 
+  SFREC & Lactuca & serriola & Forb & Int & 2.46 & -2.22 & 0.15 & -0.15 & 0.00 & -0.00 \\ 
+  SFREC & Sherardia & arvensis & Forb & Int & 0.26 & 0.12 & 0.01 & 0.03 & 0.00 & 0.04 \\ 
+  SFREC & Dichlostemma & multiflorum & Forb & Nat & 0.00 & 0.00 & 0.03 & -0.03 & 0.00 & -0.00 \\ 
+  SFREC & Centaurea & solstitialis & Forb & Int & 0.20 & -0.20 & 0.37 & -0.37 & 0.00 & 0.00 \\ 
+  SFREC & Epilobium & brachycarpum & Forb & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Filago & gallica & Forb & Int & 0.12 & -0.05 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Linanthus & parviflora & Forb & Nat & 0.00 & -0.00 & 0.00 & 0.06 & 0.00 & 0.00 \\ 
+  SFREC & Odontostomum & hartwegii & Forb & Nat & 0.00 & 0.44 & 0.00 & 0.47 & 0.00 & 0.50 \\ 
+  SFREC & Githopsis & specularioides & Forb & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Sanicula & bipinnatifida & Forb & Nat & 0.00 & 0.00 & 0.03 & -0.03 & 0.00 & 0.00 \\ 
+  SFREC & Thysanocarpus & curvipes & Forb & Nat & 0.00 & 0.00 & 0.04 & 0.00 & 0.00 & 0.00 \\ 
+  SFREC & Trifolium & microcephalum & Legume & Nat & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+   \hline
+\end{tabular}
+}
+\caption{} 
+\end{table}
 \hypertarget{chapter-3-supporting-information}{%
 \chapter{Chapter 3 Supporting Information}\label{chapter-3-supporting-information}}
 \begin{table}[ht]
@@ -1217,7 +1460,7 @@ Native perennial & 95 & 8 & 7 & 29 \\
 \end{table}
 \begin{table}[ht]
 \centering
-\begin{tabular}{llllllrr}
+\begin{tabular}{llllllll}
   \hline
 Model & DF & Priority & 1 Year SPEI & 2 Year SPEI & 3 Year SPEI & deltaAIC & AIC \\ 
   \hline
@@ -1225,8 +1468,8 @@ Model & DF & Priority & 1 Year SPEI & 2 Year SPEI & 3 Year SPEI & deltaAIC & AIC
   2 & 24 & X &  &  &  & 6.16 & 1260.83 \\ 
   3 & 24 &  & X &  &  & 31.82 & 1286.49 \\ 
   4 & 24 &  &  & X &  & 31.76 & 1286.43 \\ 
-  5 & 24 &  &  &  & X & 28.00 & 1282.67 \\ 
-  6 & 36 & X & X &  &  & 0.00 & 1254.67 \\ 
+  5 & 24 &  &  &  & X & 28 & 1282.67 \\ 
+  6 & 36 & X & X &  &  & 0 & 1254.67 \\ 
   7 & 36 & X &  & X &  & 3.92 & 1258.59 \\ 
   8 & 36 & X &  &  & X & 0.25 & 1254.92 \\ 
    \hline
@@ -1263,6 +1506,7 @@ Model & DF & Priority & 1 Year SPEI & 2 Year SPEI & 3 Year SPEI & deltaAIC & AIC
 \setlength{\parskip}{8pt}
 
 \hypertarget{refs}{}
+\begin{cslreferences}
 \leavevmode\hypertarget{ref-Adler2006}{}%
 Adler, P. B., J. HilleRisLambers, P. C. Kyriakidis, Q. Guan, and J. M. Levine. 2006. Climate variability has a stabilizing effect on the coexistence of prairie grasses. Proceedings of the National Academy of Sciences of the United States of America 103:12793--12798.
 
@@ -1640,7 +1884,7 @@ Young, T. P., E. P. Zefferman, K. J. Vaughn, and S. Fick. 2014. Initial success 
 
 \leavevmode\hypertarget{ref-Zavaleta2003}{}%
 Zavaleta, E. S., M. R. Shaw, N. R. Chiariello, B. D. Thomas, E. E. Cleland, C. B. Field, and H. a. Mooney. 2003. Grassland responses to three years of elevated temperature, CO 2, precipitation, and N deposition. Ecological Monographs 73:585--604.
-
+\end{cslreferences}
 \end{ucmainmatter}
 \end{document}
 
