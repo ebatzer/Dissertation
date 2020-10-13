@@ -1,6 +1,6 @@
-\contentsline {chapter}{Abstract}{iii}{Doc-Start}%
-\contentsline {chapter}{List of Tables}{viii}{chapter*.2}%
-\contentsline {chapter}{List of Figures}{x}{chapter*.3}%
+\contentsline {chapter}{Abstract}{iv}{Doc-Start}%
+\contentsline {chapter}{List of Tables}{ix}{chapter*.2}%
+\contentsline {chapter}{List of Figures}{xii}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}The ``Neutral Theory'' of Niche Dimensionality}{1}{chapter.1}%
 \contentsline {section}{Abstract}{2}{section*.4}%
 \contentsline {section}{Introduction}{3}{section*.5}%
@@ -8,14 +8,19 @@
 \contentsline {section}{Results}{16}{section*.8}%
 \contentsline {section}{Discussion}{22}{section*.15}%
 \contentsline {chapter}{\numberline {2}Nitrogen enrichment has scale-dependent effects on plant diversity in California grasslands.}{29}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Climate drives transitions between vegetation states in California grasslands.}{34}{chapter.3}%
-\contentsline {section}{Abstract}{34}{section*.22}%
-\contentsline {section}{Introduction}{35}{section*.23}%
-\contentsline {section}{Methods}{39}{section*.24}%
-\contentsline {section}{Results}{45}{section*.26}%
-\contentsline {section}{Discussion}{53}{section*.33}%
-\contentsline {chapter}{\numberline {A}Chapter 1 Supporting Information}{60}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Chapter 2 Supporting Information}{64}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Chapter 3 Supporting Information}{73}{appendix.C}%
-\contentsline {subsection}{Clustering Index Ranking Methods:}{74}{subsection*.50}%
-\contentsline {chapter}{References}{79}{appendix*.56}%
+\contentsline {section}{Abstract}{29}{section*.16}%
+\contentsline {section}{Introduction}{30}{section*.17}%
+\contentsline {section}{Methods}{33}{section*.18}%
+\contentsline {section}{Results}{39}{section*.20}%
+\contentsline {section}{Discussion}{47}{section*.28}%
+\contentsline {chapter}{\numberline {3}Climate drives transitions between vegetation states in California grasslands.}{52}{chapter.3}%
+\contentsline {section}{Abstract}{52}{section*.29}%
+\contentsline {section}{Introduction}{53}{section*.30}%
+\contentsline {section}{Methods}{57}{section*.31}%
+\contentsline {section}{Results}{63}{section*.33}%
+\contentsline {section}{Discussion}{71}{section*.40}%
+\contentsline {chapter}{\numberline {A}Chapter 1 Supporting Information}{78}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Chapter 2 Supporting Information}{82}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Chapter 3 Supporting Information}{91}{appendix.C}%
+\contentsline {subsection}{Clustering Index Ranking Methods:}{92}{subsection*.57}%
+\contentsline {chapter}{References}{97}{appendix*.63}%

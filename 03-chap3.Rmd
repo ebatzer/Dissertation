@@ -130,7 +130,7 @@ table_nums_chap03(name = "table3_1")
 
 ```{r table3_1, echo = FALSE, include = TRUE, results='asis'}
 tab3_1[is.na(tab3_1)] = ""
-xtable(tab3_1, caption = "Species mixtures used in initial plot seeding. Distinctions between “Native”, “Naturalized”, and “Invasive” species groups reflect species origins in California grasslands.")
+xtable(tab3_1, caption = 'Species mixtures used in initial plot seeding. Distinctions between “Native”, “Naturalized”, and “Invasive” species groups reflect species origins in California grasslands.')
 ```
 
 \newline
@@ -205,7 +205,7 @@ Seeding effects (temporal priority) were defined as a binary (1/0) variable desc
 We fit models consisting of only drought effects as covariates, seeding as a covariate, and models containing both drought and seeding as additive effects.
 
 AIC scores were used to compare the relative fit of all potential candidate models. We selected the model with the lowest AIC score as our best fit model. 
-A table consisting of model descriptions and AIC scores is presented in Table C.4. Multistate model fitting and model selection was performed using the “msm” package. [@Jackson2011]
+A table consisting of model descriptions and AIC scores is presented in Appendix Table C.4. Multistate model fitting and model selection was performed using the “msm” package. [@Jackson2011]
 
 All analyses were conducted in R version 3.06 (R Development Core Team). 
  
@@ -213,7 +213,7 @@ All analyses were conducted in R version 3.06 (R Development Core Team).
 
 _Seeding treatment effects on community composition_
 
-In the first year of observation (2008), plant communities were highly segregated as a function of seeded species mixture (PERMANOVA, pseudo-$F_{6, 49} = 32.815, P < 0.001$; Figure C.1, Table C.1). 
+In the first year of observation (2008), plant communities were highly segregated as a function of seeded species mixture (PERMANOVA, pseudo-$F_{6, 49} = 32.815, P < 0.001$; Appendix Figure C.1, Appendix Table C.1). 
 Pairwise contrasts of community dissimilarity indicate clear distinctions in vegetation group establishment following seeding -- all planting mixtures containing the “naturalized annuals” group were similar in their species composition, as were mixtures composed of “invasive grasses” and “invasive grasses + native species”. 
 The single group “native species” treatment composition was also compositionally segregated from others.   
 
@@ -227,17 +227,17 @@ Clustering captured a substantial proportion of total compositional variation (P
 However, residual variation suggests that fluctuations in cover within clusters were still common. 
 This indicates that our method best captured broad changes in the dominance of correlated groups of species, rather than the varying abundance of individual species.   
 	
-Partitioning of community variance into vegetation states was best characterized by 4 discrete clusters (Appendix C, Table C.2). 
+Partitioning of community variance into vegetation states was best characterized by 4 discrete clusters (Appendix C, Appendix Table C.2). 
 Indicator species analysis of these assignments demonstrated that 2 of 4 vegetation states largely followed established conceptions of vegetation types within this system (Table 3.2).
 State 1 (hereafter, Native Perennials) was characterized by a group of native perennial grasses, while State 3 (Invasive Annuals) was composed of the two planted invasive annual species.
 However, State 2 (B. hordeaceus-Festuca Annuals) and State 4 (Avena-B. diandrus Annuals) reflected the partitioning of the “Naturalized Annual” group into two separate  types.
-Cluster assignments reflected a 75% cumulative relative abundance of associated indicator species, on average. Less than one tenth of observations had cumulative indicator species relative abundances of less than 40% (Figure C.2).
+Cluster assignments reflected a 75% cumulative relative abundance of associated indicator species, on average. Less than one tenth of observations had cumulative indicator species relative abundances of less than 40% (Appendix Figure C.2).
 
 ```{r, results = "hide"}
 fig_nums_chap03(name = "fig-3-1")
 ```
 
-![Visualization of clustering assignments following K-medoids clustering. Non-metric multidimensional scaling (NMDS) ordination was conducted on all community observations from 2008 – 2018 (n=560). Pairwise community distance was calculated using Bray-Curtis dissimilarity index. Species vectors correspond to taxa that were found to be significantly associated (p < 0.05) with state assignments using indicator species analysis. \label{fig-3-1}](figure/Fig3_2.png){width=100% height=80%}
+![Visualization of clustering assignments following K-medoids clustering. Non-metric multidimensional scaling (NMDS) ordination was conducted on all community observations from 2008 – 2018 (n=560). Pairwise community distance was calculated using Bray-Curtis dissimilarity index. Species vectors correspond to taxa that were found to be significantly associated (P < 0.05) with state assignments using indicator species analysis. \label{fig-3-1}](figure/Fig3_2.png){width=100% height=80%}
 
 
 ```{r, results = "hide"}
@@ -254,7 +254,7 @@ _Frequency of state assignments over time_
 
 The climatic conditions we observed included a period of normal to above-average water availability (2008 – 2011), followed by drought (2012 – 2016), and substantial water surplus  (2017; Figure 3.2a). 
 During this period, community transitions between vegetation states were common in all plots (mean number of total transitions observed per plot = 3.73 +/- 0.16 SE). 
-The frequency of these transition events—summarized in a contingency table (Table C.3)—were highly non-random, varying as a function of a plot’s state assignment in a previous year, in addition to current climatic conditions (plot-level state assignments presented in Figure C.3).
+The frequency of these transition events -- summarized in a contingency table (Appendix Table C.3) -- were highly non-random, varying as a function of a plot’s state assignment in a previous year, in addition to current climatic conditions (plot-level state assignments presented in Appendix Figure C.3).
 	
 Following seeding, a majority of communities were characterized by a single state assignment, as each of the 32 plots that received naturalized annual seed (including Avena fatua and Trifolium subterraneum) assumed the Festuca-B. hordeaceus state (Figure 3.2b). 
 The predominance of this community configuration was short-lived, however, and subsequent community dynamics were largely driven by a series of sequential, unidirectional transitions. 
@@ -270,7 +270,7 @@ While these transitions were largely driven by dominance of Invasive Annual spec
 Instead, many Invasive Annual communities experienced a transition to the Avena-B. diandrus state type between 2013-2015, a change which persisted in many plots until the end of monitoring in 2018.
 
 Curiously, the frequency of Native Perennial communities increased slowly, yet steadily over the course of our experiment (Figure 3.2B). 
-Closer inspection of plot-level state assignments demonstrated that conversion of any vegetation type to the Native Perennial state was rare in cases where native perennial grasses were not included in seeding mixtures (Table C.3).
+Closer inspection of plot-level state assignments demonstrated that conversion of any vegetation type to the Native Perennial state was rare in cases where native perennial grasses were not included in seeding mixtures (Appendix Table C.3).
 Once established, however, these communities were quite resistant to state transition, often maintaining their assignment for multiple years under variable climatic conditions.
 
 &nbsp;
@@ -278,9 +278,9 @@ Once established, however, these communities were quite resistant to state trans
 _Model Selection_
 
 We fit multi-state models to observed state assignment data to quantify likely pathways of vegetation transition across different state types, treatment combinations, and environmental contexts. 
-From model comparison, we found that that best fit models included both the influence of initial seeding composition and climate variation (Table C.4). 
+From model comparison, we found that that best fit models included both the influence of initial seeding composition and climate variation (Appendix Table C.4). 
 While both 1-year and 3-year cumulative drought stress models provided comparable fits, here we present results from the former due to lower AIC score and greater parsimony. 
-Chi-squared goodness of fit test of observed and expected state frequencies showed no significant deviations from model assumptions ($\chi_9^2 = 12, p > 0.20$). 
+Chi-squared goodness of fit test of observed and expected state frequencies showed no significant deviations from model assumptions $\chi_9^2 = 12; P > 0.20$. 
 
 &nbsp;
 
@@ -307,7 +307,7 @@ table_nums_chap03(name = "table3_2")
 ```
 
 ```{r table3_2, echo = FALSE, include = TRUE, results = 'asis'}
-xtable(tab3_2, caption = "Parameter estimates of the best fit multi-state model (Model 6). For each state assignment, potential state assignments in subsequent years (Transitions) and their associated probabilities (with 95 percent confidence intervals) are reported. Covariate effects reported as hazard ratios, where superscripts correspond to statistical significance: $` = P < 0.1; * = P < 0.05; ** = P < 0.01$")
+xtable(tab3_2, caption = "Parameter estimates of the best fit multi-state model (Model 6). For each state assignment, potential state assignments in subsequent years (Transitions) and their associated probabilities (with 95 percent confidence intervals) are reported. Covariate effects reported as hazard ratios, where superscripts correspond to statistical significance: ' = P < 0.1; $*$ = P < 0.05; $**$ = P < 0.01.")
 ```
 
 In contrast to states which exhibited linearly correlated responses to drought stress, plots characterized by the Native Perennial state displayed complex interactions between effects of drought stress and initial planting composition (Figure 3.4, Table 3.3). 
@@ -317,7 +317,7 @@ Critically, these transitions were strongly affected by seeding treatments, wher
 ```{r, results = "hide"}
 fig_nums_chap03(name = "fig-3-4")
 ```
-![The effects of temporal priority and drought stress on the probability of transition of a plot to the Native Perennial state given other previous state assignments. Transition probabilities presented are a function of drought stress (SPEI) and whether native species were included/absent from the seeded species mixture (+/- Priority). Solid lines indicate significant (p < 0.05) covariate effects of both SPEI and priority; dashed lines correspond to non-significant effects. \label{fig-3-4}](figure/Fig3_4.png){height=40%}
+![The effects of temporal priority and drought stress on the probability of transition of a plot to the Native Perennial state given other previous state assignments. Transition probabilities presented are a function of drought stress (SPEI) and whether native species were included/absent from the seeded species mixture (+/- Priority). Solid lines indicate significant (P < 0.05) covariate effects of both SPEI and priority; dashed lines correspond to non-significant effects. \label{fig-3-4}](figure/Fig3_4.png){height=40%}
 
 
 ## Discussion

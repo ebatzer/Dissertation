@@ -29,33 +29,196 @@ tab2_1 <- read_csv("data/Table2_1.csv")
 tab2_2 <- read_csv("data/Table2_2.csv")
 ```
 
+## Abstract
+
+The increased availability of nitrogen is implicated in widespread loss of plant community biodiversity in terrestrial systems. However, this diversity change is commonly evaluated in small plots, which translate poorly to effects at larger scales of conservation or management interest. Cross-scale studies may better capture the effects of N addition, and frequently report variation in the loss of species richness as a function of sampling scale. While the mechanisms responsible for this scale-dependence are not well understood, attempts to link biodiversity scaling to shifts in species richness, relative abundance, and spatial distribution offer more detailed interpretation of observed effects.
+
+In this study, we evaluated scale-dependent patterns of plant diversity change following experimental N fertilization in two California grassland sites. At both sites, we found that N enrichment significantly decreased plant diversity in small subplots yet failed to produce richness declines at larger scales. In contrast, effects on community evenness were consistent across scales, indicating that scale-dependent patterns were primarily driven by the increased abundance of dominant species without any large-scale loss of species. While N addition may have limited effects on large-scale persistence mechanisms, we observed greater intraspecific aggregation in fertilized plots that may make them more vulnerable to extirpation in the long term. Together, our findings underscore the need to supplement cross-scale comparisons of species richness with those of other factors, such as abundance and spatial distribution, to better understand community responses to N enrichment.
+
+
+## Introduction
+
+Human effects on regional and global nutrient cycles have caused shifts in the availability of resources that control plant productivity, more than doubling the total amount of plant-available nitrogen in terrestrial systems [@canfield2010; @Vitousek1997]. Increased concentrations of soil nitrogen are theorized to be a major contributor to widespread plant diversity loss; nitrogen loading is known to produce shifts in the abundance of dominant species, increases in invasive plant cover, and species extirpation [@butchart2010; @Harpole2016; @Tilman2001]. This diversity loss, in turn, is implicated in declines of ecosystem resilience, resistance, and the provision of key services [@Chapin2000; @Hector2007; @loreau2001].
+
+However, there exists a key discrepancy in the scale of global and regional biodiversity changes and experimental approaches that often take place over much smaller areas. Empirical studies are critical to understanding the drivers of biodiversity loss; yet attempts to link richness changes at small scales to those at larger ones often produce estimates that significantly over- or under-predict effects (e.g.; @he2011; @sax2003; @vellend2013). A central challenge to this translation between experimental and observed contexts stems from the nature of species diversity as a scale-dependent measure – by definition, measures of biodiversity increase non-linearly as a function of sampling effort [@chase2018; @scheiner2003]. Accounting for this scale-dependence is essential to predict at what scales biodiversity may be most affected by nitrogen enrichment, or the scale at which it is conserved most effectively.
+
+The scale-dependence of biodiversity in plant systems emerges, in large part, from a suite of coexistence mechanisms that operate across different areas or timeframes. Depending on the extent or duration of sampling, dominant coexistence mechanisms at a given scale will vary [@hart2017]. In local neighborhoods of interaction, for example, species richness is often thought to be driven by resource partitioning and stochastic community assembly [@Tilman1982]. Coexistence at larger scales, in contrast, may be more dependent on other mechanisms, such as storage effects, environmental filtering, dispersal limitation, and competition-colonization trade-offs [@Chesson2000; @leibold2004]. Based on how different mechanisms are affected by nitrogen enrichment, biodiversity change at small scales may not reflect shifts at larger ones. While this topic has yet to be examined extensively, cross-scale studies often report differences in the magnitude or direction of effects between the smallest and largest area sampled [@chase2018]. 
+
+To better understand this scale-dependence, treatment effects are often evaluated at the sample level ($\alpha$ diversity), study extent ($\gamma$ diversity), and at intermediate scales using species accumulation curves [@gotelli2001; @scheiner2003]. However, characterization of richness change across multiple sampling areas is insufficient to capture drivers of scale-dependent effects. Scale-dependent relationships are known to depend on a set of independent components -- including species pool size, relative abundance, and spatial distribution -- that present markedly different interpretation of biological phenomena [@chase2018; @mcglinn2019]. While several studies have compared scale-dependent richness change following nitrogen addition in grassland systems, few have captured its relationship with these components (but see @lan2015).
+
+N enrichment in California grasslands is known to reduce species richness at local scales [@Harpole2007; @Zavaleta2003], yet its effects on large-scale coexistence are less understood. An annual-dominated system characterized by high species diversity, heterogenous soils, and variable climatic conditions, California grasslands are known to exhibit organization across multiple scales [@germain2017]. Species diversity in this system is maintained by many mechanisms, including resource competition, temporal and spatial storage effects, disturbance, and environmental variation [@elmendorf2009; @Hobbs2007; @seabloom2005]. 
+
+Scale-dependent relationships of N addition in California grasslands may be characterized by many potential outcomes, each with associated links between drivers of change and coexistence mechanisms. In the simplest case, N enrichment may have consistent effects on both local and regional ($\gamma$) scale diversity through species extirpation across the extent of observation [@lan2015]. Alternatively, N additions can result in intermediately abundant species less frequently occupying a sampling unit, thus decreasing community evenness without changing species richness. This also results in the decreases in richness seen at smaller scales being diminished at larger scales [@tj2008]. This pattern may also emerge from changes in environmental suitability that increase the dominance of a few species yet fail to affect larger-scale mechanisms such as spatial or temporal storage effects [@Adler2006; @Chesson2000]. Finally, changes in intraspecific aggregation can also result in scale-dependent effects, independent of changes in total richness or relative abundance. N enrichment may reduce aggregation through environmental homogenization, affecting $\gamma$ diversity, or increase aggregation through reduced dispersal or concentration of individuals in spatial refugia, disproportionately reducing $\alpha$ diversity [@eskelinen2015].
+
+Here, we expand upon prior studies by relating scale-dependent diversity loss to three key components – species richness, community evenness, and spatial distribution – to generate a more complete understanding of the effects of nitrogen enrichment in California grasslands. 
+
+
+## Methods
+
+_Study Design_
+
+This study was conducted at two sites in the foothills of California’s Sierra and Coast Ranges, roughly 600m in elevation: The Donald and Sylvia McLaughlin Natural Reserve (MCLA) and Sierra Foothill Research and Extension Center (SFREC; Figure 2.1). Both sites experience a Mediterranean climate defined by dry, hot summers and cool wet winters. Average temperatures in each site ranged between 15^o^ C (MCLA) and 16.7^o^ C (SFREC); mean total annual precipitation ranged between 698mm yr^-1^ (MCLA) and 818mm yr^-1^ (SFREC).
+
+To capture changes in core mechanisms underlying scale-dependent relationships, we selected communities that were likely sensitive to multiple elements of change -- in both sites, sampled grasslands were species-rich (often >10 spp. m^-2^), exhibited relatively even species abundance distributions, and spatial structure detectable to a range of 2-3m (Appendix Figure B.1).  During peak growth, the most abundant species in our chosen sites consisted of annual grasses (Elymus caput-medusae, Bromus hordeaceous), with a subcanopy of forbs (Agoseris heterophylla), legumes (Lupinus bicolor) and grasses (Festuca myuros; Appendix Figure B.2, Appendix Table B.1). Late-season communities were primarily composed of late blooming forb species (Lagophylla ramosissima, Holocarpha virgata).
+
+In the spring of 2016, we selected 4 locations in each site classified as the California Annual Grassland type [@keeler-wolf2007]. At each location, we established a randomized block design consisting of two 100m^2^ plots (8 blocks / 16 plots total). In each plot, we designated the interior 8x8m portion for community sampling, leaving a 1m buffer on all edges to limit edge effects caused by fertilization treatments. Within this interior core, we established sixty-four 0.5x0.5m subplots centered on 1m intervals to be used in community sampling (Figure 2.1). 
+
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-1")
 ```
-![\label{fig-2-1}](figure/Fig2_1.png){width=50% height=40%}
+![ Study site locations and sampling design. Site 1: McLaughlin Natural Reserve (MCLA). Site 2: Sierra Foothill Research and Extension Center (SFREC). In each site, we established 4 blocks consisting of 10x10m paired plots randomly subject to nitrogen enrichment (+N). Within each plot, we constructed a grid of sixty-four 0.5x0.5m subplots with a 1m boundary to plot edges. \label{fig-2-1}](figure/Fig2_1.png){width=50% height=40%}
+
+Plots within blocks were randomly assigned either an N enrichment treatment (10g N m^-2^ yr^-1^, delivered as 44-0-0 time-release urea) or control treatment (no manipulation). Between 2017 and 2019, fertilization was applied in late January or early February, coinciding with peak plant nutrient demands as spring temperatures begin to rise [@eviner2007]. 
+
+Prior to initiation of the experiment, we conducted more limited pilot sampling at each location in the spring of 2015 to characterize site spatial structure and assess potential sources of bias in our sampling design (Appendix Figure B.1). Using a similar study design replicated in 2 blocks in each site, we found scale-dependent patterns of species diversity but no significant differences in subplot or plot-level species richness within blocks. Together with a lack of observed treatment effect on diversity in our first treatment year, it is unlikely that inherent differences of treatment vs control plots within blocks significantly affected any observed results. 
+
+&nbsp;
+
+_Response Measurements_
+
+Starting in 2017, we assessed the total areal cover of all species present in each subplot using a modified Daubenmire method with the following binned cover classes: 0-1%, 1-5%, 5-25%, 25-50%, 50-75%, 75-95%, 95-100%. Cover was estimated visually for each species, often yielding total plot cover values greater than 100% in dense communities. To account for variable species phenology, we repeated cover estimates at three time points – mid- to late-April (peak cover of species with early to mid-season phenology), mid-May (peak cover of late-spring species), and late June (including cover of summer species) – depending on precipitation and temperature patterns in each year. Percent cover of each species was calculated as the highest observed cover value across the three observation periods.
+
+To assess changes in community biomass and light availability driven by fertilization, we sampled total aboveground biomass and light interception during peak biomass (mid-May) in each year. As not to disturb subplots used in community sampling, we collected all aboveground plant material along ten 1m x 10cm strips placed in the margins of sampling grids in each plot. Strips were rotated each year to prevent the same location from being sampled twice. After collection, biomass samples were dried to a constant mass at 60^o^ C and weighed.
+
+Light availability was measured as photosynthetically active radiation (PAR) using a Decagon Ceptometer. Ten locations in each plot were randomly distributed but fixed across years. At each of these locations, PAR was measured above the tallest vegetation and in two locations placed at the soil surface. The proportion of available light reaching the soil surface was calculated as the ratio of canopy PAR relative to the mean of the two surface-level measurements.
+
+
+&nbsp;
+
+_Statistical Analysis_
+
+Effects of fertilization on community biomass and light availability were analyzed using linear mixed effects models to account for a repeated-measures design. For biomass, where sampling was randomly distributed in each year, we included random effects of site, block, and plot. For light availability, which was measured in the same locations across multiple years, we included random effects of site, block, plot, and sampling location.
+
+To explore effects of N enrichment on community diversity, we used a modified analytical framework developed by @mcglinn2019 through capture of the specific contributions of changes in species richness, relative abundances, and spatial distribution at different scales.
+
+First, to test for effects on scaling relationships driven by shifts in species pool size and abundance distribution, we tested for changes in community diversity at the subplot and plot scales. Using a multiplicative diversity partition, we constructed estimates of community diversity at $\alpha$ (0.25m^2^), $\gamma$ (cumulative across 64 subplots), and $\beta$ scales, where $\beta = \gamma / \bar{\alpha}$. To capture effects on community richness and evenness, we calculated community diversity using Hill numbers, linearized diversity metrics with variable weighting of species abundances, allowing for cross-scale diversity comparisons  [@hil1973; @jost2006; @jost2007]. We calculated Hill diversity at two different abundance weights: zeroth order (Q = 0) diversity, which is based on species presence-absence, equivalent to total species richness; and second order (Q = 2) diversity, which weights species proportional to their squared abundances, equivalent to the inverse Simpson diversity index. 
+
+For comparisons made across multiplicative diversity metrics, we calculated a log response-ratio of diversity in treatment relative to control plot, e.g. $log(\alpha_{treatment} / \alpha_{control})$ =  $log(\alpha_{treatment}) - log(\alpha_{control})$. For $\alpha$ diversity, response ratios were constructed using the mean observed $\alpha$ in each plot. Significance of log-response ratios was calculated using confidence intervals generated using 10,000 bootstrap samples, stratified by block, site, and year. Confidence intervals were adjusted using a Bonferroni correction to account for pairwise comparisons in each diversity metric between treatments across three years. For $\beta$ and $\gamma$ diversity, bootstrap estimates were constructed using resampling of subplot-level samples which were then aggregated into larger-scale metrics.
+
+While diversity partitioning between the smallest and largest scale of sampling captures changes in the richness and evenness of plant communities, it does not evaluate changes in plant spatial aggregation that operate on richness observed at intermediate scales. To visualize observed effect size across scales and test for the effects of changing spatial aggregation in response to treatment, we constructed species accumulative curves composed of all subplots within each plot (“Type IIIA” accumulation curves; Scheiner 2003). Using a null model approach, we compared effects on species richness between accumulative curves assembled using spatial and non-spatial rarefaction orders. In the former, mean richness is calculated across all 64 possible starting positions when samples are accumulated in order of observed spatial proximity, while in the latter, sample positions are randomized prior to spatial accumulation. We tested for the effects of aggregation by comparing observed log response ratios of species richness to a distribution composed of 10,000 randomized accumulation orders. Significant effects of spatial aggregation were detected by deviations from the quantiles of this null distribution using Bonferroni-corrected 95% confidence intervals.
+
+While effects on spatial aggregation at intermediate scales may be detected using this method, like many biodiversity analyses, they are subject to arbitrary decisions regarding spatial grain and extent. As a result, comparison between spatial and nonspatial rarefaction methods are unable to detect changes in spatial aggregation occurring at the smallest scale (concentration of species in individual subplots). To better understand these small-scale shifts in spatial distribution, we supplemented our null-model approach by evaluating changes in the relationship between species presence-absence and relative abundance; under increasing aggregation, species will occupy a smaller proportion of subplots relative to their total cover. Using generalized linear mixed effects models, we compared the proportion of subplots occupied by species in a plot as a function of their average cover across plots, including random effects of species identity, site, and block. Tests for significance of model terms were conducted using Wald (Z-score) tests.
+
+&nbsp;
+
+_Statistical Software_
+
+All analyses were conducted using R version 4.0.2 (R Core Team 2020). Generalized and linear mixed-effects modeling was conducted using ‘lme4’ and ‘lmerTest’ [@Bates2015; @Kuznetsova2017]. Rarefaction was performed using ‘mobr' [@mcglinn2019].
+
+
+## Results
+
+_Biomass and light availability_
+
+Experimental N enrichment resulted in increases in both total aboveground biomass and percent light interception (Figure 2.2; table2_1). Biomass effects magnified over time, resulting in statistically significant differences only after 3 years of treatment. In contrast, changes in light availability were pronounced after a single year of treatment, and varied between years (Figure 2.2b), with no effect of fertilization after three years of treatment (Figure 2.2a). 
+
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-2")
 ```
-![\label{fig-2-2}](figure/Fig2_2.png){height=40%}
+![Effects of fertilization on (a) total aboveground biomass and (b) canopy light interception, colored by treatment. Large points correspond to mean values across all plots with associated Bonferroni-adjusted 95% confidence intervals. Small points reflect plot-level means. Statistically significant differences in means (P < 0.05) are highlighted with “*”.  \label{fig-2-2}](figure/Fig2_2.png){height=40%}
+
+&nbsp;
+
+```{r, results = "hide"}
+table_nums_chap02(name = "table2_1")
+```
+
+```{r table2_1, echo = FALSE, include = TRUE, results = 'asis'}
+colnames(tab2_1)[1] <- "Source"
+xtable(tab2_1[1:3,],
+       caption = 'ANOVA of linear mixed-effects models used to estimate changes in total aboveground biomass in response to fertilization treatment. Degrees of freedom were calculated using Satterthwaite Approximation, often yielding non-integer denominator degrees of freedom. Coefficients with statistically significant effects (P < 0.05) are highlighted with “*".')
+```
+
+&nbsp;
+
+```{r, results = "hide"}
+table_nums_chap02(name = "table2_2")
+```
+
+```{r table2_2, echo = FALSE, include = TRUE, results = 'asis'}
+colnames(tab2_2)[1] <- "Source"
+xtable(tab2_2,
+       caption = 'ANOVA of linear mixed-effects models used to estimate changes in light interception in response to fertilization treatment. Degrees of freedom were calculated using Satterthwaite Approximation, often yielding non-integer denominator degrees of freedom. Coefficients with statistically significant effects (P < 0.05) are highlighted with “*”.')
+```
+
+_Diversity across scales_
+
+Construction of species-accumulation curves relating observed species richness to cumulative sample number suggested scale-dependent effects of fertilization treatment (Figure 2.3). Both control and treatment plots accumulated a similar number of species, on average, indicating diminished effects as scale expands. However, treatment effects decreased species richness at smaller sampling scales, most apparent on the log scale (Figure 2.3b). 
+
+
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-3")
 ```
-![\label{fig-2-3}](figure/Fig2_3.png){height=50%}
+![Species accumulation curves (SACs) depicting the cumulative number of observed species as a function of sampling effort, presented on untransformed (a) and log scales (b). Accumulation curves presented were generated through spatially explicit sample accumulation (“empirical” SACs), where samples are accumulated in order of proximity to the starting sample. Bolded lines represent the mean SAC across all treatment and control plots in each year; standard lines correspond to individual plots across all sites in each year. \label{fig-2-3}](figure/Fig2_3.png){height=50%}
+
+&nbsp;
+
+_Effects on richness and evenness_
+
+By decomposing the endpoints of each accumulation curve into $\alpha / \beta / \gamma$ diversity partition, we found that scale-dependent effects on species diversity were primarily a function of richness, but not evenness (Figure 2.4). When focused on species richness, our results confirmed the patterns observed in species-accumulation curves: fertilization significantly reduced the average species richness observed at the subplot scale in the second and third year of treatment ($\alpha$), with no significant change in plot richness ($\gamma$), resulting in an increase in turnover or accumulation rate ($\beta$; Figure 2.4a). 
+
+In contrast, for abundance-weighted diversity, in which fertilization in years two and three reduced community evenness at both the subplot scale ($\alpha$; Figure 2.4b) and at the plot scale ($\gamma$). Consistent effects at small and large scales yielded no change to abundance-weighted turnover ($\beta$). 
+
+Compositional analysis of community response to treatment indicated that nitrogen fertilization generally increased the abundance of species that were dominant in control plots (Appendix Tables B.4, B.5). While treatment responses were not consistent across plant functional groups or species origin, individual species often responded in similar fashion across blocks. In both sites, spatial (block) and temporal (year) variation accounted for significant (P < 0.05) fractions of total compositional variance (Appendix Figures B.3, B.4; Appendix Tables B.2, B.3).
+
+
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-4")
 ```
-![\label{fig-2-4}](figure/Fig2_4.png){height=60%}
+![Changes in community diversity at $\alpha$ (subplot), $\beta$, and $\gamma$ (plot) scales using multiplicative diversity partitioning using Hill diversity indices. Diversity was calculated as function of species richness (Q = 0) and abundance-weighted diversity (Q = 2). Effects are presented as log response ratios of each diversity metric within blocks. Black points correspond to mean effect across all blocks, with Bonferroni-corrected 95% confidence intervals generated using 10,000 bootstrap samples. Colored points correspond to estimated effects within each block. Statistically significant effects are highlighted, “*”, when 95% confidence intervals do not overlap 0. \label{fig-2-4}](figure/Fig2_4.png){height=60%}
+
+
+&nbsp;
+
+_Effects on sample occupancy_
+
+N enrichment produced a significant effect on spatial aggregation at the subplot-scale (Figure 2.5). For a given amount of recorded cover, species in fertilized plots were found to occupy a smaller fraction of subplots in the second and third year of treatment. This reduction in occupancy indicates that infrequent species between 1-10 percent of average cover (intermediate values on the log scale) exhibited the greatest concentration of individuals into a smaller number of sampling units; species with an average cover of 5 percent (1.6 when log-transformed), for example, were estimated to decrease in percent occupancy from 63 to 57 percent of subplots, on average.
+
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-5")
 ```
-![\label{fig-2-5}](figure/Fig2_5.png){height=30%}
+![Effect of fertilization on the proportion of subplots occupied by species, relative to average subplot cover. Lines correspond to mean relationship reported by mixed-effects logistic regression, after accounting for random variance across species and blocks within sites (2018 data not shown). Treatment effects indicate significant decreases in occupancy relative to cover in the second and third year of treatment (2018: Z = -0.274, P < 0.001; 2019: Z = -0.288, P < 0.001). Effects on occupancy were not significant in the first year of treatment (2017: Z = -0.008, P = 0.803). \label{fig-2-5}](figure/Fig2_5.png){height=30%}
+
+&nbsp;
+
+_Effects on aggregation_
+
+Comparison of species accumulation curves constructed using spatial and random rarefaction orders demonstrated no clear effects on intraspecific aggregation across multiple subplots (Figure 2.6, Appendix Figure C.6). Across all years, the average response ratio constructed using spatial rarefaction curves rarely deviated from a random distribution generated using 10,000 random permutations of community spatial arrangements. While data from the third year of treatment suggest minor changes in aggregation occurring at intermediate scales, these results were not consistent in direction between years (Appendix Figure C.6). 
 
 ```{r, results = "hide"}
 fig_nums_chap02(name = "fig-2-6")
 ```
-![\label{fig-2-6}](figure/Fig2_6.png){height=35%}
+![Effect of fertilization on species richness and spatial aggregation as a function of sampling scale in 2019, presented as a log response ratio. In subplot 5a, the solid black line corresponds to mean estimated effects under spatially explicit (“empirical”) sample accumulation, while dashed line reflects the median value of mean diversity effects under randomized sample accumulation. Shaded areas correspond to Bonferroni-adjusted 95% confidence intervals of mean diversity response across 10,000 random sample accumulation curves. Colored lines denote individual responses of each block. In subplot 5b, lines correspond to the net effects of spatial aggregation on estimated response, calculated as the observed log-response ratio relative to the median value across bootstrap samples. The shaded area depicts Bonferroni-adjusted 95% confidence intervals of aggregation effects on mean diversity response across 10,000 random sample accumulation curves. \label{fig-2-6}](figure/Fig2_6.png){height=35%}
+
+&nbsp;
+
+## Discussion
+
+The increased availability of soil nitrogen is widely considered to be an important driver of loss of biodiversity in plant systems [@bobbink2010]. However, many experimental N enrichment studies assess changes to community diversity at a single spatial scale. Cross-scale studies may generalize more effectively to areas of conservation or management interest, and management approaches will be improved by understanding the many drivers that produce scale-dependent effects. Here, we demonstrate that scale-dependent community responses to nitrogen addition are not captured by focusing on species richness alone, but also require an assessment of changes to community evenness and spatial distribution
+
+As reported in many experimental manipulations in nitrogen-limited systems, we found that N addition resulted in reduced community diversity at a scale typical of other studies (≤1m^2^). Also consistent with these other findings, N fertilization in our experiment resulted in increased biomass and light limitation that likely acted to decrease subplot species richness. At these local scales, competitive interactions are known to be an important driver of community diversity [@Tilman1982; @tilman1987]. Loss of average richness across subplots, therefore, is likely to be driven by shifts in the identity of limiting nutrients from soil resources to light that produces competitive exclusion [@Borer2014a; @DeMalach2017a; @Hautier2009].
+
+While fertilization produced significant changes to light interception in the first year of treatment, delayed effects on biomass and richness suggest our results depended on both the accumulating nature of our treatments and seasonal dynamics of California grasslands [@eviner2007]. In annual grasslands, seedling dynamics during winter months are known to exert considerable control over the composition of plant communities at peak biomass [@bartolome1979; @harrison2019]; our treatments, applied several months after germination, may not significantly affect species diversity or composition within the year. Instead, successive years of nitrogen addition may spur growth and reproduction of effective competitors that generate positive feedbacks over time. 
+
+Similar dynamics may explain changes in aboveground biomass, in which fertilization produced positive effects that were not statistically significant until the third year of our experiment. Multiple years of treatment may be needed to promote substantial litter accumulation. Development of thatch layers is observed to be an important mechanism of compositional change in this system [@amatangelo2008]; litter suppression is often linked to the spread of certain introduced species that responded positively to treatment in our experiment, such as E. caput-medusae, that often suppresses the growth of smaller-statured forbs [@DiTomaso2008]. 
+
+Despite strong effects observed at local scales of interaction, we found that nitrogen enrichment produced no significant change in plot-level species richness across all three years of study. Comparison across multiple diversity metrics, however, demonstrates that this scale-dependence in richness change should not be interpreted as a lack of effect on community structure at large scales [@chase2013; @chase2018]. Instead, the increased abundance of dominant species (at the expense of intermediately abundant ones) appears to act as the main driver of this scale-dependence; richness loss at small scales occurs not through extirpation, but the decreased probability of observing intermediately-abundant and rare species in small samples of highly uneven communities [@tj2008].
+
+Understanding scaling relationships will likely depend on integrating the effects of multiple coexistence mechanisms [@chase2018; @demalach2019]. While we are unable to identify changes to specific mechanisms in our study, our observed patterns suggest that large-scale persistence is not strongly affected by N enrichment. In California grasslands, spatial and temporal environmental variation is known to be an important driver of storage effects in less competitive species, which rely on soil seedbanks to maintain persistence [@hallett2019; @Hobbs2007; @Laforgia2018]. Even in plots receiving fertilization, considerable variation in space and time suggests these communities are still subject to the influence of these environmental drivers.
+
+As in our study, diminished effect sizes of diversity loss at larger scales are often observed in experiments manipulating fertility or disturbance in grassland environments [@lan2015; @lep2014; @Sandel2012], but are not a uniform finding (Seabloom et al. _Personal Communication_). While cross-site syntheses of scale-dependent diversity change are limited, evidence suggests that site productivity is likely to control effects. For example, @chalcraft2008 found that declines in β-diversity were strongest in highly productive systems but were unable to identify a particular mechanism responsible for this pattern. 
+
+We caution that these results do not indicate that N enrichment will fail to result in species extirpation in this system. While our results are limited to an area smaller than most considered in conservation or management, changes in plant spatial distributions highlight potential drivers of diversity loss that may occur at larger scales, particularly over time. The concentration of individuals into a smaller number of favorable locations may elevate risks of stochastic extirpation and reduce dispersal [@kuussaari2009; @Tilman2001]. If these patterns hold, this system may be subject to extinction debt in the long-term, as populations are unable to effectively capitalize on favorable conditions to replenish seedbanks or colonize potential sites [@gilbert2013; @hylander2013; @jackson2010]. Shifts in spatial distribution may also interact with other global change factors, such as plant invasion and climate change, to amplify diversity loss caused by increasingly frequent drought events or dampen recovery [@harrison2015; @Harrison2018].These results underscore the need to supplement incidence-based monitoring with other metrics, as richness trends alone are unlikely to provide a sufficiently detailed picture of biodiversity change [@hillebrand2018]. 
+
+Our findings do not exclude changes to plant size as a potential mechanism of scale-dependence, given the impracticalities of estimating density in a system that regularly exceeds 8,000 mature individuals per square meter [@Heady1958]. Fertilization may produce biodiversity loss independent of any shifts in spatial distribution or species abundance through decreased numbers of individuals that manifest as sampling effects [@goldberg1990; @stevens1999]. While changes in density may drive scale-dependent responses to other global change factors [@powell2013; @schuler2015], there is little evidence that this phenomenon acts as an important mechanism in grassland systems [@lan2015]. 
+
+Global biodiversity loss remains a primary environmental concern in the 21st century [@butchart2010]. Experimental manipulations of global changes serve as a critical tool to assess the drivers and consequences of this diversity change, though are often limited by choices in sampling area or duration. Biodiversity is inherently a scale-dependent phenomenon [@chase2018]; failure to account for mechanisms that operate beyond a focal sampling unit will likely generate conclusions which fail to capture the complexity of the community response [@englund2003]. Instead, we emphasize that deliberate capture of biodiversity change across multiple scales can improve our understanding of how communities change, which will improve our ability to both predict and manage change. Together, assessment of scale-dependent patterns of biodiversity change and related metrics, including community distribution and evenness, form an essential tool to better understand and manage human impacts on natural ecosystems. 
+
+
+
+
