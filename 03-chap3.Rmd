@@ -1,6 +1,6 @@
 # Climate drives transitions between vegetation states in California grasslands.
 <!-- This adds a different "short title" -->
-\chaptermark{Vegetation state transitions}
+\chaptermark{State transitions}
 
 Evan E. Batzer^1\*^, 
 Carolyn Malmstrom^2^, 

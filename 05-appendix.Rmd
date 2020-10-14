@@ -95,7 +95,7 @@ table_nums_appendix(name = "tableA1_2")
 fig_nums_appendix(name = "app-2-1")
 ```
 
-![Mantel correlograms demonstrating spatial autocorrelation in plant community composition using pre-treatment data. In both sites, statistically significant (P < 0.05) autocorrelation in community composition was detectable to a scale of roughly 2-3 meters. Difference in community composition was calculated using Bray-Curtis dissimilarity and Pearson correlation. Significance tests were perforumed using 999 sample permutations, with P-values adjusted using the Holm correction. \label{app-2-1}](figure/AppFig2_1.png){height=30% width=90%}
+![Mantel correlograms demonstrating spatial autocorrelation in plant community composition using pre-treatment data. In both sites, statistically significant (P < 0.05) autocorrelation in community composition was detectable to a scale of roughly 2-3 meters. Difference in community composition was calculated using Bray-Curtis dissimilarity and Pearson correlation. Significance tests were perforumed using 999 sample permutations, with P-values adjusted using the Holm correction. \label{app-2-1}](figure/AppFig2_1.png){height=27% width=90%}
 
 
 ```{r, results = "hide"}

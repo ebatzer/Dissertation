@@ -23,24 +23,27 @@ abstract: |
   
 
 acknowledgments: |
+  All of the research I completed in pursuit of a PhD was conducted among a network of friends and mentors, without whom none of this work would have been possible.  
+  
+  I chose to attend Davis in response to the affability and enthusiasm that my advisor, Valerie Eviner, displayed in our first conversations In retrospect, I am very fortunate to have joined a lab that emphasized both scientific rigor and personal growth. Valerie's support was crucial to all elements of my graduate education, encouraging me to pursue research in subjects that I found compelling while also refocusing my wandering interests. Most importantly, Valerie was always an advocate for my individual pursuits. Her support was essential to the path I took through graduate school, which allowed me to focus on my own development as a researcher and scientist.
 
-  I’ll start by thanking my advisor, Valerie Eviner, for her guidance throughout my time at UC Davis. Valerie’s enthusiasm and support gave me the confidence to explore many different fields and research topics throughout graduate school.
+  I am deeply grateful to the support offered by the rest of the Eviner lab. Ben Waitman, Joanne Heraty, Sherly Castro, Julia Michaels, Brianne Palmer, David Mitchell, and Maggie Shepherd were important sources of companionship and acted as sounding boards for many projects. Sara Gaffney, Julea Shaw, and Jonah Weeks -- the Sisterhood of the Traveling Plants -- have been an incredible source of support during much of my time in graduate school. I couldn’t ask for better friends, collaborators, and travel companions. 
 
-  Thank you to my dissertation and qualifying exam committees – Susan Harrison, Andrew Latimer, Mary Cadenasso, Marcel Rejmanek, and Rick Karban -- for their role in refining my research ideas. What do I want?
+  Thank you to my guidance, qualifying exam, and dissertation committees –- Susan Harrison, Andrew Latimer, Mary Cadenasso, Marcel Rejmanek, and Rick Karban -- for their role in developing and refining my research ideas. 
+        
+  My work was strongly influenced by training provided by the UC Davis Statistics Department. The opportunity to pursue a statistics MS during my PhD was an invaluable source of knowledge that shaped many projects, ultimately making me a better scientist. A big thanks to Chris Miller, who took a majority of these classes with me. I would have struggled greatly without our study sessions.
   
-  I am deeply grateful to the support offered by the rest of the Eviner lab. Ben Waitman, Joanne Heraty, Sherly Castro, Julia Michaels, Brianne Palmer, David Mitchell, and Maggie Shepherd were important sources of companionship and acted as sounding boards for many projects. Sara Gaffney, Julea Shaw, and Jonah Weeks – the Sisterhood of the Traveling Plants – have been an incredible source of support during much of my time in graduate school. I couldn’t ask for better friends, collaborators, and travel companions. 
+  It’s been a pleasure being part of the Graduate Group in Ecology at UC Davis. Holly Hatfield-Rogai, Elizabeth Sturdy, Matt Maelepeai, and JoAnna Lewis were a crucial to navigating all the technical aspects of the PhD program. A big thanks to Martha Wolfheil, Michael Culshaw-Maurer, and Ross Brennan for their work helping lead the Statistics Support Group, which was a highlight of the last couple years. To the whole of the GGE community, thank you so much for contributing to such a collegial and productive work environment. 
   
-  My work was strongly influenced by training provided by the UC Davis Statistics Department. The opportunity to pursue a statistics MS during my PhD was an invaluable source of knowledge that shaped many projects, and ultimately, made me a better scientist. A big thanks to Chris Miller, who took a majority of these classes with me – I would have struggled greatly without our study sessions.
+  Eric Seabloom, Elizabeth Borer, Ashley Asmus, Siddharth Bharath, and the rest of the Nutrient Network community were fantastic collaborators and field companions. I learned so much during sampling trips and annual meetings at the NutNet working group. The opportunity to work with such an engaged, collaborative group of researchers has been one of the highlights of my academic career.
   
-  It’s been a pleasure being part of the Graduate Group in Ecology at UC Davis. Holly Hatfield-Rogai, Elizabeth Sturdy, Matt Maelepeai, and JoAnna Lewis were a constant source of help in navigating all the technical aspects of the PhD program. A big thanks to Martha Wolfheil, Michael Culshaw-Maurer, and Ross Brennan for their work helping lead the Statistics Support Group, which was a highlight of the last couple years. To the whole of the GGE community, thank you so much for contributing to such a collegial and productive work environment. 
-  
-  Eric Seabloom, Elizabeth Borer, Ashley Asmus, Siddharth Bharath, and the rest of the Nutrient Network community were fantastic collaborators and field companions. I learned so much during sampling trips and working groups. The opportunity to participate in such an engaged, collaborative group of researchers was one of the highlights of my academic career.
-  
-  I never would have been able to conduct my field research without the help of directors and staff at McLaughlin Reserve, Hopland REC, and Sierra Foothill REC. Cathy Koehler, Chuck Vaughn, and Dustin Flavell were instrumental in getting acquainted with California’s grassland ecosystems. Thanks to Paul Aigner, Amber Shrum, John Bailey, Kim Rodrigues, and others for their assistance keeping my projects organized. 
+  I never would have been able to conduct my field research without the help of directors and staff at McLaughlin Reserve, Hopland REC, and Sierra Foothill REC. Cathy Koehler, Chuck Vaughn, and Dustin Flavell were instrumental in getting acquainted with California’s grassland ecosystems. Thanks to Paul Aigner, Amber Shrum, John Bailey, Kim Rodrigues, and others for their assistance keeping my projects organized.  
   
   Generous funding support during my PhD was provided by the UC Davis Graduate Group in Ecology, Department of Plant Sciences, UC Natural Reserve System, Northern California Botanists, and the California Native Plant Society.
   
-  And also thanks to Alex
+  And finally, thank you to Alex McInturf, who has been a constant companion, editor, cycling partner, and general advocate for my own well-being. You have made these last few years of my PhD among the most fun and rewarding. I will be forever grateful for your patience, kindness, and understanding.  
+
+  To everyone that contributed to my time in graduate school -- thank you. 
 
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
@@ -77,14 +80,4 @@ If you'd like to include a comment that won't be produced in your resulting file
 If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
 -->
 
-```{r include_packages, include = FALSE}
-# This chunk ensures that the aggiedown package is
-# installed and loaded. This aggiedown package includes
-# the template files for the thesis.
-if(!require(devtools))
-  install.packages("devtools", repos = "http://cran.rstudio.com")
-if(!require(aggiedown))
-  devtools::install_github("ryanpeek/aggiedown")
-library(aggiedown)
-```
 

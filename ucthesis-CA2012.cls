@@ -120,8 +120,8 @@
   \def\ps@headings{
       \def\@oddfoot{\rm\hfil\thepage\hfil}
       \def\@evenfoot{\rm\hfil\thepage\hfil}     % Page numbers on ALL pages.
-      \def\@evenhead{\hfil\slshape\leftmark}%
-      \def\@oddhead{{\slshape\rightmark}\hfil}%
+      % \def\@evenhead{\hfil\slshape\leftmark}%
+      % \def\@oddhead{{\slshape\rightmark}\hfil}%
       \let\@mkboth\markboth
     \def\chaptermark##1{%
       \markboth {\MakeUppercase{%
@@ -403,14 +403,6 @@
 % \title and \author macros
 \def\abstract{
     \if@openright\cleardoublepage \else\clearpage \fi
-    \begin{flushright}
-    {
-        \ssp
-        \@author\\
-        \@degreemonth\ \@degreeyear\\
-        \@field\\
-      }
-    \end{flushright}
     \begin{center}
       {\fmfont {\bfseries \abstractname}\par}
     \end{center}
@@ -801,7 +793,7 @@
 
 % change sizes and margins
 \topmargin      0.25in
-\oddsidemargin  0.5in
+\oddsidemargin  0.25in
 \evensidemargin 0.25in
 \textheight     7.75in % can adjust to 7.00
 \textwidth      5.75in
@@ -809,6 +801,6 @@
 \headheight     12pt
 \marginparsep  12pt
 \marginparwidth    54pt
-\footskip      0.5in % can adjust to 0.1
+\footskip      0.25in % can adjust to 0.1
 
 \endinput

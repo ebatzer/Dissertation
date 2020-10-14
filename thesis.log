@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.11)  12 OCT 2020 16:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.13)  13 OCT 2020 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -371,12 +371,26 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/everypage/everypag
 e.sty
-Package: everypage 2007/06/20 1.1 Hooks to run on every page
+Package: everypage 2020/10/11 R2.0 Hooks to run on every page
+
+Package everypage Warning: Functionality similar to this package has recently
+(everypage)                been implemented in LaTeX. This package is now in
+(everypage)                legacy status.
+(everypage)                Please, don't use it in new documents and packages.
+
+
+Package everypage Warning: You appear to be running a version of LaTeX
+(everypage)                providing the new functionality.
+(everypage)                Doing the best to deliver the original `everypage`
+(everypage)                interface on top of it. Strict equivalence is
+(everypage)                not possible, breakage may occur.
+(everypage)                If truly needed, Use `everypage-1x` to force the
+(everypage)                loading of an older code base.
+
 ))
 \c@theorem=\count288
 \bibdata{references}
 No file thesis.bbl.
-\cslhangindent=\skip75
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
 sty
@@ -599,9 +613,10 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip76
+\Hy@SectionHShift=\skip75
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 106.
+Package hyperref Info: Option `breaklinks' set `true' on input line 98.
+\cslhangindent=\skip76
 
 LaTeX Warning: Unused global option(s):
     [12pt].
@@ -640,38 +655,38 @@ LaTeX Warning: Label `discussion' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-17.
+16.
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 116.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 11
-7.
+6.
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -688,58 +703,58 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 117.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 117.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 117.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 117.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 117.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 117.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 117.
-LaTeX Font Info:    Redeclaring math accent \check on input line 117.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 117.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 117.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 117.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 117.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 116.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 116.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 116.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 116.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 116.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 116.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 116.
+LaTeX Font Info:    Redeclaring math accent \check on input line 116.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 116.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 116.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 116.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 116.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 117.
+(Font)              `operators' in the math version `normal' on input line 116.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 117.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 116.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 117.
+(Font)              `operators' in the math version `bold' on input line 116.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 117.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 117.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 117.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 117.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 117.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 117.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 117.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 117.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 117.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 117.
-Package hyperref Info: Link coloring ON on input line 117.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 116.
+Package hyperref Info: Link coloring ON on input line 116.
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -755,63 +770,63 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count316
 )
-LaTeX Info: Redefining \ref on input line 117.
-LaTeX Info: Redefining \pageref on input line 117.
-LaTeX Info: Redefining \nameref on input line 117.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 141
+LaTeX Font Info:    Trying to load font information for U+msa on input line 140
 .
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 141
+LaTeX Font Info:    Trying to load font information for U+msb on input line 140
 .
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 14
-1.
+0.
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 141.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 140.
 
 
 (c:/Users/ebatz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/se-asc
@@ -822,220 +837,294 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 ] [2
 
-] [3] [4
+] [3] [4] [5
 
 ]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5] [6] (./thesis.toc [7
+[6] [7] (./thesis.toc [8
 
 ])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[8] (./thesis.lot [9
+[9] (./thesis.lot [10
 
 ]
-Overfull \hbox (2.18622pt too wide) in paragraph at lines 18--18
+Underfull \hbox (badness 4303) in paragraph at lines 18--18
  [][] [][][]\TU/lmr/m/n/12 Summary of identified species, functional group, ori
-gin (native/introduced) 
+gin (na- 
  []
 
 
-Overfull \hbox (2.18622pt too wide) in paragraph at lines 19--19
+Underfull \hbox (badness 1642) in paragraph at lines 18--18
+ \TU/lmr/m/n/12 tive/introduced) mean cover in control plots, and average net 
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 19--19
  [][] [][][]\TU/lmr/m/n/12 Summary of identified species, functional group, ori
-gin (native/introduced) 
+gin (na- 
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 19--19
+ \TU/lmr/m/n/12 tive/introduced) mean cover in control plots, and average net 
  []
 
 )
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-
-Underfull \vbox (badness 1052) has occurred while \output is active []
-
-[10] [11] (./thesis.lof
+[11] [12] (./thesis.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[12
+[13
 
 ]
-Underfull \vbox (badness 4899) has occurred while \output is active []
-
-[13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3291) has occurred while \output is active []
 
 [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15])
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16]
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+[17])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[16] [17]
+[18]
 Chapter 1.
 [1
 
 
-] [2]
-Overfull \hbox (0.38054pt too wide) in paragraph at lines 304--315
-\TU/lmr/m/n/12 Human alterations of the earth’s biogeochemical cycles have prod
-uced widespread changes
- []
-
-[3]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[4]
+[2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5]
+[3] [4] [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[6] [7] [8] [9]
+[6] [7]
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+[8]
+Underfull \vbox (badness 1810) has occurred while \output is active []
+
+[9]
 File: figure/Fig1_1.png Graphic file (type bmp)
 <figure/Fig1_1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--373
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
 
  []
 
-
+[10] [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[10] [11] [12] [13] [14] [15]
+[12] [13]
+Underfull \vbox (badness 1728) has occurred while \output is active []
+
+[14] [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16]
 File: figure/Fig1_2.png Graphic file (type bmp)
 <figure/Fig1_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--473
+Underfull \hbox (badness 10000) in paragraph at lines 473--480
 
  []
 
-[16] [17]
 File: figure/Fig1_3.png Graphic file (type bmp)
 <figure/Fig1_3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--507
+Underfull \hbox (badness 1048) in paragraph at lines 483--514
+\TU/lmr/m/n/12 showed no consistent deviations from general positive correlatio
+n in response
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--514
 
  []
 
+[17] [18]
 File: figure/Fig1_4.png Graphic file (type bmp)
 <figure/Fig1_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--532
+Underfull \hbox (badness 10000) in paragraph at lines 517--539
 
  []
 
-[18]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[20] [21] [22]
 File: figure/Fig1_5.png Graphic file (type bmp)
 <figure/Fig1_5.png>
-[20] [21] [22] [23]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[24]
+[23] [24]
+Underfull \vbox (badness 5288) has occurred while \output is active []
+
+[25] [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[25]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+[27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[26] [27] [28]
+[28] [29]
 Chapter 2.
-[29
+[30
 
-] [30]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+] [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[31] [32] [33]
+[32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[34]
 File: figure/Fig2_1.png Graphic file (type bmp)
 <figure/Fig2_1.png>
+[35] [36] [37] [38]
+Overfull \hbox (14.68143pt too wide) in paragraph at lines 648--649
+\TU/lmr/m/n/12 response-ratio of diversity in treatment relative to control plo
+t, e.g. $\OML/cmm/m/it/12 log\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^K[]\OT1/cmr/m/
+n/12 /\OML/cmm/m/it/12 ^^K[]\OT1/cmr/m/n/12 )$
+ []
 
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[34] [35] [36] [37]
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[38]
-File: figure/Fig2_2.png Graphic file (type bmp)
-<figure/Fig2_2.png>
-[39]
-File: figure/Fig2_3.png Graphic file (type bmp)
-<figure/Fig2_3.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[40] [41]
+[39] [40]
+File: figure/Fig2_2.png Graphic file (type bmp)
+<figure/Fig2_2.png>
+File: figure/Fig2_3.png Graphic file (type bmp)
+<figure/Fig2_3.png>
+[41] [42]
 File: figure/Fig2_4.png Graphic file (type bmp)
 <figure/Fig2_4.png>
-[42]
+[43] [44]
 File: figure/Fig2_5.png Graphic file (type bmp)
 <figure/Fig2_5.png>
 File: figure/Fig2_6.png Graphic file (type bmp)
 <figure/Fig2_6.png>
 
-Underfull \vbox (badness 3568) has occurred while \output is active []
+Underfull \vbox (badness 6559) has occurred while \output is active []
 
-[43] [44] [45] [46]
+[45] [46] [47] [48]
 Missing character: There is no ≤ in font [lmroman12-regular]:mapping=tex-text;!
-[47] [48]
+[49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[50]
 Missing character: There is no β in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \vbox (badness 4608) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[49]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[50] [51]
+[52] [53]
 Chapter 3.
-[52
+[54
 
-] [53] [54]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[55] [56] [57] [58]
-Underfull \hbox (badness 10000) in paragraph at lines 864--884
+[55] [56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[58]
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+[59] [60]
+Overfull \hbox (6.83609pt too wide) in paragraph at lines 874--888
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 871--891
 
  []
 
-[59] [60] [61] [62] [63]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[61] [62]
+Underfull \hbox (badness 1205) in paragraph at lines 920--924
+\TU/lmr/m/n/12 CA (38.535694, -121.777636). CIMIS automated dataloggers collect
+ weather
+ []
+
+[63] [64] [65] [66]
 File: figure/Fig3_2.png Graphic file (type bmp)
 <figure/Fig3_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 976--1010
+Underfull \hbox (badness 10000) in paragraph at lines 983--1017
 
  []
 
-[64] [65]
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+[67] [68]
 File: figure/Fig3_1.png Graphic file (type bmp)
 <figure/Fig3_1.png>
 
-Underfull \vbox (badness 6542) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[66]
-Underfull \vbox (badness 1342) has occurred while \output is active []
+[69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[67]
+[70]
 File: figure/Fig3_3.png Graphic file (type bmp)
 <figure/Fig3_3.png>
 File: figure/Fig3_4.png Graphic file (type bmp)
 <figure/Fig3_4.png>
-[68] [69] [70] [71]
-Underfull \hbox (badness 2418) in paragraph at lines 1110--1116
-[]\TU/lmr/m/n/12 Our partitioning results highlight the potential difficulty in
- extending species-
+[71] [72] [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[74] [75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[76] [77]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[79] [80]
+Appendix A.
+
+Overfull \hbox (11.35185pt too wide) in paragraph at lines 1240--1241
+ [][] 
  []
 
-[72] [73] [74] [75] [76] [77]
-Appendix A.
 File: figure/AppFig1_1.png Graphic file (type bmp)
 <figure/AppFig1_1.png>
 File: figure/AppFig1_2.png Graphic file (type bmp)
 <figure/AppFig1_2.png>
-[78
+[81
 
-] [79] [80] [81]
+] [82] [83] [84]
 Appendix B.
 File: figure/AppFig2_1.png Graphic file (type bmp)
 <figure/AppFig2_1.png>
@@ -1047,41 +1136,29 @@ File: figure/AppFig2_3.png Graphic file (type bmp)
 <figure/AppFig2_3.png>
 File: figure/AppFig2_4.png Graphic file (type bmp)
 <figure/AppFig2_4.png>
-[82
+[85
 
-] [83] [84] [85] [86] [87] [88] [89] [90]
+] [86] [87] [88] [89] [90] [91] [92] [93]
 Appendix C.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[91
+[94
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[92]
+[95]
 File: figure/AppFig3_1.png Graphic file (type bmp)
 <figure/AppFig3_1.png>
 File: figure/AppFig3_2.png Graphic file (type bmp)
 <figure/AppFig3_2.png>
 File: figure/AppFig3_3.png Graphic file (type bmp)
 <figure/AppFig3_3.png>
-[93] [94] [95] [96]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[97
+[96] [97] [98] [99] [100
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[98]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[99]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[100]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [101]
@@ -1138,7 +1215,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [118]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[119] [120] (./thesis.aux)
+[119]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[120]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[121]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[122]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[123] [124] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 64E5EF50C282242586E89D63E78FAC75;1659.
 
@@ -1146,12 +1235,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19253 strings out of 479441
- 337368 string characters out of 5879416
- 771338 words of memory out of 5000000
- 38286 multiletter control sequences out of 15000+600000
+ 19246 strings out of 479441
+ 337284 string characters out of 5879416
+ 771245 words of memory out of 5000000
+ 38279 multiletter control sequences out of 15000+600000
  542661 words of font info for 76 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 70i,12n,78p,1693b,582s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,12n,78p,1693b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (137 pages).
+Output written on thesis.pdf (142 pages).

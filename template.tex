@@ -30,7 +30,7 @@
 \usepackage{lscape}
 \usepackage{longtable}
 \usepackage{titlesec}
-\usepackage{longtable}
+
 
 \usepackage[nostamp]{draftwatermark}
 % % Use the following to make modification
@@ -51,16 +51,6 @@
 % extracted from the output of `pandoc -s`
 %% Make R markdown code chunks work
 
-$if(csl-refs)$
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newenvironment{cslreferences}%
-  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
-  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
-  {\par}
-$endif$
-
-
 \ifxetex
   \usepackage{fontspec,xltxtra,xunicode}
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
@@ -73,7 +63,7 @@ $endif$
   \fi
 \fi
 \DefineShortVerb[commandchars=\\\{\}]{\|}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},',fontsize=\small' }
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
 % Add ',fontsize=\small' for more characters per line
 \newenvironment{Shaded}{}{}
 \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
@@ -111,9 +101,18 @@ $endif$
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
 
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+$endif$
+
 %---Set Margins ------------------------------------------------------
-\setlength\oddsidemargin{0.25 in} \setlength\evensidemargin{0.25 in} \setlength\textwidth{6.25 in} \setlength\textheight{8.50 in}
-\setlength\footskip{0.25 in} \setlength\topmargin{0 in} \setlength\headheight{0.25 in} \setlength\headsep{0.25 in}
+\setlength\oddsidemargin{0.25 in} \setlength\evensidemargin{0.25 in} \setlength\textwidth{6.00 in} \setlength\textheight{8.25 in}
+\setlength\footskip{0.5 in} \setlength\topmargin{0 in} \setlength\headheight{0.25 in} \setlength\headsep{0.25 in}
 
 %%%---DOCUMENT---%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -144,6 +143,7 @@ $endif$
 	% APPROVAL AND COPYRIGHT
 	% \approvalpage % AS OF 2018 Fall, don't need this additional page if use cover page for signatures
 	% \copyrightpage
+
   
   % ACKNOWLEDGEMENTS
   
